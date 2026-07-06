@@ -1,0 +1,31 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import { safeCollection } from '~/lib/collections';
+
+export async function getStaticPaths() {
+  const events = await safeCollection('events', (e) => e.data.status === 'confirmed');
+  return events.map((event) => ({ params: { slug: event.id }, props: { event } }));
+}
+
+const { event } = Astro.props;
+const { Content } = await render(event);
+const locale = 'fr';
+---
+
+<BaseLayout title={event.data.title} description={event.data.summary} path={`event/${event.id}`} locale={locale}>
+  <PageHero eyebrow={event.data.format} title={event.data.title} intro={event.data.summary} />
+  <article class="section container prose">
+    <Content />
+    {
+      event.data.registerUrl && (
+        <p>
+          <a class="btn btn-primary" href={event.data.registerUrl} target="_blank" rel="noopener">
+            S'inscrire
+          </a>
+        </p>
+      )
+    }
+  </article>
+</BaseLayout>

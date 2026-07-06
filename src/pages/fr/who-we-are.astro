@@ -1,0 +1,15 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import WhoWeAreContent from '~/components/WhoWeAreContent.astro';
+
+const locale = 'fr';
+---
+
+<BaseLayout
+  title="Qui sommes-nous"
+  description="Le LearningPlanet Festival, lancé en 2020 en partenariat avec l'UNESCO, est un mouvement mondial pour réinventer l'éducation."
+  path="who-we-are"
+  locale={locale}
+>
+  <WhoWeAreContent locale={locale} />
+</BaseLayout>

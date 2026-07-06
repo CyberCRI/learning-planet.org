@@ -1,0 +1,63 @@
+---
+import { SITE } from '~/site';
+import { useTranslations, localizedPath, type Locale } from '~/i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<section class="section movement" aria-labelledby="movement-title">
+  <div class="container">
+    <p class="eyebrow movement-eyebrow">{t('movement.heading')}</p>
+    <h2 id="movement-title" class="movement-line">
+      {t('movement.statementPre')}
+      <span class="movement-accent">{t('movement.statementCountries')}</span>{t('movement.statementPost')}
+    </h2>
+    <a class="movement-link" href={localizedPath('who-we-are', locale)}>
+      {t('movement.readMore')}
+      <span aria-hidden="true">→</span>
+    </a>
+  </div>
+</section>
+
+<style>
+  .movement {
+    background: var(--paper);
+  }
+  .movement-eyebrow {
+    color: var(--c-coral);
+  }
+  .movement-line {
+    font-family: var(--font-display);
+    font-size: var(--fs-800);
+    line-height: 1.08;
+    font-weight: 700;
+    color: var(--ink);
+    max-width: 24ch;
+    letter-spacing: -0.01em;
+    margin: 0 0 var(--sp-3);
+  }
+  .movement-accent {
+    color: var(--c-coral);
+    white-space: nowrap;
+  }
+  .movement-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--fs-500);
+    color: var(--c-deep-teal);
+    text-decoration: none;
+  }
+  .movement-link:hover {
+    gap: 0.7rem;
+  }
+  .movement-link span {
+    transition: transform 0.15s ease;
+  }
+</style>

@@ -1,0 +1,14 @@
+---
+# Template for a speaker. Copy to `<slug>.md`, fill in, then flip `speakers`
+# to true in src/config.ts. Files starting with "_" are ignored.
+name: "Speaker Name"
+role: "Their role"
+organisation: "Their organisation"
+photo: "./speaker-name.jpg"   # optional; place image alongside this file
+featured: false
+links:
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/example/"
+---
+
+Optional speaker bio in Markdown.

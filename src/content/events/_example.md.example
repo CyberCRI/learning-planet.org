@@ -1,0 +1,23 @@
+---
+# Template for a programme event. Copy to `<slug>.md` (drop the .example),
+# fill in, set status: confirmed, and flip `programme` to true in src/config.ts.
+# Files starting with "_" are ignored by Astro's content loader.
+title: "Example session title"
+summary: "One-sentence summary shown on the programme card."
+start: 2027-01-24T15:00:00+01:00
+end: 2027-01-24T16:00:00+01:00
+timezone: "Europe/Paris"
+format: "online"          # online | in-person | hybrid
+language: "en"
+location: "Online"        # optional; for in-person/hybrid
+theme: "youth-agency"     # one of the six theme ids
+speakers: []              # references to entries in the speakers collection
+registerUrl: "https://example.org/register"   # optional outbound link
+livestreamUrl:            # optional
+replayUrl:                # optional
+featured: false
+edition: "LPF 2027"
+status: "draft"           # draft | confirmed — only confirmed entries render
+---
+
+Full event description in Markdown.

@@ -1,0 +1,58 @@
+---
+import { localizedPath, useTranslations, type Locale } from '~/i18n/utils';
+
+interface Props {
+  title: string;
+  message: string;
+  locale: Locale;
+}
+const { title, message, locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<div class="empty-state container">
+  <span class="empty-orbs" aria-hidden="true"></span>
+  <h2 class="h-bold empty-title">{title}</h2>
+  <p class="empty-msg">{message}</p>
+  <a class="btn btn-primary" href={`${localizedPath('', locale) === '/' ? '' : localizedPath('', locale)}/#stay-informed`.replace('//#', '/#')}>{t('nav.stayInformed')}</a>
+</div>
+
+<style>
+  .empty-state {
+    position: relative;
+    text-align: center;
+    padding-block: var(--sp-7);
+    max-width: 52ch;
+  }
+  .empty-orbs {
+    position: absolute;
+    left: 50%;
+    top: 18%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 120px;
+    z-index: 0;
+    background:
+      radial-gradient(circle at 25% 50%, var(--c-green), transparent 60%),
+      radial-gradient(circle at 50% 40%, var(--c-lilac), transparent 60%),
+      radial-gradient(circle at 75% 55%, var(--c-coral), transparent 60%);
+    opacity: 0.22;
+    filter: blur(4px);
+    pointer-events: none;
+  }
+  .empty-title,
+  .empty-msg,
+  .empty-state .btn {
+    position: relative;
+    z-index: 1;
+  }
+  .empty-title {
+    font-size: var(--fs-700);
+    margin-bottom: var(--sp-2);
+  }
+  .empty-msg {
+    color: var(--ink-soft);
+    font-size: var(--fs-500);
+    margin-bottom: var(--sp-3);
+  }
+</style>

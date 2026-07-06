@@ -1,0 +1,113 @@
+---
+import { IMPACT } from '~/site';
+import { useTranslations, type Locale } from '~/i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+const accents = ['--c-green', '--c-blue', '--c-coral', '--c-yellow'];
+---
+
+<section class="section impact" aria-labelledby="impact-title">
+  <div class="container">
+    <p class="eyebrow impact-eyebrow">{t('impact.eyebrow')}</p>
+    <h2 id="impact-title" class="visually-hidden">{t('impact.heading')}</h2>
+    <dl class="impact-grid">
+      {
+        IMPACT.map((stat, i) => (
+          <div class="impact-item" style={`--accent: var(${accents[i % accents.length]})`}>
+            <dt class="impact-value" data-target={stat.value} data-year={stat.isYear ? 'true' : 'false'}>
+              <span class="impact-num">{stat.isYear ? stat.value : 0}</span><span class="impact-suffix">{stat.suffix}</span>
+            </dt>
+            <dd class="impact-label">{t(stat.labelKey)}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+</section>
+
+<style>
+  .impact {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .impact-eyebrow {
+    color: var(--c-yellow);
+  }
+  .impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    gap: clamp(1.4rem, 3vw, 2.6rem);
+    margin: var(--sp-2) 0 0;
+  }
+  .impact-item {
+    border-top: 3px solid var(--accent);
+    padding-top: var(--sp-2);
+  }
+  .impact-value {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 0.9;
+    display: flex;
+    align-items: flex-start;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+  }
+  .impact-num {
+    font-size: clamp(3.4rem, 2rem + 7vw, 6.4rem);
+    letter-spacing: -0.02em;
+  }
+  .impact-suffix {
+    font-size: clamp(2rem, 1.4rem + 3vw, 3.4rem);
+    line-height: 1;
+  }
+  .impact-label {
+    font-size: var(--fs-500);
+    color: color-mix(in srgb, var(--paper) 82%, transparent);
+    margin: 0.5rem 0 0;
+    max-width: 22ch;
+  }
+</style>
+
+<script>
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const values = document.querySelectorAll<HTMLElement>('.impact-value');
+
+  function animate(el: HTMLElement) {
+    const target = Number(el.dataset.target ?? '0');
+    const isYear = el.dataset.year === 'true';
+    const numEl = el.querySelector<HTMLElement>('.impact-num');
+    if (!numEl) return;
+    const node = numEl;
+    if (reduce || isYear) {
+      node.textContent = String(target);
+      return;
+    }
+    const duration = 1400;
+    const start = performance.now();
+    function tick(now: number) {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      node.textContent = String(Math.round(target * eased));
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          animate(entry.target as HTMLElement);
+          io.unobserve(entry.target);
+        }
+      }
+    },
+    { threshold: 0.4 }
+  );
+  values.forEach((v) => io.observe(v));
+</script>

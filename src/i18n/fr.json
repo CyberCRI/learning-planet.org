@@ -1,0 +1,17 @@
+{
+  "_comment": "French stub — fill these in to ship FR. Until then, the helper falls back to EN so /fr/ routes resolve cleanly. No code changes needed to add French: complete this file and the fr/ content directories.",
+  "nav": {
+    "home": "Accueil",
+    "whoWeAre": "Qui sommes-nous",
+    "replays": "Replays",
+    "programme": "Programme",
+    "speakers": "Intervenants",
+    "partners": "Partenaires",
+    "stayInformed": "Rester informé"
+  },
+  "common": {
+    "languageSwitch": "English",
+    "languageLabel": "Langue",
+    "poweredBy": "Avec le soutien de"
+  }
+}

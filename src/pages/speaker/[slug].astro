@@ -1,0 +1,25 @@
+---
+import { render } from 'astro:content';
+import { Image } from 'astro:assets';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import { safeCollection } from '~/lib/collections';
+
+export async function getStaticPaths() {
+  const speakers = await safeCollection('speakers');
+  return speakers.map((speaker) => ({ params: { slug: speaker.id }, props: { speaker } }));
+}
+
+const { speaker } = Astro.props;
+const { Content } = await render(speaker);
+const locale = 'en';
+const subtitle = [speaker.data.role, speaker.data.organisation].filter(Boolean).join(' · ');
+---
+
+<BaseLayout title={speaker.data.name} description={subtitle || speaker.data.name} path={`speaker/${speaker.id}`} locale={locale}>
+  <PageHero title={speaker.data.name} intro={subtitle} />
+  <article class="section container prose">
+    {speaker.data.photo && <Image src={speaker.data.photo} alt={speaker.data.name} width={200} height={200} />}
+    <Content />
+  </article>
+</BaseLayout>

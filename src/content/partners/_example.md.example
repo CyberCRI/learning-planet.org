@@ -1,0 +1,8 @@
+---
+# Template for a partner. Copy to `<slug>.md`, fill in, then flip `partners`
+# to true in src/config.ts. Files starting with "_" are ignored.
+name: "Partner Organisation"
+logo: "./partner-logo.svg"   # required; place logo alongside this file
+url: "https://example.org/"
+tier: "partner"              # lead | partner | supporter
+---

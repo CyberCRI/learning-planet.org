@@ -1,0 +1,41 @@
+---
+/** Festival Bold inner-page header: big uppercase Archivo title on paper,
+    the signature rainbow rule along the bottom. No ticker (homepage only). */
+interface Props {
+  eyebrow?: string;
+  title: string;
+  intro?: string;
+}
+const { eyebrow, title, intro } = Astro.props;
+---
+
+<header class="page-hero">
+  <div class="container">
+    {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+    <h1 class="h-bold page-hero-title">{title}</h1>
+    {intro && <p class="page-hero-intro">{intro}</p>}
+  </div>
+  <hr class="rainbow-rule page-hero-rule" aria-hidden="true" />
+</header>
+
+<style>
+  .page-hero {
+    position: relative;
+    padding-block: clamp(3rem, 7vw, 5.5rem) var(--sp-5);
+    background: var(--paper-2);
+  }
+  .page-hero-title {
+    font-size: var(--fs-900);
+    max-width: 20ch;
+  }
+  .page-hero-intro {
+    font-size: var(--fs-500);
+    color: var(--ink-soft);
+    margin-top: var(--sp-2);
+    max-width: 60ch;
+  }
+  .page-hero-rule {
+    position: absolute;
+    inset: auto 0 0 0;
+  }
+</style>

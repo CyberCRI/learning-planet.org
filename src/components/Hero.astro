@@ -1,0 +1,281 @@
+---
+import { Image } from 'astro:assets';
+import PoweredBy from './PoweredBy.astro';
+import hero from '~/assets/LPF27_Hero1.png';
+import { SITE, EDITION, LINKS } from '~/site';
+import { useTranslations, localizedPath, type Locale } from '~/i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+// Ticker phrases (decorative). Kept short + confirmed.
+const tickerItems = [
+  t('ticker.uniting'),
+  t('ticker.care'),
+  t('ticker.countries'),
+  t('ticker.movement'),
+];
+const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
+---
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-art" aria-hidden="true">
+    <Image src={hero} alt="" widths={[720, 1100, 1600, 2200]} sizes="100vw" loading="eager" fetchpriority="high" />
+  </div>
+
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="hero-eyebrow">{t('hero.returns')}</p>
+
+      <h1 id="hero-title" class="hero-title">
+        <span class="hero-name-1">Learning Planet</span>
+        <span class="hero-name-2 grad-text">Festival</span>
+      </h1>
+
+      <p class="hero-mission">{SITE.mission}.</p>
+
+      <p class="save-date">
+        <span class="save-date-kicker">{t('hero.saveTheDateKicker')}</span>
+        <span class="save-date-big">January <span class="save-date-year">2027</span></span>
+      </p>
+
+      <p class="hero-note">{t('hero.saveTheDate', { ide: EDITION.ideNote })} {t('hero.programmeSoon')}</p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href={localizedPath('replays', locale)}>{t('hero.watchReplays')}</a>
+        <a class="btn btn-outline" href="#stay-informed">{t('hero.stayInformed')}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="ticker" role="presentation">
+    <div class="ticker-track">
+      {
+        Array.from({ length: 2 }).map(() => (
+          <span class="ticker-run" aria-hidden="true">
+            {tickerItems.map((item, i) => (
+              <>
+                <span style={`color: var(${tickerColors[i % tickerColors.length]})`}>{item}</span>
+                <span class="dot">●</span>
+              </>
+            ))}
+          </span>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<!-- Powered-by lockup as a slim strip directly below the hero (C2). -->
+<div class="hero-powered-strip">
+  <div class="container">
+    <PoweredBy label={t('common.poweredBy')} variant="light" size="sm" />
+  </div>
+</div>
+
+<style>
+  .hero {
+    position: relative;
+    overflow: clip;
+    background: var(--paper);
+    isolation: isolate;
+  }
+  .hero-art {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .hero-art :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  /* The arc illustration opens into a clean clearing on the left; a soft
+     radial cream feather guarantees headline contrast there. */
+  .hero-art::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      120% 120% at 14% 42%,
+      var(--paper) 0%,
+      color-mix(in srgb, var(--paper) 72%, transparent) 30%,
+      transparent 56%
+    );
+  }
+  .hero-grid {
+    position: relative;
+    z-index: 1;
+    min-height: clamp(480px, 72vh, 700px);
+    display: grid;
+    align-items: center;
+    padding-block: var(--sp-5);
+  }
+  .hero-copy {
+    max-width: 38rem;
+  }
+  .hero-eyebrow {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-weight: 600;
+    font-size: var(--fs-400);
+    color: var(--c-deep-green);
+    margin: 0 0 var(--sp-2);
+  }
+  .hero-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 0.86;
+    color: var(--ink);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-name-1 {
+    font-size: clamp(2.4rem, 1.2rem + 6vw, 5rem);
+  }
+  .hero-name-2 {
+    font-size: clamp(3.4rem, 1.4rem + 9vw, 7.6rem);
+    line-height: 0.84;
+  }
+  .hero-mission {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(1.1rem, 0.9rem + 0.8vw, 1.45rem);
+    color: var(--ink-soft);
+    margin: var(--sp-3) 0 0;
+    max-width: 28ch;
+  }
+  .save-date {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    margin: var(--sp-4) 0 var(--sp-3);
+    padding-top: var(--sp-2);
+    border-top: 3px solid var(--ink);
+    width: fit-content;
+  }
+  .save-date-kicker {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.34em;
+    font-weight: 600;
+    font-size: var(--fs-400);
+    color: var(--c-coral);
+  }
+  .save-date-big {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3em;
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(1.8rem, 1rem + 4vw, 3.4rem);
+    line-height: 0.9;
+    color: var(--ink);
+  }
+  .save-date-year {
+    color: var(--c-coral);
+  }
+  .hero-note {
+    max-width: 30rem;
+    font-size: var(--fs-400);
+    color: var(--ink-soft);
+    margin: 0 0 var(--sp-4);
+  }
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+  }
+
+  /* Powered-by strip below the hero */
+  .hero-powered-strip {
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    padding-block: var(--sp-3);
+  }
+
+  /* ticker */
+  .ticker {
+    position: relative;
+    z-index: 1;
+    background: var(--ink);
+    overflow: hidden;
+  }
+  .ticker-track {
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 34s linear infinite;
+  }
+  .ticker-run {
+    display: flex;
+    align-items: center;
+    flex: none;
+    padding-block: 0.85rem;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    font-size: var(--fs-500);
+    color: var(--paper);
+    white-space: nowrap;
+  }
+  .ticker-run > span:not(.dot) {
+    padding-inline: clamp(0.9rem, 2vw, 1.6rem);
+  }
+  .ticker .dot {
+    color: var(--c-yellow);
+    font-size: 0.6em;
+  }
+  @keyframes ticker-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 980px) {
+    .hero-art :global(img) {
+      opacity: 0.42;
+    }
+    .hero-art::before {
+      background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--paper) 80%, transparent) 0%,
+        var(--paper) 90%
+      );
+    }
+    .hero-grid {
+      min-height: auto;
+      padding-block: var(--sp-5) var(--sp-6);
+    }
+  }
+  @media (max-width: 560px) {
+    .save-date-big {
+      flex-direction: column;
+      gap: 0;
+      line-height: 0.95;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-track {
+      animation: none;
+      width: 100%;
+      justify-content: center;
+    }
+    .ticker-run:nth-child(2) {
+      display: none;
+    }
+  }
+</style>

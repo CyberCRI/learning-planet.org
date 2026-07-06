@@ -1,0 +1,27 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Hero from '~/components/Hero.astro';
+import MovementSection from '~/components/MovementSection.astro';
+import ThemesGrid from '~/components/ThemesGrid.astro';
+import StatCounters from '~/components/StatCounters.astro';
+import ReplaysTeaser from '~/components/ReplaysTeaser.astro';
+import StayInformedCta from '~/components/StayInformedCta.astro';
+import { show } from '~/config';
+import { SITE } from '~/site';
+
+const locale = 'en';
+---
+
+<BaseLayout
+  title={SITE.name}
+  description="The LearningPlanet Festival returns in January 2027, around the International Day of Education. A global movement reimagining education — learning to take care of oneself, others and the planet."
+  path=""
+  locale={locale}
+>
+  <Hero locale={locale} />
+  <MovementSection locale={locale} />
+  {show.themes && <ThemesGrid locale={locale} />}
+  <StatCounters locale={locale} />
+  <ReplaysTeaser locale={locale} />
+  <StayInformedCta locale={locale} />
+</BaseLayout>

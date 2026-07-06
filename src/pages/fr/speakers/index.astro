@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import EmptyState from '~/components/EmptyState.astro';
+import { safeCollection } from '~/lib/collections';
+import { show } from '~/config';
+import { useTranslations } from '~/i18n/utils';
+
+const locale = 'fr';
+const t = useTranslations(locale);
+
+const speakers = await safeCollection('speakers');
+const hasSpeakers = show.speakers && speakers.length > 0;
+---
+
+<BaseLayout
+  title={t('held.speakersTitle')}
+  description="Les intervenants du LearningPlanet Festival 2027. Annoncés prochainement."
+  path="speakers"
+  locale={locale}
+  noindex={!hasSpeakers}
+>
+  <PageHero eyebrow="LearningPlanet Festival 2027" title={t('held.speakersTitle')} />
+
+  {
+    hasSpeakers ? (
+      <section class="section container">
+        <ul class="speaker-grid">
+          {speakers.map((s) => (
+            <li>
+              <a href={`/fr/speaker/${s.id}`}>
+                {s.data.photo && <Image src={s.data.photo} alt={s.data.name} width={160} height={160} />}
+                <h3>{s.data.name}</h3>
+                <p>{s.data.role}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ) : (
+      <EmptyState title={t('held.speakersTitle')} message={t('held.speakersEmpty')} locale={locale} />
+    )
+  }
+</BaseLayout>

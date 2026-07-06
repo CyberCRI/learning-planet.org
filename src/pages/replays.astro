@@ -1,0 +1,15 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import ReplaysContent from '~/components/ReplaysContent.astro';
+
+const locale = 'en';
+---
+
+<BaseLayout
+  title="Replays"
+  description="Catch up on sessions from past LearningPlanet Festival editions on our YouTube channel, including the 2026 replays playlist."
+  path="replays"
+  locale={locale}
+>
+  <ReplaysContent locale={locale} />
+</BaseLayout>

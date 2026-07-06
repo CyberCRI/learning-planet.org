@@ -1,0 +1,129 @@
+---
+/**
+ * "Powered by [LPI] and [UNESCO]" co-organiser lockup.
+ * BRANDING RULE: LPI always first, UNESCO immediately next, in that order.
+ *
+ * Uses the OFFICIAL LPI logo (bubble emblem with "LEARNING PLANET INSTITUTE"
+ * typeset across it, fully legible): the full-colour version on light grounds,
+ * the monochrome-white version on dark grounds. UNESCO is the official wordmark
+ * (tinted to ink on light, knocked to white on dark).
+ *
+ * `variant`: "light" (on light ground) | "dark" (on dark ground)
+ * `size`: "sm" (footer) | "lg" (in-page feature) | "xl" (hero)
+ */
+import { Image } from 'astro:assets';
+import lpiColour from '~/assets/brand/lpi-colour.png';
+import lpiWhite from '~/assets/brand/lpi-white.png';
+import unesco from '~/assets/brand/unesco.svg';
+import { LINKS } from '~/site';
+
+interface Props {
+  label: string;
+  variant?: 'light' | 'dark';
+  size?: 'sm' | 'lg' | 'xl';
+}
+const { label, variant = 'light', size = 'sm' } = Astro.props;
+const lpi = variant === 'dark' ? lpiWhite : lpiColour;
+---
+
+<div class:list={['powered-by', variant, size]}>
+  <span class="pb-label">{label}</span>
+  <div class="pb-logos">
+    <a href={LINKS.lpi} target="_blank" rel="noopener" class="pb-logo pb-lpi" aria-label="Learning Planet Institute">
+      <Image src={lpi} alt="Learning Planet Institute" width={420} height={395} loading="lazy" />
+    </a>
+    <span class="pb-and" aria-hidden="true">&amp;</span>
+    <a href={LINKS.unesco} target="_blank" rel="noopener" class="pb-logo pb-unesco" aria-label="UNESCO">
+      <Image src={unesco} alt="UNESCO" width={262} height={56} loading="lazy" />
+    </a>
+  </div>
+</div>
+
+<style>
+  .powered-by {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+    text-align: center;
+  }
+  .pb-label {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: var(--fs-300);
+    font-weight: 600;
+    color: var(--ink-faint);
+  }
+  .pb-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(1.1rem, 3vw, 2.4rem);
+  }
+  .pb-logo {
+    display: inline-flex;
+    align-items: center;
+  }
+  .pb-logo :global(img) {
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* LPI is a square emblem-with-text; UNESCO a wide wordmark. Give LPI a
+     larger box so both read at comparable weight and LPI's text stays clear. */
+  .sm .pb-lpi :global(img) {
+    height: 64px;
+  }
+  .sm .pb-unesco :global(img) {
+    height: 30px;
+  }
+  .lg .pb-lpi :global(img) {
+    height: 92px;
+  }
+  .lg .pb-unesco :global(img) {
+    height: 44px;
+  }
+  .xl .pb-lpi :global(img) {
+    height: 104px;
+  }
+  .xl .pb-unesco :global(img) {
+    height: 50px;
+  }
+
+  .pb-and {
+    font-family: var(--font-display);
+    color: var(--ink-faint);
+    font-size: var(--fs-500);
+  }
+
+  /* Light grounds: LPI shows in full colour as-is; tint only UNESCO
+     (its source fill is white) to a dark ink so it's visible. */
+  .light .pb-unesco :global(img) {
+    filter: brightness(0) saturate(100%) invert(13%) sepia(28%) saturate(1100%) hue-rotate(150deg)
+      brightness(95%);
+    opacity: 0.9;
+  }
+
+  /* Dark grounds: LPI already uses the monochrome-white asset; just lift
+     UNESCO to white. */
+  .dark .pb-label,
+  .dark .pb-and {
+    color: rgba(255, 255, 255, 0.72);
+  }
+  .dark .pb-unesco :global(img) {
+    filter: brightness(0) invert(1);
+    opacity: 0.95;
+  }
+
+  @media (max-width: 460px) {
+    .lg .pb-lpi :global(img),
+    .xl .pb-lpi :global(img) {
+      height: 76px;
+    }
+    .lg .pb-unesco :global(img),
+    .xl .pb-unesco :global(img) {
+      height: 38px;
+    }
+  }
+</style>

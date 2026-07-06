@@ -1,0 +1,78 @@
+---
+import { LINKS } from '~/site';
+import { useTranslations, type Locale } from '~/i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<section class="section stay" id="stay-informed" aria-labelledby="stay-title">
+  <hr class="rainbow-rule stay-rule" aria-hidden="true" />
+  <div class="container stay-inner">
+    <p class="stay-eyebrow">{t('stayInformed.eyebrow')}</p>
+    <h2 id="stay-title" class="h-bold stay-title">
+      {t('stayInformed.titlePre')}<span class="grad-text">{t('stayInformed.titleAccent')}</span>{t('stayInformed.titlePost')}
+    </h2>
+    <p class="stay-text">{t('stayInformed.body')}</p>
+    <a class="btn stay-btn" href={LINKS.newsletter} target="_blank" rel="noopener">{t('stayInformed.cta')}</a>
+    <p class="stay-note">{t('stayInformed.note')}</p>
+  </div>
+</section>
+
+<style>
+  .stay {
+    background: var(--c-deep-teal);
+    color: var(--paper);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .stay-rule {
+    position: absolute;
+    inset: 0 0 auto 0;
+  }
+  .stay-inner {
+    max-width: 46rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sp-2);
+  }
+  .stay-eyebrow {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+    font-size: var(--fs-400);
+    color: var(--c-yellow);
+    margin: 0;
+  }
+  .stay-title {
+    font-size: var(--fs-900);
+    color: var(--white);
+    margin: 0;
+  }
+  .stay-text {
+    font-size: var(--fs-500);
+    color: color-mix(in srgb, var(--paper) 84%, transparent);
+    max-width: 38ch;
+    margin: 0 0 var(--sp-2);
+  }
+  .stay-btn {
+    background: var(--c-yellow);
+    color: var(--ink);
+    font-size: var(--fs-600);
+    padding: 0.85rem 1.9rem;
+  }
+  .stay-btn:hover {
+    background: var(--white);
+  }
+  .stay-note {
+    font-size: var(--fs-300);
+    color: color-mix(in srgb, var(--paper) 66%, transparent);
+    margin: 0;
+  }
+</style>

@@ -1,0 +1,72 @@
+---
+import { featuredReplays } from '~/data/replays';
+import ReplayEmbed from './ReplayEmbed.astro';
+import { LINKS } from '~/site';
+import { useTranslations, localizedPath, type Locale } from '~/i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<section class="section replays" aria-labelledby="replays-title">
+  <div class="container replays-inner">
+    <div class="replays-copy">
+      <p class="eyebrow">{t('replays.eyebrow')}</p>
+      <h2 id="replays-title" class="h-bold replays-h">{t('replays.teaserHeading')}</h2>
+      <p class="replays-text">{t('replays.teaserText')}</p>
+      <div class="replays-cta">
+        <a class="btn btn-primary" href={localizedPath('replays', locale)}>{t('replays.teaserCta')}</a>
+        <a class="btn btn-outline" href={LINKS.youtubeChannel} target="_blank" rel="noopener">{t('replays.watchChannel')}</a>
+      </div>
+    </div>
+
+    <div class="replays-grid">
+      {featuredReplays.slice(0, 3).map((r) => <ReplayEmbed id={r.id} title={r.title} />)}
+    </div>
+  </div>
+</section>
+
+<style>
+  .replays {
+    background: var(--paper);
+  }
+  .replays-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--sp-5);
+    align-items: center;
+  }
+  .replays-h {
+    font-size: var(--fs-800);
+    margin-bottom: var(--sp-2);
+  }
+  .replays-text {
+    font-size: var(--fs-500);
+    color: var(--ink-soft);
+    max-width: 40ch;
+    margin-bottom: var(--sp-3);
+  }
+  .replays-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+  }
+  .replays-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(0.8rem, 1.6vw, 1.2rem);
+  }
+  @media (min-width: 640px) {
+    .replays-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (min-width: 981px) {
+    .replays-inner {
+      grid-template-columns: 0.85fr 1.15fr;
+    }
+  }
+</style>

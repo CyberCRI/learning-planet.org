@@ -1,0 +1,34 @@
+---
+/**
+ * Festival wordmark. Picks the correct supplied variant per background:
+ *  - "colour"  → full-colour lockup on light grounds (default, header)
+ *  - "black"   → all-black, for monochrome contexts
+ *  - "festival"→ festival-only colour wordmark, for dark grounds
+ * The wordmark is custom art (never recreated as a font).
+ */
+import { Image } from 'astro:assets';
+import colour from '~/assets/brand/lpf-colour.png';
+import black from '~/assets/brand/lpf-black.png';
+import festival from '~/assets/brand/lpf-festival-colour.png';
+
+interface Props {
+  variant?: 'colour' | 'black' | 'festival';
+  height?: number;
+  eager?: boolean;
+  class?: string;
+}
+const { variant = 'colour', height = 48, eager = false, class: className } = Astro.props;
+const src = variant === 'black' ? black : variant === 'festival' ? festival : colour;
+// source art is 2599×1300 (2:1)
+const width = Math.round(height * 2);
+---
+
+<Image
+  src={src}
+  alt="LearningPlanet Festival"
+  width={width}
+  height={height}
+  densities={[1, 2, 3]}
+  loading={eager ? 'eager' : 'lazy'}
+  class={className}
+/>

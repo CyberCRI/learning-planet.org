@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Home",
+    "whoWeAre": "Who we are",
+    "replays": "Replays",
+    "programme": "Programme",
+    "speakers": "Speakers",
+    "partners": "Partners",
+    "stayInformed": "Stay informed"
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "languageSwitch": "Français",
+    "languageLabel": "Language",
+    "menu": "Menu",
+    "close": "Close",
+    "backToHome": "Back to home",
+    "poweredBy": "Powered by"
+  },
+  "hero": {
+    "returns": "The festival returns",
+    "saveTheDateKicker": "Save the date",
+    "saveTheDate": "The LearningPlanet Festival returns {ide}.",
+    "programmeSoon": "The full programme is announced soon.",
+    "watchReplays": "Watch replays",
+    "stayInformed": "Stay informed"
+  },
+  "ticker": {
+    "uniting": "Uniting to transform education",
+    "care": "Care for oneself, others & the planet",
+    "countries": "193 countries",
+    "movement": "A global movement"
+  },
+  "movement": {
+    "heading": "A global movement",
+    "statementPre": "The LearningPlanet Festival was first launched in 2020 in partnership with UNESCO, and has grown into a global movement uniting hundreds of thousands of participants from ",
+    "statementCountries": "193 countries",
+    "statementPost": ".",
+    "readMore": "Read our story"
+  },
+  "themes": {
+    "eyebrow": "The line-up",
+    "heading": "What LPF 2027 will explore",
+    "intro": "Six themes will shape the next edition. The full programme follows."
+  },
+  "impact": {
+    "eyebrow": "By the numbers",
+    "heading": "Impact at a glance",
+    "events": "events each year",
+    "partners": "partner organisations",
+    "countries": "countries",
+    "since": "celebrating the International Day of Education since"
+  },
+  "replays": {
+    "heading": "Replays",
+    "eyebrow": "Catch up",
+    "intro": "Catch up on sessions from past editions on our YouTube channel.",
+    "teaserHeading": "Relive past editions",
+    "teaserText": "Hundreds of conversations from every edition, free to watch. Browse the full archive or dive into the 2026 highlights.",
+    "watchChannel": "YouTube channel",
+    "watch2026": "2026 replays playlist",
+    "teaserCta": "All replays"
+  },
+  "stayInformed": {
+    "eyebrow": "Don't miss the announcement",
+    "heading": "Stay informed about LPF 2027",
+    "titlePre": "Be first to know when the ",
+    "titleAccent": "2027 programme",
+    "titlePost": " drops",
+    "body": "One newsletter, no noise — dates, themes and how to take part, straight to your inbox.",
+    "cta": "Subscribe to the newsletter",
+    "note": "You'll be taken to the Learning Planet Institute newsletter."
+  },
+  "whoWeAre": {
+    "title": "Who we are",
+    "sharedGoals": "Our Shared Goals",
+    "journey": "Our journey so far",
+    "team": "The LearningPlanet Festival team",
+    "organisers": "Our organisers",
+    "followLinkedIn": "Connect on LinkedIn"
+  },
+  "held": {
+    "programmeTitle": "Programme",
+    "programmeEmpty": "The LPF 2027 programme will be announced soon. Stay informed to be the first to know.",
+    "speakersTitle": "Speakers",
+    "speakersEmpty": "Speakers for LPF 2027 will be announced soon.",
+    "partnersTitle": "Partners",
+    "partnersEmpty": "Partner organisations will be listed here soon."
+  },
+  "footer": {
+    "tagline": "Uniting to Transform Education",
+    "explore": "Explore",
+    "connect": "Connect",
+    "newsletter": "Newsletter",
+    "contact": "Contact",
+    "mediaEnquiries": "Media enquiries",
+    "rights": "The LearningPlanet Festival"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you're looking for doesn't exist or has moved.",
+    "cta": "Back to home"
+  }
+}

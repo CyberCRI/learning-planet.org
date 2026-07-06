@@ -1,0 +1,146 @@
+---
+import PoweredBy from './PoweredBy.astro';
+import Logo from './Logo.astro';
+import { visibleNav } from '~/lib/nav';
+import { LINKS, SITE } from '~/site';
+import { useTranslations, localizedPath, type Locale } from '~/i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+const nav = visibleNav();
+const year = 2027;
+
+const socials = [
+  { label: 'YouTube', url: LINKS.youtubeChannel },
+  { label: 'LinkedIn', url: LINKS.linkedin },
+  { label: 'Instagram', url: LINKS.instagram },
+  { label: 'Facebook', url: LINKS.facebook },
+];
+---
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <PoweredBy label={t('common.poweredBy')} variant="dark" size="sm" />
+  </div>
+
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <Logo variant="festival" height={40} />
+      <p class="footer-tagline">{t('footer.tagline')}</p>
+    </div>
+
+    <nav class="footer-col" aria-label="Footer">
+      <h2 class="footer-h">{t('footer.explore')}</h2>
+      <ul>
+        {nav.map((item) => <li><a href={localizedPath(item.path, locale)}>{t(item.key)}</a></li>)}
+      </ul>
+    </nav>
+
+    <div class="footer-col">
+      <h2 class="footer-h">{t('footer.connect')}</h2>
+      <ul>
+        {socials.map((s) => <li><a href={s.url} target="_blank" rel="noopener">{s.label}</a></li>)}
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h2 class="footer-h">{t('footer.contact')}</h2>
+      <ul>
+        <li><a href={LINKS.newsletter} target="_blank" rel="noopener">{t('footer.newsletter')}</a></li>
+        <li><a href={`mailto:${LINKS.contactEmail}`}>{t('footer.contact')}</a></li>
+        <li><a href={`mailto:${LINKS.mediaEmail}`}>{t('footer.mediaEnquiries')}</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© {year} {t('footer.rights')}</p>
+    <p class="footer-mission">{SITE.mission}</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--ink);
+    color: rgba(255, 255, 255, 0.82);
+    margin-top: var(--sp-6);
+  }
+  .footer-top {
+    padding-block: var(--sp-5) var(--sp-3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: var(--sp-4) var(--sp-3);
+    padding-block: var(--sp-5);
+  }
+  .footer-brand :global(img) {
+    height: 40px;
+    width: auto;
+  }
+  .footer-tagline {
+    font-family: var(--font-display);
+    font-size: var(--fs-500);
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0.9rem;
+    max-width: 22ch;
+  }
+  .footer-h {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: var(--fs-300);
+    font-weight: 600;
+    color: var(--c-green);
+    margin-bottom: 0.9rem;
+  }
+  .footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+  .footer-col a {
+    color: rgba(255, 255, 255, 0.82);
+    text-decoration: none;
+    font-size: 0.98rem;
+  }
+  .footer-col a:hover {
+    color: var(--white);
+    text-decoration: underline;
+  }
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem 2rem;
+    padding-block: var(--sp-3);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: var(--fs-300);
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-mission {
+    font-style: italic;
+  }
+  .footer-bottom p {
+    margin: 0;
+  }
+
+  @media (max-width: 760px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .footer-brand {
+      grid-column: 1 / -1;
+    }
+  }
+  @media (max-width: 460px) {
+    .footer-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

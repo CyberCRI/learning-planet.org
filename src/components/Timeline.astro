@@ -1,0 +1,81 @@
+---
+import { timeline } from '~/data/timeline';
+
+// Rotate brand brights across the timeline markers.
+const accents = ['--c-green', '--c-blue', '--c-lilac', '--c-coral', '--c-yellow'];
+---
+
+<ol class="timeline">
+  {
+    timeline.map((entry, i) => (
+      <li class="tl-item" style={`--accent: var(${accents[i % accents.length]})`}>
+        <div class="tl-marker" aria-hidden="true" />
+        <div class="tl-body">
+          <p class="tl-date">{entry.date}</p>
+          <h3 class="tl-title">{entry.title}</h3>
+          <p class="tl-desc">{entry.description}</p>
+        </div>
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .timeline {
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  /* vertical spine */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: var(--line-strong);
+  }
+  .tl-item {
+    position: relative;
+    padding-left: 3rem;
+    padding-bottom: var(--sp-4);
+  }
+  .tl-item:last-child {
+    padding-bottom: 0;
+  }
+  .tl-marker {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 5px var(--paper);
+  }
+  .tl-date {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: var(--fs-400);
+    color: var(--c-coral);
+    margin: 0 0 0.2rem;
+  }
+  .tl-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    line-height: 1.02;
+    font-size: var(--fs-600);
+    margin-bottom: 0.5rem;
+  }
+  .tl-desc {
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0;
+  }
+</style>

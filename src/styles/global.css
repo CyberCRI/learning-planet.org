@@ -1,0 +1,264 @@
+/* ============================================================
+   LearningPlanet Festival — design tokens (from the brandbook)
+   ============================================================ */
+:root {
+  /* Brand brights (exact brandbook values) */
+  --c-green: #00dba7;
+  --c-blue: #6cd5ff;
+  --c-lilac: #d6a2ff;
+  --c-coral: #ff9473;
+  --c-yellow: #ffcc00;
+
+  /* Brand dark companions */
+  --c-deep-green: #205243;
+  --c-deep-teal: #004357;
+  --c-slate: #505471;
+  --c-brown: #52372d;
+  --c-olive: #5b4f05;
+
+  /* Chosen neutrals — warm/teal-biased, not pure grey */
+  --ink: #0b2b33; /* deep teal-black */
+  --ink-soft: #3f5a60;
+  --ink-faint: #5b7077; /* AA-compliant for small labels on paper */
+  --paper: #fbfaf7;
+  --paper-2: #f3f1ea;
+  --line: #e4e0d4;
+  --line-strong: #cfc9b8;
+  --white: #ffffff;
+
+  /* Rainbow gradient (festival signature) */
+  --grad-festival: linear-gradient(
+    92deg,
+    var(--c-green) 0%,
+    #2bc0ce 24%,
+    var(--c-blue) 40%,
+    var(--c-lilac) 58%,
+    var(--c-coral) 80%,
+    var(--c-yellow) 100%
+  );
+
+  /* Typography */
+  --font-display: 'Archivo Narrow', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Roboto', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Fluid type scale */
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: clamp(1.25rem, 0.9rem + 1.4vw, 1.6rem);
+  --fs-700: clamp(1.6rem, 1.1rem + 2.2vw, 2.4rem);
+  --fs-800: clamp(2.2rem, 1.3rem + 4vw, 3.6rem);
+  --fs-900: clamp(2.8rem, 1.4rem + 6vw, 5rem);
+
+  /* Spacing scale */
+  --sp-1: 0.5rem;
+  --sp-2: 1rem;
+  --sp-3: 1.5rem;
+  --sp-4: 2rem;
+  --sp-5: 3rem;
+  --sp-6: 4.5rem;
+  --sp-7: 7rem;
+
+  --radius: 14px;
+  --radius-sm: 8px;
+  --maxw: 1140px;
+  --maxw-prose: 68ch;
+
+  --shadow-sm: 0 1px 3px rgba(11, 43, 51, 0.06), 0 1px 2px rgba(11, 43, 51, 0.04);
+  --shadow: 0 12px 40px -16px rgba(11, 43, 51, 0.22);
+  --focus: 3px solid var(--c-deep-teal);
+}
+
+/* ---------- reset / base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-400);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  margin: 0;
+  text-wrap: balance;
+  font-weight: 700;
+}
+p {
+  margin: 0 0 1rem;
+}
+a {
+  color: var(--c-deep-teal);
+  text-underline-offset: 0.18em;
+}
+a:hover {
+  text-decoration-thickness: 2px;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+:focus-visible {
+  outline: var(--focus);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* ---------- layout helpers ---------- */
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: clamp(1.1rem, 4vw, 2.5rem);
+}
+.section {
+  padding-block: var(--sp-6);
+}
+.prose {
+  max-width: var(--maxw-prose);
+}
+.prose p {
+  margin-bottom: 1.1rem;
+}
+
+/* uppercase eyebrow label */
+.eyebrow {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: var(--fs-300);
+  font-weight: 600;
+  color: var(--c-deep-green);
+  margin: 0 0 var(--sp-2);
+}
+
+/* ----- Festival Bold shared primitives -----
+   Big condensed uppercase section heading — the site-wide heading voice. */
+.h-bold {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  line-height: 0.95;
+  color: var(--ink);
+}
+
+/* the signature rainbow hairline, used to cap sections/headers */
+.rainbow-rule {
+  height: 5px;
+  background: var(--grad-festival);
+  border: 0;
+  margin: 0;
+}
+
+/* gradient festival text (used sparingly) */
+.grad-text {
+  background: var(--grad-festival);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* visually-hidden but available to AT */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* skip link */
+.skip-link {
+  position: absolute;
+  left: var(--sp-2);
+  top: -3rem;
+  z-index: 100;
+  background: var(--ink);
+  color: var(--white);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius-sm);
+  transition: top 0.18s ease;
+}
+.skip-link:focus {
+  top: var(--sp-2);
+}
+
+/* buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-500);
+  letter-spacing: 0.01em;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--white);
+}
+.btn-primary:hover {
+  background: var(--c-deep-teal);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--line-strong);
+}
+.btn-outline:hover {
+  border-color: var(--ink);
+}

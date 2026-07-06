@@ -1,0 +1,47 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageHero from '~/components/PageHero.astro';
+import EmptyState from '~/components/EmptyState.astro';
+import { safeCollection } from '~/lib/collections';
+import { show } from '~/config';
+import { useTranslations } from '~/i18n/utils';
+
+const locale = 'en';
+const t = useTranslations(locale);
+
+const partners = await safeCollection('partners');
+const hasPartners = show.partners && partners.length > 0;
+---
+
+<BaseLayout
+  title={t('held.partnersTitle')}
+  description="Partner organisations of the LearningPlanet Festival 2027."
+  path="partners"
+  locale={locale}
+  noindex={!hasPartners}
+>
+  <PageHero eyebrow="LearningPlanet Festival 2027" title={t('held.partnersTitle')} />
+
+  {
+    hasPartners ? (
+      <section class="section container">
+        <ul class="partner-wall">
+          {partners.map((p) => (
+            <li>
+              {p.data.url ? (
+                <a href={p.data.url} target="_blank" rel="noopener">
+                  <Image src={p.data.logo} alt={p.data.name} width={180} height={90} />
+                </a>
+              ) : (
+                <Image src={p.data.logo} alt={p.data.name} width={180} height={90} />
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+    ) : (
+      <EmptyState title={t('held.partnersTitle')} message={t('held.partnersEmpty')} locale={locale} />
+    )
+  }
+</BaseLayout>

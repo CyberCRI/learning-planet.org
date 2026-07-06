@@ -1,0 +1,54 @@
+---
+import PageHero from './PageHero.astro';
+import ReplayEmbed from './ReplayEmbed.astro';
+import { featuredReplays } from '~/data/replays';
+import { LINKS } from '~/site';
+import { useTranslations, type Locale } from '~/i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<PageHero eyebrow={t('replays.heading')} title={t('replays.heading')} intro={t('replays.intro')} />
+
+<section class="section container">
+  <div class="replay-links">
+    <a class="btn btn-primary" href={LINKS.youtubeChannel} target="_blank" rel="noopener">
+      {t('replays.watchChannel')}
+    </a>
+    <a class="btn btn-outline" href={LINKS.youtube2026Playlist} target="_blank" rel="noopener">
+      {t('replays.watch2026')}
+    </a>
+  </div>
+
+  <div class="replay-grid">
+    {featuredReplays.map((r) => <ReplayEmbed id={r.id} title={r.title} />)}
+  </div>
+</section>
+
+<style>
+  .replay-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: var(--sp-5);
+  }
+  .replay-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1rem, 2.4vw, 1.6rem);
+  }
+  @media (max-width: 880px) {
+    .replay-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 620px) {
+    .replay-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
