@@ -1,0 +1,44 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# screenshots (QA artifacts)
+screenshots/
+
+# os / editor
+.DS_Store
+*.log
+
+# claude code runtime
+.claude/
+
+# review/preview artifacts (not part of the site)
+home-comparison.html
+home-b-refined.html
+phase0-plan.html
+hero-blend.html
+hero-images.html
+hero-options-gallery.html
+LPF27-home-review.html
+LPF27-home-artifact.html
+scripts/inline-export.mjs
+scripts/make-artifact.mjs
+scripts/shot.mjs
+scripts/shot-full.mjs
+
+# unused hero candidates (only LPF27_Hero1.png ships, imported by Hero.astro)
+src/assets/LPF27_Hero2.png
+src/assets/LPF27_Hero3.png
+src/assets/Hero_LPF27.png
+src/assets/brand/main-hero.webp
+
+# local source material & internal working docs — NOT for the public repo
+# (contain unpublished/draft festival content; keep on disk only)
+_sources/
+BUILD_PROMPT.md
+PHASE0_FINDINGS.md
+MIGRATION_NOTES.md
+*-for-review.*
