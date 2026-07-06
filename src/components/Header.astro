@@ -15,7 +15,7 @@ const switchHref = alternatePath(Astro.url.pathname, other);
 
 function hrefFor(item: { path: string; anchor?: string }) {
   const base = localizedPath(item.path, locale);
-  return item.anchor ? `${base === '/' ? '' : base}/#${item.anchor}`.replace('//#', '/#') : base;
+  return item.anchor ? `${base}#${item.anchor}` : base;
 }
 function isCurrent(item: { path: string; anchor?: string }) {
   if (item.anchor) return false; // anchor links are never the "current page"

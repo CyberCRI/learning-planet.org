@@ -7,7 +7,7 @@ export type SeoProps = {
   /** bare path without locale prefix, e.g. "who-we-are" or "" for home */
   path?: string;
   locale: Locale;
-  /** absolute or site-relative image for og:image */
+  /** absolute URL, or an imported-asset src (already base-prefixed) — never a bare root-absolute path */
   image?: string;
   noindex?: boolean;
 };

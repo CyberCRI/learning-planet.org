@@ -14,7 +14,7 @@ const t = useTranslations(locale);
   <span class="empty-orbs" aria-hidden="true"></span>
   <h2 class="h-bold empty-title">{title}</h2>
   <p class="empty-msg">{message}</p>
-  <a class="btn btn-primary" href={`${localizedPath('', locale) === '/' ? '' : localizedPath('', locale)}/#stay-informed`.replace('//#', '/#')}>{t('nav.stayInformed')}</a>
+  <a class="btn btn-primary" href={`${localizedPath('', locale)}#stay-informed`}>{t('nav.stayInformed')}</a>
 </div>
 
 <style>

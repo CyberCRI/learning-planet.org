@@ -6,6 +6,7 @@ import Footer from '~/components/Footer.astro';
 import { buildSeo, type SeoProps } from '~/lib/seo';
 import { useTranslations, type Locale } from '~/i18n/utils';
 import { SITE } from '~/site';
+import { withBase } from '~/lib/paths';
 
 type Props = Omit<SeoProps, 'locale'> & {
   locale?: Locale;
@@ -17,7 +18,7 @@ const t = useTranslations(locale);
 
 const seo = buildSeo({ title, description, path, image, noindex, locale }, Astro.site);
 const fullTitle = title === SITE.name ? `${SITE.name} — ${SITE.descriptor}` : `${title} — ${SITE.name}`;
-const ogImage = image ? new URL(image, Astro.site).href : new URL('/og-default.png', Astro.site).href;
+const ogImage = new URL(image ?? withBase('og-default.png'), Astro.site).href;
 ---
 
 <!doctype html>
@@ -32,7 +33,7 @@ const ogImage = image ? new URL(image, Astro.site).href : new URL('/og-default.p
 
     {seo.alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
 
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href={withBase('favicon.png')} />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />

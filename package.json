@@ -9,7 +9,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "build:pages": "astro build --site https://cybercri.github.io --base /learning-planet.org",
+    "preview:pages": "astro preview --site https://cybercri.github.io --base /learning-planet.org"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.3.0",

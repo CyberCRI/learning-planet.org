@@ -5,7 +5,7 @@ import ThemesGrid from '~/components/ThemesGrid.astro';
 import EmptyState from '~/components/EmptyState.astro';
 import { safeCollection } from '~/lib/collections';
 import { show } from '~/config';
-import { useTranslations } from '~/i18n/utils';
+import { useTranslations, localizedPath } from '~/i18n/utils';
 
 const locale = 'fr';
 const t = useTranslations(locale);
@@ -31,7 +31,7 @@ const hasProgramme = show.programme && events.length > 0;
         <ul class="programme-list">
           {events.map((event) => (
             <li>
-              <a href={`/fr/event/${event.id}`}>
+              <a href={localizedPath(`event/${event.id}`, locale)}>
                 <h3>{event.data.title}</h3>
                 <p>{event.data.summary}</p>
               </a>

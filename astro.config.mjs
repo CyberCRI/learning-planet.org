@@ -3,7 +3,10 @@ import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import { show } from './src/config.ts';
 
-// Production site URL — update to the final deploy domain before launch.
+// Production site URL — used for local builds. In CI, GitHub's Pages workflow
+// overrides both site and base via CLI flags (astro build --site <pages origin>
+// --base <base_path>), so the github.io sub-path and the future custom domain
+// need no code change.
 const SITE = 'https://festival.learning-planet.org';
 
 // Held routes are noindexed while their flag is OFF — keep them out of the

@@ -5,7 +5,7 @@ import PageHero from '~/components/PageHero.astro';
 import EmptyState from '~/components/EmptyState.astro';
 import { safeCollection } from '~/lib/collections';
 import { show } from '~/config';
-import { useTranslations } from '~/i18n/utils';
+import { useTranslations, localizedPath } from '~/i18n/utils';
 
 const locale = 'fr';
 const t = useTranslations(locale);
@@ -29,7 +29,7 @@ const hasSpeakers = show.speakers && speakers.length > 0;
         <ul class="speaker-grid">
           {speakers.map((s) => (
             <li>
-              <a href={`/fr/speaker/${s.id}`}>
+              <a href={localizedPath(`speaker/${s.id}`, locale)}>
                 {s.data.photo && <Image src={s.data.photo} alt={s.data.name} width={160} height={160} />}
                 <h3>{s.data.name}</h3>
                 <p>{s.data.role}</p>

@@ -1,5 +1,6 @@
 import en from './en.json';
 import fr from './fr.json';
+import { withBase, stripBase } from '~/lib/paths';
 
 export const locales = ['en', 'fr'] as const;
 export type Locale = (typeof locales)[number];
@@ -35,29 +36,30 @@ export function useTranslations(locale: Locale) {
   };
 }
 
-/** Pull the locale out of a URL pathname (Astro also exposes Astro.currentLocale). */
+/** Pull the locale out of a URL pathname (base-tolerant). */
 export function getLocaleFromPath(pathname: string): Locale {
-  const seg = pathname.split('/').filter(Boolean)[0];
+  const seg = stripBase(pathname).split('/').filter(Boolean)[0];
   return (locales as readonly string[]).includes(seg) ? (seg as Locale) : defaultLocale;
 }
 
 /**
- * Build a locale-aware path. EN has no prefix (prefixDefaultLocale: false);
- * FR is prefixed with /fr. Always returns a leading-slash absolute path.
+ * Build a locale- and base-aware href. EN has no prefix (prefixDefaultLocale:
+ * false); FR is prefixed with /fr. Emits trailing-slash URLs to match the
+ * build.format 'directory' output, so GitHub Pages serves them without a
+ * 301 hop and canonicals match the sitemap.
  */
 export function localizedPath(path: string, locale: Locale): string {
-  const clean = '/' + path.replace(/^\/+/, '').replace(/\/+$/, '');
-  const base = clean === '/' ? '' : clean;
-  return locale === defaultLocale ? base || '/' : `/${locale}${base || ''}` || `/${locale}`;
+  const clean = path.replace(/^\/+|\/+$/g, '');
+  const prefix = locale === defaultLocale ? '' : locale;
+  const joined = [prefix, clean].filter(Boolean).join('/');
+  return withBase(joined ? `${joined}/` : '');
 }
 
-/** Map the current path to its equivalent in the other locale (for the switcher). */
+/** Map the current path (may include the deploy base) to its equivalent in the other locale (for the switcher). */
 export function alternatePath(pathname: string, target: Locale): string {
-  // strip a leading /fr (or other locale) segment, then re-localize
-  const segments = pathname.split('/').filter(Boolean);
+  const segments = stripBase(pathname).split('/').filter(Boolean);
   if ((locales as readonly string[]).includes(segments[0])) segments.shift();
-  const bare = segments.join('/');
-  return localizedPath(bare, target);
+  return localizedPath(segments.join('/'), target);
 }
 
 /** The opposite locale, for a two-language switcher. */
