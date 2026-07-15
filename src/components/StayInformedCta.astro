@@ -17,8 +17,7 @@ const t = useTranslations(locale);
       {t('stayInformed.titlePre')}<span class="grad-text">{t('stayInformed.titleAccent')}</span>{t('stayInformed.titlePost')}
     </h2>
     <p class="stay-text">{t('stayInformed.body')}</p>
-    <a class="btn stay-btn" href={LINKS.newsletter} target="_blank" rel="noopener">{t('stayInformed.cta')}</a>
-    <p class="stay-note">{t('stayInformed.note')}</p>
+    <a class="btn stay-btn" href={LINKS.stayInformedForm} target="_blank" rel="noopener">{t('stayInformed.cta')}</a>
   </div>
 </section>
 
@@ -69,10 +68,5 @@ const t = useTranslations(locale);
   }
   .stay-btn:hover {
     background: var(--white);
-  }
-  .stay-note {
-    font-size: var(--fs-300);
-    color: color-mix(in srgb, var(--paper) 66%, transparent);
-    margin: 0;
   }
 </style>

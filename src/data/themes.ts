@@ -1,8 +1,8 @@
 /**
  * The six themes LPF 2027 will explore — confirmed for announcement.
- * Titles are prominent; the framing question is a subline (provisional
- * wording, kept easily editable). Each theme keys to one brand bright so
- * the grid carries the festival's rainbow signature.
+ * Titles are prominent; the framing question is a subline. Each theme keys
+ * to one brand bright so the grid carries the festival's rainbow signature.
+ * Wording per the July 2026 editorial review.
  *
  * Translatable: titles/questions live here as data, not hardcoded in markup.
  */
@@ -17,26 +17,26 @@ export const themes: Theme[] = [
   {
     id: 'youth-agency',
     color: '--c-green',
-    title: 'Youth agency & meaningful youth engagement',
+    title: 'Youth Agency & Meaningful Youth Engagement',
     question: 'What conditions enable young people to act meaningfully?',
   },
   {
     id: 'peace-citizenship',
     color: '--c-blue',
-    title: 'Peace & Citizenship',
+    title: 'Peace & Global Citizenship',
     question: 'How can we train 250 million young peacemakers by 2035?',
   },
   {
     id: 'wellbeing-ehf',
     color: '--c-lilac',
     title: 'Wellbeing & Education for Human Flourishing',
-    question: 'From framework to action: EHF in practice.',
+    question: 'From framework to action: what does Education for Human Flourishing look like in practice?',
   },
   {
     id: 'climate-sustainability',
     color: '--c-coral',
     title: 'Climate & Sustainability',
-    question: 'Training the next generation of climate changemakers.',
+    question: 'How can we train and support the next generation of climate changemakers?',
   },
   {
     id: 'ai-youth-skills',
@@ -50,6 +50,6 @@ export const themes: Theme[] = [
     color: '--c-deep-green',
     title: 'Beyond 2030',
     question:
-      'What should the future of education look like beyond the SDG agenda, and how can youth voices shape it?',
+      'What will the future of the SDGs and the global agenda look like after 2030, and how can youth voices help shape them?',
   },
 ];

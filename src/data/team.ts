@@ -1,17 +1,14 @@
 /**
- * LearningPlanet Festival team — sourced verbatim from the WordPress
- * `team-member` records (positions, companies, divisions, LinkedIn, headshots).
+ * LearningPlanet Festival team — list revised per the July 2026 editorial
+ * review (positions, companies, divisions, LinkedIn, headshots).
  * Sorted by the original WordPress menu_order.
  *
- * NOTE (user follow-up): this list is shipped as-is for now; it will be
- * reviewed/updated later. Editing it is a content-only change — no rework.
  * Headshots are referenced from src/assets/team via the `photo` import key.
  */
 import type { ImageMetadata } from 'astro';
 
 import olivier from '~/assets/team/olivier-brechard.jpg';
 import katherine from '~/assets/team/katherine-brown.jpg';
-import claire from '~/assets/team/claire-gaide.jpg';
 import ikya from '~/assets/team/ikya-kondapolu.jpg';
 import ilia from '~/assets/team/ilia-lysenko.jpeg';
 import edward from '~/assets/team/edward-stevenette.jpg';
@@ -28,24 +25,17 @@ export type TeamMember = {
 export const team: TeamMember[] = [
   {
     name: 'Olivier Bréchard',
-    position: 'Director, LearningPlanet Festival',
+    position: 'Director, LearningPlanet International Relations & Festival',
     organisation: 'Learning Planet Institute',
     linkedin: 'https://fr.linkedin.com/in/olivier-brechard-1b104011',
     photo: olivier,
   },
   {
     name: 'Katherine Brown',
-    position: 'Project Manager, Global South Learning Ecosystems',
+    position: 'Project Manager, Learning Ecosystems, Education for Human Flourishing',
     organisation: 'LearningPlanet Alliance',
     linkedin: 'https://www.linkedin.com/in/katherine-brown-a5a0ba149/',
     photo: katherine,
-  },
-  {
-    name: 'Claire Gaide',
-    position: "Project Support, Festival de l'Apprendre",
-    organisation: 'LearningPlanet Alliance',
-    linkedin: 'https://www.linkedin.com/in/claire-gaide-a3546818/',
-    photo: claire,
   },
   {
     name: 'Ikya Kondapolu',

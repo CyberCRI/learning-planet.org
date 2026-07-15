@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 import PoweredBy from './PoweredBy.astro';
 import hero from '~/assets/LPF27_Hero1.png';
-import { SITE, EDITION, LINKS } from '~/site';
+import { SITE, LINKS } from '~/site';
 import { useTranslations, localizedPath, type Locale } from '~/i18n/utils';
 
 interface Props {
@@ -13,10 +13,10 @@ const t = useTranslations(locale);
 
 // Ticker phrases (decorative). Kept short + confirmed.
 const tickerItems = [
-  t('ticker.uniting'),
-  t('ticker.care'),
-  t('ticker.countries'),
-  t('ticker.movement'),
+  t('ticker.shaping'),
+  t('ticker.youth'),
+  t('ticker.sustainable'),
+  t('ticker.peaceful'),
 ];
 const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
 ---
@@ -39,14 +39,14 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
 
       <p class="save-date">
         <span class="save-date-kicker">{t('hero.saveTheDateKicker')}</span>
-        <span class="save-date-big">January <span class="save-date-year">2027</span></span>
+        <span class="save-date-big">25–29 January <span class="save-date-year">2027</span></span>
       </p>
 
-      <p class="hero-note">{t('hero.saveTheDate', { ide: EDITION.ideNote })} {t('hero.programmeSoon')}</p>
+      <p class="hero-note">{t('hero.note')}</p>
 
       <div class="hero-cta">
         <a class="btn btn-primary" href={localizedPath('replays', locale)}>{t('hero.watchReplays')}</a>
-        <a class="btn btn-outline" href="#stay-informed">{t('hero.stayInformed')}</a>
+        <a class="btn btn-outline" href={LINKS.stayInformedHeroForm} target="_blank" rel="noopener">{t('hero.stayInformed')}</a>
       </div>
     </div>
   </div>

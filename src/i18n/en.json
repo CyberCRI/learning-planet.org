@@ -20,56 +20,59 @@
   "hero": {
     "returns": "The festival returns",
     "saveTheDateKicker": "Save the date",
-    "saveTheDate": "The LearningPlanet Festival returns {ide}.",
-    "programmeSoon": "The full programme is announced soon.",
+    "note": "The LearningPlanet Festival returns in January 2027 for its 8th edition, celebrating the International Day of Education on 24 January. More details on the programme and opportunities to participate will be announced soon.",
     "watchReplays": "Watch replays",
     "stayInformed": "Stay informed"
   },
   "ticker": {
-    "uniting": "Uniting to transform education",
-    "care": "Care for oneself, others & the planet",
-    "countries": "193 countries",
-    "movement": "A global movement"
+    "shaping": "Shaping the futures of learning",
+    "youth": "Advancing youth agency",
+    "sustainable": "Building a sustainable future",
+    "peaceful": "Building peaceful societies"
   },
   "movement": {
-    "heading": "A global movement",
-    "statementPre": "The LearningPlanet Festival was first launched in 2020 in partnership with UNESCO, and has grown into a global movement uniting hundreds of thousands of participants from ",
-    "statementCountries": "193 countries",
+    "heading": "A global movement for transforming education",
+    "statementPre": "Since its launch in 2020 with UNESCO, the LearningPlanet Festival has been held each January, becoming a shared space for dialogue and action to reimagine learning in the 21st century, bringing together hundreds of thousands of participants from ",
+    "statementCountries": "over 190 countries",
     "statementPost": ".",
     "readMore": "Read our story"
   },
   "themes": {
-    "eyebrow": "The line-up",
-    "heading": "What LPF 2027 will explore",
-    "intro": "Six themes will shape the next edition. The full programme follows."
+    "eyebrow": "Key themes",
+    "heading": "Questions guiding LPF 2027"
+  },
+  "curated": {
+    "heading": "A focused and curated 2027 edition",
+    "p1": "In 2027, the LearningPlanet Festival will take place in a more <strong>focused and curated format</strong>, organised around selected online and in-person moments led by the Learning Planet Institute and co-designed with strategic partners.",
+    "p2": "The programme will focus on the six priority areas outlined above, with <strong>youth agency</strong> running as a cross-cutting theme throughout.",
+    "p3": "<strong>While there will not be an open call for events this year,</strong> we are beginning to explore <strong>what a renewed open and decentralised Festival model could look like from 2028 onwards</strong>. If you would like to be involved in this co-design process, please express your interest through this <a href=\"{form}\" target=\"_blank\" rel=\"noopener\">form</a>. We will soon share a survey and further details on potential workshops from September onwards."
   },
   "impact": {
     "eyebrow": "By the numbers",
     "heading": "Impact at a glance",
-    "events": "events each year",
-    "partners": "partner organisations",
-    "countries": "countries",
-    "since": "celebrating the International Day of Education since"
+    "events": "events organised during LPF 2026",
+    "partners": "partner organisations involved globally",
+    "countries": "countries represented across the Festival community",
+    "editions": "editions celebrating the International Day of Education"
   },
   "replays": {
     "heading": "Replays",
     "eyebrow": "Catch up",
     "intro": "Catch up on sessions from past editions on our YouTube channel.",
     "teaserHeading": "Relive past editions",
-    "teaserText": "Hundreds of conversations from every edition, free to watch. Browse the full archive or dive into the 2026 highlights.",
-    "watchChannel": "YouTube channel",
-    "watch2026": "2026 replays playlist",
-    "teaserCta": "All replays"
+    "teaserText": "Explore conversations from previous editions of the LearningPlanet Festival, free to watch anytime. Browse the full archive or dive into the 2026 highlights.",
+    "highlights2026": "2026 Highlights",
+    "allReplays": "All replays",
+    "lpf2026Highlights": "LPF 2026 Highlights"
   },
   "stayInformed": {
     "eyebrow": "Don't miss the announcement",
     "heading": "Stay informed about LPF 2027",
-    "titlePre": "Be first to know when the ",
+    "titlePre": "Be the first to know when the ",
     "titleAccent": "2027 programme",
-    "titlePost": " drops",
-    "body": "One newsletter, no noise — dates, themes and how to take part, straight to your inbox.",
-    "cta": "Subscribe to the newsletter",
-    "note": "You'll be taken to the Learning Planet Institute newsletter."
+    "titlePost": " goes live",
+    "body": "Fill in the form below to receive updates on the 2027 programme, including key dates, themes and opportunities to participate.",
+    "cta": "Stay informed"
   },
   "whoWeAre": {
     "title": "Who we are",

@@ -19,8 +19,8 @@ const accents = ['--c-green', '--c-blue', '--c-coral', '--c-yellow'];
       {
         IMPACT.map((stat, i) => (
           <div class="impact-item" style={`--accent: var(${accents[i % accents.length]})`}>
-            <dt class="impact-value" data-target={stat.value} data-year={stat.isYear ? 'true' : 'false'}>
-              <span class="impact-num">{stat.isYear ? stat.value : 0}</span><span class="impact-suffix">{stat.suffix}</span>
+            <dt class="impact-value" data-target={stat.value}>
+              <span class="impact-num">0</span><span class="impact-suffix">{stat.suffix}</span>
             </dt>
             <dd class="impact-label">{t(stat.labelKey)}</dd>
           </div>
@@ -79,11 +79,10 @@ const accents = ['--c-green', '--c-blue', '--c-coral', '--c-yellow'];
 
   function animate(el: HTMLElement) {
     const target = Number(el.dataset.target ?? '0');
-    const isYear = el.dataset.year === 'true';
     const numEl = el.querySelector<HTMLElement>('.impact-num');
     if (!numEl) return;
     const node = numEl;
-    if (reduce || isYear) {
+    if (reduce) {
       node.textContent = String(target);
       return;
     }

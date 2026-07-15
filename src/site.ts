@@ -12,9 +12,8 @@ export const SITE = {
 
 export const EDITION = {
   label: 'LearningPlanet Festival 2027',
-  // Display only "January 2027" — exact dates are TBD and must not be asserted.
-  when: 'January 2027',
-  ideNote: 'around the International Day of Education (24 January)',
+  // Dates confirmed by the July 2026 editorial review.
+  when: '25–29 January 2027',
 } as const;
 
 export const LINKS = {
@@ -29,19 +28,21 @@ export const LINKS = {
   mediaEmail: 'team.communication@learningplanetinstitute.org',
   lpi: 'https://learningplanetinstitute.org/',
   unesco: 'https://www.unesco.org/',
+  stayInformedHeroForm: 'https://forms.gle/w2qv1zqEeQ3vyCHU8',
+  stayInformedForm: 'https://forms.gle/44bqNT5KBZwRLpT79',
+  coDesignForm: 'https://forms.gle/kSHAjuvtrTfq6VGT7',
 } as const;
 
-/** Confirmed evergreen impact figures for the movement. */
+/** Confirmed evergreen impact figures for the movement, per the July 2026 editorial review. */
 export type ImpactStat = {
   value: number;
   suffix: string;
   labelKey: string;
-  isYear?: boolean;
 };
 
 export const IMPACT: ImpactStat[] = [
-  { value: 600, suffix: '+', labelKey: 'impact.events' },
+  { value: 800, suffix: '+', labelKey: 'impact.events' },
   { value: 500, suffix: '+', labelKey: 'impact.partners' },
-  { value: 193, suffix: '', labelKey: 'impact.countries' },
-  { value: 2020, suffix: '', labelKey: 'impact.since', isYear: true },
+  { value: 190, suffix: '+', labelKey: 'impact.countries' },
+  { value: 7, suffix: '', labelKey: 'impact.editions' },
 ];

@@ -12,8 +12,14 @@ const accents = ['--c-green', '--c-blue', '--c-lilac', '--c-coral', '--c-yellow'
         <div class="tl-marker" aria-hidden="true" />
         <div class="tl-body">
           <p class="tl-date">{entry.date}</p>
-          <h3 class="tl-title">{entry.title}</h3>
-          <p class="tl-desc">{entry.description}</p>
+          <h3 class="tl-title">
+            {entry.href ? (
+              <a href={entry.href} target="_blank" rel="noopener">{entry.title}</a>
+            ) : (
+              entry.title
+            )}
+          </h3>
+          <p class="tl-desc" set:html={entry.description} />
         </div>
       </li>
     ))
@@ -73,9 +79,24 @@ const accents = ['--c-green', '--c-blue', '--c-lilac', '--c-coral', '--c-yellow'
     font-size: var(--fs-600);
     margin-bottom: 0.5rem;
   }
+  .tl-title a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.18em;
+  }
+  .tl-title a:hover {
+    color: var(--c-deep-teal);
+  }
   .tl-desc {
     color: var(--ink-soft);
     max-width: 62ch;
     margin: 0;
+  }
+  .tl-desc :global(a) {
+    color: var(--c-deep-teal);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
   }
 </style>

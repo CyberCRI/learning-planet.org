@@ -1,0 +1,49 @@
+---
+import { LINKS } from '~/site';
+import { useTranslations, type Locale } from '~/i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+---
+
+<section class="section curated" aria-labelledby="curated-title">
+  <div class="container">
+    <h2 id="curated-title" class="h-bold curated-title">{t('curated.heading')}</h2>
+    <div class="curated-body">
+      <p set:html={t('curated.p1')} />
+      <p set:html={t('curated.p2')} />
+      <p set:html={t('curated.p3', { form: LINKS.coDesignForm })} />
+    </div>
+  </div>
+</section>
+
+<style>
+  .curated {
+    background: var(--paper);
+  }
+  .curated-title {
+    font-size: var(--fs-800);
+    margin-bottom: var(--sp-3);
+  }
+  .curated-body p {
+    font-size: var(--fs-500);
+    color: var(--ink-soft);
+    max-width: 65ch;
+    margin: 0 0 var(--sp-2);
+  }
+  .curated-body p:last-child {
+    margin-bottom: 0;
+  }
+  .curated-body :global(strong) {
+    color: var(--ink);
+  }
+  .curated-body :global(a) {
+    color: var(--c-deep-teal);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+</style>

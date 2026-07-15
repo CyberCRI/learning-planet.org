@@ -22,11 +22,11 @@ const t = useTranslations(locale);
   <div class="organisers">
     <article class="organiser">
       <h2 class="org-name">{organisers.lpi.name}</h2>
-      <p class="org-text">{organisers.lpi.text}</p>
+      {organisers.lpi.paragraphs.map((p) => <p class="org-text" set:html={p} />)}
     </article>
     <article class="organiser">
       <h2 class="org-name">{organisers.unesco.name}</h2>
-      <p class="org-text">{organisers.unesco.text}</p>
+      {organisers.unesco.paragraphs.map((p) => <p class="org-text" set:html={p} />)}
     </article>
   </div>
 
@@ -76,6 +76,12 @@ const t = useTranslations(locale);
   .org-text {
     color: var(--ink-soft);
     margin: 0;
+  }
+  .org-text + .org-text {
+    margin-top: var(--sp-2);
+  }
+  .org-text :global(strong) {
+    color: var(--ink);
   }
   .organisers-powered {
     margin-top: var(--sp-5);

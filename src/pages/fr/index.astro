@@ -3,6 +3,7 @@ import BaseLayout from '~/layouts/BaseLayout.astro';
 import Hero from '~/components/Hero.astro';
 import MovementSection from '~/components/MovementSection.astro';
 import ThemesGrid from '~/components/ThemesGrid.astro';
+import CuratedEdition from '~/components/CuratedEdition.astro';
 import StatCounters from '~/components/StatCounters.astro';
 import ReplaysTeaser from '~/components/ReplaysTeaser.astro';
 import StayInformedCta from '~/components/StayInformedCta.astro';
@@ -19,8 +20,9 @@ const locale = 'fr';
   locale={locale}
 >
   <Hero locale={locale} />
-  <MovementSection locale={locale} />
   {show.themes && <ThemesGrid locale={locale} />}
+  <CuratedEdition locale={locale} />
+  <MovementSection locale={locale} />
   <StatCounters locale={locale} />
   <ReplaysTeaser locale={locale} />
   <StayInformedCta locale={locale} />
