@@ -11,7 +11,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "build:pages": "astro build --site https://cybercri.github.io --base /learning-planet.org",
-    "preview:pages": "astro preview --site https://cybercri.github.io --base /learning-planet.org"
+    "preview:pages": "astro preview --site https://cybercri.github.io --base /learning-planet.org",
+    "og:generate": "node scripts/generate-og.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.3.0",
@@ -21,6 +22,8 @@
   "devDependencies": {
     "@astrojs/check": "0.9.9",
     "playwright": "1.61.1",
-    "typescript": "5.9.3"
+    "satori": "0.28.0",
+    "typescript": "5.9.3",
+    "wawoff2": "2.0.1"
   }
 }
