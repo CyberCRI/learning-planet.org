@@ -1,0 +1,11 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import LegalPageContent from '~/components/LegalPageContent.astro';
+import { getLegalPage } from '~/data/legal';
+
+const locale = 'en';
+const page = getLegalPage('legal-notice', locale);
+---
+<BaseLayout title={page.title} description={page.metaDescription} path="legal-notice" locale={locale}>
+  <LegalPageContent page={page} locale={locale} />
+</BaseLayout>

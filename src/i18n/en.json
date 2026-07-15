@@ -107,11 +107,22 @@
     "newsletter": "Newsletter",
     "contact": "Contact",
     "mediaEnquiries": "Media enquiries",
-    "rights": "The LearningPlanet Festival"
+    "rights": "The LearningPlanet Festival",
+    "legalNotice": "Legal notice",
+    "privacy": "Privacy policy",
+    "cookies": "Cookies policy"
   },
   "notFound": {
     "title": "Page not found",
     "body": "The page you're looking for doesn't exist or has moved.",
     "cta": "Back to home"
+  },
+  "cookieConsent": {
+    "title": "We respect your privacy",
+    "body": "We use Matomo to understand how this site is used. No tracking cookies are set unless you accept.",
+    "learnMore": "Learn more",
+    "accept": "Accept",
+    "decline": "Decline",
+    "manage": "Manage cookies"
   }
 }

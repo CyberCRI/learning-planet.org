@@ -58,6 +58,12 @@ const socials = [
 
   <div class="container footer-bottom">
     <p>© {year} {t('footer.rights')}</p>
+    <ul class="footer-legal">
+      <li><a href={localizedPath('legal-notice', locale)}>{t('footer.legalNotice')}</a></li>
+      <li><a href={localizedPath('privacy-policy', locale)}>{t('footer.privacy')}</a></li>
+      <li><a href={localizedPath('cookies-policy', locale)}>{t('footer.cookies')}</a></li>
+      <li><button type="button" data-open-cookie-banner>{t('cookieConsent.manage')}</button></li>
+    </ul>
     <p class="footer-mission">{SITE.mission}</p>
   </div>
 </footer>
@@ -128,6 +134,34 @@ const socials = [
   }
   .footer-bottom p {
     margin: 0;
+  }
+  .footer-legal {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 1.2rem;
+    margin: 0;
+    padding: 0;
+  }
+  .footer-legal a,
+  .footer-legal button {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+  .footer-legal a:hover,
+  .footer-legal button:hover {
+    color: var(--white);
+  }
+  .footer-legal button {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    font-size: var(--fs-300);
+    cursor: pointer;
   }
 
   @media (max-width: 760px) {

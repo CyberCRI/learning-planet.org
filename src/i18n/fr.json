@@ -23,5 +23,18 @@
     "all": "Tous",
     "count": "{count} partenaires",
     "noResults": "Aucun partenaire ne correspond à votre recherche."
+  },
+  "footer": {
+    "legalNotice": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Politique de cookies"
+  },
+  "cookieConsent": {
+    "title": "Nous respectons votre vie privée",
+    "body": "Nous utilisons Matomo pour mesurer l’audience de ce site. Aucun cookie de suivi n’est déposé sans votre accord.",
+    "learnMore": "En savoir plus",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "manage": "Gérer les cookies"
   }
 }

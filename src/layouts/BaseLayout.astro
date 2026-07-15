@@ -3,6 +3,7 @@ import '~/styles/fonts.css';
 import '~/styles/global.css';
 import Header from '~/components/Header.astro';
 import Footer from '~/components/Footer.astro';
+import CookieConsent from '~/components/CookieConsent.astro';
 import { buildSeo, type SeoProps } from '~/lib/seo';
 import { useTranslations, type Locale } from '~/i18n/utils';
 import { SITE } from '~/site';
@@ -60,5 +61,25 @@ const ogImage = new URL(image ?? withBase('og-default.png'), Astro.site).href;
       <slot />
     </main>
     <Footer locale={locale} />
+    <CookieConsent locale={locale} />
+
+    <!-- Matomo -->
+    <script is:inline>
+      var _paq = (window._paq = window._paq || []);
+      // Cookieless until the visitor accepts via the consent banner.
+      _paq.push(['requireCookieConsent']);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = 'https://analytics.learning-planet.org/';
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.async = true;
+        g.src = u + 'matomo.js';
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+    <!-- End Matomo -->
   </body>
 </html>
