@@ -9,7 +9,7 @@ export const show = {
   themes: true, // the six 2027 themes — confirmed, displayed now
   programme: false, // events collection — held until the programme is confirmed
   speakers: false, // speakers collection — held
-  partners: false, // partners logo wall — held
+  partners: true, // partner directory — 507 orgs imported from learning-planet.org
 } as const;
 
 export type FeatureFlag = keyof typeof show;

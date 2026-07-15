@@ -1,0 +1,4549 @@
+[
+  {
+    "slug": "east-side-institute-yes-and-higher-education-network",
+    "name": "“Yes…and” Higher Education Network_East Side Institute",
+    "website": "https://eastsideinstitute.org/yes-and-higher-education-network/",
+    "logo": "partners/east-side-institute-yes-and-higher-education-network.webp",
+    "width": 200,
+    "height": 96,
+    "letter": "Y"
+  },
+  {
+    "slug": "2030-glorieuses",
+    "name": "2030 Glorieuses",
+    "website": "https://www.2030glorieuses.org",
+    "logo": "partners/2030-glorieuses.webp",
+    "width": 320,
+    "height": 215,
+    "letter": "2"
+  },
+  {
+    "slug": "2811",
+    "name": "2811",
+    "website": "https://2811.cl/",
+    "logo": "partners/2811.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "2"
+  },
+  {
+    "slug": "association-7eme-generation",
+    "name": "7ème Génération",
+    "website": "https://www.7eme-generation.org/",
+    "logo": "partners/association-7eme-generation.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "7"
+  },
+  {
+    "slug": "academie-de-paris",
+    "name": "Académie de Paris",
+    "website": "https://www.ac-paris.fr/",
+    "logo": "partners/academie-de-paris.webp",
+    "width": 320,
+    "height": 322,
+    "letter": "A"
+  },
+  {
+    "slug": "academie-du-climat",
+    "name": "Académie du Climat",
+    "website": "https://www.academieduclimat.paris/",
+    "logo": "partners/academie-du-climat.webp",
+    "width": 306,
+    "height": 165,
+    "letter": "A"
+  },
+  {
+    "slug": "adhyayan-quality-education-foundation",
+    "name": "Adhyayan Quality Education Foundation",
+    "website": "https://adhyayanfoundation.org/",
+    "logo": "partners/adhyayan-quality-education-foundation.webp",
+    "width": 320,
+    "height": 133,
+    "letter": "A"
+  },
+  {
+    "slug": "advancing-youth-opportunities-initiative-ayoi",
+    "name": "Advancing Youth Opportunities Initiative (AYOI)",
+    "website": "https://www.ayoi.org",
+    "logo": "partners/advancing-youth-opportunities-initiative-ayoi.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "A"
+  },
+  {
+    "slug": "aero",
+    "name": "AERO",
+    "website": "https://www.educationrevolution.org/store/",
+    "logo": "partners/aero.webp",
+    "width": 200,
+    "height": 112,
+    "letter": "A"
+  },
+  {
+    "slug": "afghan-girls-success-gate",
+    "name": "Afghan Girls Success Gate",
+    "website": "https://www.afghangirlssuccessgate.org/",
+    "logo": "partners/afghan-girls-success-gate.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "A"
+  },
+  {
+    "slug": "afghans-for-progressive-thinking-apt",
+    "name": "Afghans for Progressive Thinking (APT)",
+    "website": "https://aptyouth.org",
+    "logo": "partners/afghans-for-progressive-thinking-apt.webp",
+    "width": 320,
+    "height": 140,
+    "letter": "A"
+  },
+  {
+    "slug": "africa-voices-dialogue",
+    "name": "Africa Voices Dialogue",
+    "website": "https://www.africavoicesdialogue.africa",
+    "logo": "partners/africa-voices-dialogue.webp",
+    "width": 320,
+    "height": 154,
+    "letter": "A"
+  },
+  {
+    "slug": "afrikids",
+    "name": "Afrikids",
+    "website": "https://www.afrikids.org/",
+    "logo": "partners/afrikids.webp",
+    "width": 320,
+    "height": 231,
+    "letter": "A"
+  },
+  {
+    "slug": "agastya-international-foundation",
+    "name": "Agastya International Foundation",
+    "website": "https://www.agastya.org/",
+    "logo": "partners/agastya-international-foundation.webp",
+    "width": 320,
+    "height": 226,
+    "letter": "A"
+  },
+  {
+    "slug": "agence-francaise-de-developpement-afd",
+    "name": "Agence Française de Développement (AFD)",
+    "website": "https://www.afd.fr/en",
+    "logo": "partners/agence-francaise-de-developpement-afd.webp",
+    "width": 320,
+    "height": 142,
+    "letter": "A"
+  },
+  {
+    "slug": "agence-universitaire-de-la-francophonie-auf",
+    "name": "Agence Universitaire de la Francophonie (AUF)",
+    "website": "https://www.auf.org",
+    "logo": "partners/agence-universitaire-de-la-francophonie-auf.webp",
+    "width": 320,
+    "height": 116,
+    "letter": "A"
+  },
+  {
+    "slug": "ago-formation-innovante",
+    "name": "AGO Formation innovante",
+    "website": "https://www.ago-formation.fr/",
+    "logo": "partners/ago-formation-innovante.webp",
+    "width": 200,
+    "height": 55,
+    "letter": "A"
+  },
+  {
+    "slug": "aime-mentoring",
+    "name": "AIME Mentoring",
+    "website": "https://aimementoring.com/",
+    "logo": "partners/aime-mentoring.webp",
+    "width": 320,
+    "height": 160,
+    "letter": "A"
+  },
+  {
+    "slug": "allgrow",
+    "name": "AllGrow",
+    "website": "https://www.allgrowromania.org/",
+    "logo": "partners/allgrow.webp",
+    "width": 200,
+    "height": 138,
+    "letter": "A"
+  },
+  {
+    "slug": "alli-asbl",
+    "name": "ALLI asbl",
+    "website": "https://alliasbl.lu/fr/",
+    "logo": "partners/alli-asbl.webp",
+    "width": 320,
+    "height": 135,
+    "letter": "A"
+  },
+  {
+    "slug": "alliance-for-education-of-women-in-afghanistan",
+    "name": "Alliance for Education of Women in Afghanistan",
+    "website": "https://aewa.org.af/",
+    "logo": "partners/alliance-for-education-of-women-in-afghanistan.webp",
+    "width": 320,
+    "height": 127,
+    "letter": "A"
+  },
+  {
+    "slug": "alliance-for-self-directed-education",
+    "name": "Alliance for Self-Directed Education",
+    "website": "https://www.self-directed.org",
+    "logo": "partners/alliance-for-self-directed-education.webp",
+    "width": 320,
+    "height": 81,
+    "letter": "A"
+  },
+  {
+    "slug": "alliance-for-the-arts-in-research-universities-a2ru",
+    "name": "Alliance for the Arts in Research Universities (a2ru)",
+    "website": "https://a2ru.org/",
+    "logo": "partners/alliance-for-the-arts-in-research-universities-a2ru.webp",
+    "width": 320,
+    "height": 170,
+    "letter": "A"
+  },
+  {
+    "slug": "alliance-sud",
+    "name": "Alliance Sud",
+    "website": "https://www.alliancesud.ch/de",
+    "logo": "partners/alliance-sud.webp",
+    "width": 320,
+    "height": 67,
+    "letter": "A"
+  },
+  {
+    "slug": "alma-forest-school",
+    "name": "Alma Forest School",
+    "website": "https://almaforestschool.com/",
+    "logo": "partners/alma-forest-school.webp",
+    "width": 320,
+    "height": 296,
+    "letter": "A"
+  },
+  {
+    "slug": "altus",
+    "name": "Altus",
+    "website": "https://www.altusapp.fr/",
+    "logo": "partners/altus.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "A"
+  },
+  {
+    "slug": "am-design-thinking",
+    "name": "AM DESIGN THINKING",
+    "website": "https://www.am-designthinking.com/",
+    "logo": "partners/am-design-thinking.webp",
+    "width": 200,
+    "height": 66,
+    "letter": "A"
+  },
+  {
+    "slug": "american-university-of-afghanistan",
+    "name": "American University of Afghanistan",
+    "website": "https://auaf.edu.af/",
+    "logo": "partners/american-university-of-afghanistan.webp",
+    "width": 276,
+    "height": 184,
+    "letter": "A"
+  },
+  {
+    "slug": "animafac",
+    "name": "Animafac",
+    "website": "https://www.animafac.net",
+    "logo": "partners/animafac.webp",
+    "width": 320,
+    "height": 56,
+    "letter": "A"
+  },
+  {
+    "slug": "apel-gironde",
+    "name": "Apel Gironde",
+    "website": "https://www.apel.fr/",
+    "logo": "partners/apel-gironde.webp",
+    "width": 200,
+    "height": 198,
+    "letter": "A"
+  },
+  {
+    "slug": "aquatech",
+    "name": "AQUATECH",
+    "website": "https://www.aquatech.com/",
+    "logo": "partners/aquatech.webp",
+    "width": 60,
+    "height": 60,
+    "letter": "A"
+  },
+  {
+    "slug": "arab-youth-climate-movement-qatar-aycmq",
+    "name": "Arab Youth Climate Movement Qatar (AYCMQ)",
+    "website": "https://aycmqatar.org/",
+    "logo": "partners/arab-youth-climate-movement-qatar-aycmq.webp",
+    "width": 320,
+    "height": 80,
+    "letter": "A"
+  },
+  {
+    "slug": "argo-sas",
+    "name": "ARGO SAS",
+    "website": "https://pic360.fr/connecteur/",
+    "logo": "partners/argo-sas.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "A"
+  },
+  {
+    "slug": "arizona-state-university",
+    "name": "Arizona State University",
+    "website": "https://www.asu.edu/",
+    "logo": "partners/arizona-state-university.webp",
+    "width": 200,
+    "height": 113,
+    "letter": "A"
+  },
+  {
+    "slug": "artivism",
+    "name": "Artivism",
+    "website": "https://theartivism.org",
+    "logo": "partners/artivism.webp",
+    "width": 320,
+    "height": 235,
+    "letter": "A"
+  },
+  {
+    "slug": "ascend-agency",
+    "name": "Ascend Agency",
+    "website": "https://www.ascend-agency.org/",
+    "logo": "partners/ascend-agency.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "A"
+  },
+  {
+    "slug": "ashesi-university",
+    "name": "Ashesi University",
+    "website": "https://ashesi.edu.gh/",
+    "logo": "partners/ashesi-university.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "A"
+  },
+  {
+    "slug": "ashoka",
+    "name": "Ashoka",
+    "website": "https://www.ashoka.org/",
+    "logo": "partners/ashoka.webp",
+    "width": 320,
+    "height": 210,
+    "letter": "A"
+  },
+  {
+    "slug": "asociacion-europea-de-logosofia",
+    "name": "Asociación Europea de Logosofía",
+    "website": "https://logosofia.org.es/es/home/",
+    "logo": "partners/asociacion-europea-de-logosofia.webp",
+    "width": 200,
+    "height": 122,
+    "letter": "A"
+  },
+  {
+    "slug": "aspect-aquitaine",
+    "name": "Aspect Aquitaine",
+    "website": "https://www.aspect-aquitaine.fr/",
+    "logo": "partners/aspect-aquitaine.webp",
+    "width": 200,
+    "height": 72,
+    "letter": "A"
+  },
+  {
+    "slug": "aspire-2030",
+    "name": "Aspire 2030",
+    "website": "https://aspire2030.org/",
+    "logo": "partners/aspire-2030.webp",
+    "width": 200,
+    "height": 80,
+    "letter": "A"
+  },
+  {
+    "slug": "associacao-europeia-de-logosofia-ael",
+    "name": "Associação Europeia de Logosofia (AEL)",
+    "website": "https://logosofia.pt",
+    "logo": "partners/associacao-europeia-de-logosofia-ael.webp",
+    "width": 320,
+    "height": 208,
+    "letter": "A"
+  },
+  {
+    "slug": "association-for-supervision-and-curriculum-development-ascd",
+    "name": "Association for Supervision and Curriculum Development (ASCD)",
+    "website": "https://www.ascd.org/",
+    "logo": "partners/association-for-supervision-and-curriculum-development-ascd.webp",
+    "width": 320,
+    "height": 113,
+    "letter": "A"
+  },
+  {
+    "slug": "association-pagode-du-kung-fu",
+    "name": "Association Pagode du Kung Fu",
+    "website": "https://www.pagodekungfu.fr/",
+    "logo": "partners/association-pagode-du-kung-fu.webp",
+    "width": 200,
+    "height": 180,
+    "letter": "A"
+  },
+  {
+    "slug": "association-reseau-esperance-banlieues",
+    "name": "Association Réseau Espérance Banlieues",
+    "website": "https://esperancebanlieues.org/",
+    "logo": "partners/association-reseau-esperance-banlieues.webp",
+    "width": 320,
+    "height": 123,
+    "letter": "A"
+  },
+  {
+    "slug": "association-tousdys",
+    "name": "Association TousDys",
+    "website": "https://associationtousdys.fr/",
+    "logo": "partners/association-tousdys.webp",
+    "width": 320,
+    "height": 78,
+    "letter": "A"
+  },
+  {
+    "slug": "association-youth-clubs",
+    "name": "Association Youth Clubs",
+    "website": "https://www.facebook.com/AssociationYOUTHCLUBs",
+    "logo": "partners/association-youth-clubs.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "A"
+  },
+  {
+    "slug": "asu-shapingedu",
+    "name": "ASU ShapingEDU",
+    "website": "https://shapingedu.asu.edu/",
+    "logo": "partners/asu-shapingedu.webp",
+    "width": 320,
+    "height": 290,
+    "letter": "A"
+  },
+  {
+    "slug": "avalon-heights-international-school",
+    "name": "Avalon Heights International School",
+    "website": "https://www.avalonheights.org/",
+    "logo": "partners/avalon-heights-international-school.webp",
+    "width": 320,
+    "height": 476,
+    "letter": "A"
+  },
+  {
+    "slug": "be-beyond-education",
+    "name": "BE Beyond Education",
+    "website": "https://beyondeducation.tech/",
+    "logo": "partners/be-beyond-education.webp",
+    "width": 320,
+    "height": 118,
+    "letter": "B"
+  },
+  {
+    "slug": "better-futures",
+    "name": "Better Futures",
+    "website": "https://www.betterfutures.biz/",
+    "logo": "partners/better-futures.webp",
+    "width": 320,
+    "height": 68,
+    "letter": "B"
+  },
+  {
+    "slug": "bettersoil-for-a-better-world",
+    "name": "betterSoil for a better world",
+    "website": "https://www.bettersoil.info/",
+    "logo": "partners/bettersoil-for-a-better-world.webp",
+    "width": 320,
+    "height": 213,
+    "letter": "B"
+  },
+  {
+    "slug": "bibliotheque-nationale-de-france",
+    "name": "Bibliothèque Nationale de France",
+    "website": "https://www.bnf.fr/",
+    "logo": "partners/bibliotheque-nationale-de-france.webp",
+    "width": 320,
+    "height": 169,
+    "letter": "B"
+  },
+  {
+    "slug": "bibliotheque-publique-dinformations",
+    "name": "Bibliothèque publique d’informations",
+    "website": "https://agenda.bpi.fr/evenement/lepopee-du-hip-hop/",
+    "logo": "partners/bibliotheque-publique-dinformations.webp",
+    "width": 200,
+    "height": 39,
+    "letter": "B"
+  },
+  {
+    "slug": "big-bloom",
+    "name": "Big Bloom",
+    "website": "https://www.bigbloom.org/",
+    "logo": "partners/big-bloom.webp",
+    "width": 320,
+    "height": 150,
+    "letter": "B"
+  },
+  {
+    "slug": "big-change",
+    "name": "Big Change",
+    "website": "https://www.big-change.org/",
+    "logo": "partners/big-change.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "B"
+  },
+  {
+    "slug": "bles-buiten-leren-en-spelen",
+    "name": "BLES Buiten Leren en Spelen",
+    "website": "https://blesland.be",
+    "logo": "partners/bles-buiten-leren-en-spelen.webp",
+    "width": 320,
+    "height": 292,
+    "letter": "B"
+  },
+  {
+    "slug": "blub-world",
+    "name": "Blub World",
+    "website": "https://www.blubworld.com/",
+    "logo": "partners/blub-world.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "B"
+  },
+  {
+    "slug": "bridge-for-billions",
+    "name": "Bridge for Billions",
+    "website": "http://bridgeforbillions.org/",
+    "logo": "partners/bridge-for-billions.webp",
+    "width": 320,
+    "height": 294,
+    "letter": "B"
+  },
+  {
+    "slug": "bridges-coalition",
+    "name": "BRIDGES Coalition",
+    "website": "https://bridges.earth/",
+    "logo": "partners/bridges-coalition.webp",
+    "width": 320,
+    "height": 264,
+    "letter": "B"
+  },
+  {
+    "slug": "bright-mirror",
+    "name": "Bright Mirror",
+    "website": "https://www.bluenove.com/blog/bright-mirror-vous-inspire-devenez-brighters/",
+    "logo": "partners/bright-mirror.webp",
+    "width": 200,
+    "height": 99,
+    "letter": "B"
+  },
+  {
+    "slug": "bulle-de-reussite",
+    "name": "Bulle de reussite",
+    "website": "https://bulledereussite.com/",
+    "logo": "partners/bulle-de-reussite.webp",
+    "width": 216,
+    "height": 186,
+    "letter": "B"
+  },
+  {
+    "slug": "business-fights-poverty",
+    "name": "Business Fights Poverty",
+    "website": "https://businessfightspoverty.org",
+    "logo": "partners/business-fights-poverty.webp",
+    "width": 320,
+    "height": 160,
+    "letter": "B"
+  },
+  {
+    "slug": "c-n-m-n-d-parekh-preprimary-school",
+    "name": "C.N. M & N. D. Parekh Preprimary School",
+    "website": "https://cnms.ac.in/",
+    "logo": "partners/c-n-m-n-d-parekh-preprimary-school.webp",
+    "width": 215,
+    "height": 170,
+    "letter": "C"
+  },
+  {
+    "slug": "cafe-music-smile",
+    "name": "CAFE MUSIC SMILE",
+    "website": "https://www.facebook.com/Cafemusicsmile/",
+    "logo": "partners/cafe-music-smile.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "C"
+  },
+  {
+    "slug": "campus-co-evolve",
+    "name": "Campus Co-Evolve",
+    "website": "https://community.ubiquityuniversity.org/organizations/campus-co-evolve",
+    "logo": "partners/campus-co-evolve.webp",
+    "width": 320,
+    "height": 88,
+    "letter": "C"
+  },
+  {
+    "slug": "campus-francois-dassise",
+    "name": "Campus François d’Assise",
+    "website": "https://enseignement-catholique.fr/un-campus-xxl-a-bordeaux%EF%BF%BC/",
+    "logo": "partners/campus-francois-dassise.webp",
+    "width": 60,
+    "height": 60,
+    "letter": "C"
+  },
+  {
+    "slug": "canope",
+    "name": "Canopé",
+    "website": "https://www.reseau-canope.fr/",
+    "logo": "partners/canope.webp",
+    "width": 320,
+    "height": 121,
+    "letter": "C"
+  },
+  {
+    "slug": "catalyst-2030",
+    "name": "Catalyst 2030",
+    "website": "https://catalyst2030.net",
+    "logo": "partners/catalyst-2030.webp",
+    "width": 320,
+    "height": 196,
+    "letter": "C"
+  },
+  {
+    "slug": "center-for-curriculum-redesign-ccr",
+    "name": "Center for Curriculum Redesign (CCR)",
+    "website": "https://curriculumredesign.org/",
+    "logo": "partners/center-for-curriculum-redesign-ccr.webp",
+    "width": 280,
+    "height": 132,
+    "letter": "C"
+  },
+  {
+    "slug": "center-for-global-education-at-asia-society",
+    "name": "Center for Global Education at Asia Society",
+    "website": "https://asiasociety.org/education",
+    "logo": "partners/center-for-global-education-at-asia-society.webp",
+    "width": 320,
+    "height": 100,
+    "letter": "C"
+  },
+  {
+    "slug": "center-for-sustainable-development-columbia-university",
+    "name": "Center for Sustainable Development, Columbia University",
+    "website": "https://csd.columbia.edu",
+    "logo": "partners/center-for-sustainable-development-columbia-university.webp",
+    "width": 320,
+    "height": 41,
+    "letter": "C"
+  },
+  {
+    "slug": "center-for-universal-education-brookings-institution",
+    "name": "Center for Universal Education Brookings Institution",
+    "website": "https://www.brookings.edu/centers/center-for-universal-education/",
+    "logo": "partners/center-for-universal-education-brookings-institution.webp",
+    "width": 320,
+    "height": 49,
+    "letter": "C"
+  },
+  {
+    "slug": "centre-creal",
+    "name": "Centre CREAL",
+    "website": "https://www.centrecreal.org/",
+    "logo": "partners/centre-creal.webp",
+    "width": 200,
+    "height": 142,
+    "letter": "C"
+  },
+  {
+    "slug": "centre-pompidou",
+    "name": "Centre Pompidou",
+    "website": "https://www.centrepompidou.fr/fr/",
+    "logo": "partners/centre-pompidou.webp",
+    "width": 320,
+    "height": 226,
+    "letter": "C"
+  },
+  {
+    "slug": "centro-de-altos-estudos-em-sustentabilidade-e-educacao",
+    "name": "Centro de Altos Estudos em Sustentabilidade e Educação",
+    "website": "https://www.caeseceaedd.org/editora",
+    "logo": "partners/centro-de-altos-estudos-em-sustentabilidade-e-educacao.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "C"
+  },
+  {
+    "slug": "centro-lemann",
+    "name": "Centro Lemann",
+    "website": "https://centrolemann.org.br/",
+    "logo": "partners/centro-lemann.webp",
+    "width": 320,
+    "height": 192,
+    "letter": "C"
+  },
+  {
+    "slug": "cepec-isfec-rhone-alpes",
+    "name": "CEPEC ISFEC RHÔNE-ALPES",
+    "website": "https://www.cepec.org/",
+    "logo": "partners/cepec-isfec-rhone-alpes.webp",
+    "width": 200,
+    "height": 183,
+    "letter": "C"
+  },
+  {
+    "slug": "cercle-ape",
+    "name": "Cercle APE",
+    "website": "https://www.cercleape.com/",
+    "logo": "partners/cercle-ape.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "C"
+  },
+  {
+    "slug": "child-rights-international-network-crin",
+    "name": "Child Rights International Network (CRIN)",
+    "website": "https://home.crin.org/",
+    "logo": "partners/child-rights-international-network-crin.webp",
+    "width": 320,
+    "height": 60,
+    "letter": "C"
+  },
+  {
+    "slug": "children-nature-network",
+    "name": "Children & Nature Network",
+    "website": "https://www.childrenandnature.org/",
+    "logo": "partners/children-nature-network.webp",
+    "width": 320,
+    "height": 43,
+    "letter": "C"
+  },
+  {
+    "slug": "children-in-all-policies-2030",
+    "name": "Children in All Policies 2030",
+    "website": "https://cap-2030.org/",
+    "logo": "partners/children-in-all-policies-2030.webp",
+    "width": 200,
+    "height": 51,
+    "letter": "C"
+  },
+  {
+    "slug": "christel-house-international",
+    "name": "Christel House International",
+    "website": "https://christelhouse.org/",
+    "logo": "partners/christel-house-international.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "C"
+  },
+  {
+    "slug": "circles-in-structure",
+    "name": "Circles In Structure",
+    "website": "https://www.linkedin.com/company/circles-in-structure/",
+    "logo": "partners/circles-in-structure.webp",
+    "width": 244,
+    "height": 123,
+    "letter": "C"
+  },
+  {
+    "slug": "cite-de-leconomie",
+    "name": "Cité de l’économie",
+    "website": "https://www.citeco.fr/",
+    "logo": "partners/cite-de-leconomie.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "C"
+  },
+  {
+    "slug": "cities-4-peace",
+    "name": "Cities 4 Peace",
+    "website": "https://cities4peace.org/",
+    "logo": "partners/cities-4-peace.webp",
+    "width": 320,
+    "height": 130,
+    "letter": "C"
+  },
+  {
+    "slug": "clavim",
+    "name": "CLAVIM",
+    "website": "https://www.clavim.asso.fr/",
+    "logo": "partners/clavim.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "C"
+  },
+  {
+    "slug": "climate-action-project",
+    "name": "Climate Action Project",
+    "website": "https://www.climateactionproject.org/",
+    "logo": "partners/climate-action-project.webp",
+    "width": 58,
+    "height": 63,
+    "letter": "C"
+  },
+  {
+    "slug": "coach-en-vie",
+    "name": "Coach En Vie",
+    "website": "https://coachenvie.com",
+    "logo": "partners/coach-en-vie.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "C"
+  },
+  {
+    "slug": "coconut-thinking",
+    "name": "Coconut Thinking",
+    "website": "https://coconut-thinking.design",
+    "logo": "partners/coconut-thinking.webp",
+    "width": 320,
+    "height": 83,
+    "letter": "C"
+  },
+  {
+    "slug": "collaboratio-helvetica",
+    "name": "collaboratio helvetica",
+    "website": "https://www.collaboratiohelvetica.ch",
+    "logo": "partners/collaboratio-helvetica.webp",
+    "width": 320,
+    "height": 83,
+    "letter": "C"
+  },
+  {
+    "slug": "collectif-des-jeunes-ambassadeurs-du-congo-cjaco-asbl",
+    "name": "Collectif des Jeunes Ambassadeurs du Congo (CJACO-ASBL)",
+    "logo": "partners/collectif-des-jeunes-ambassadeurs-du-congo-cjaco-asbl.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "C"
+  },
+  {
+    "slug": "collectivz",
+    "name": "CollectivZ",
+    "website": "https://www.collectivz.fr",
+    "logo": "partners/collectivz.webp",
+    "width": 200,
+    "height": 60,
+    "letter": "C"
+  },
+  {
+    "slug": "college-catts-pressoir-haiti",
+    "name": "College Catts Pressoir, Haiti",
+    "website": "http://www.cattspressoir.org/",
+    "logo": "partners/college-catts-pressoir-haiti.webp",
+    "width": 320,
+    "height": 240,
+    "letter": "C"
+  },
+  {
+    "slug": "colombus",
+    "name": "COLOMBUS",
+    "website": "https://www.colombus.education",
+    "logo": "partners/colombus.webp",
+    "width": 60,
+    "height": 60,
+    "letter": "C"
+  },
+  {
+    "slug": "color-the-education",
+    "name": "Color The Education",
+    "website": "https://www.color-the-education.fr/",
+    "logo": "partners/color-the-education.webp",
+    "width": 301,
+    "height": 351,
+    "letter": "C"
+  },
+  {
+    "slug": "comite-mondial-pour-les-apprentissages-tout-au-long-de-la-vie-cmatlv-world-committee-for-lifelong-learning",
+    "name": "Comité mondial pour les apprentissages tout au long de la vie (CMAtlv) World Committee for LifeLong Learning",
+    "website": "https://www.cmatlv.org",
+    "logo": "partners/comite-mondial-pour-les-apprentissages-tout-au-long-de-la-vie-cmatlv-world-committee-for-lifelong-learning.webp",
+    "width": 320,
+    "height": 189,
+    "letter": "C"
+  },
+  {
+    "slug": "communaute-makesense-education",
+    "name": "Communauté makesense Education",
+    "website": "https://www.facebook.com/groups/communautemakesenseeducation/",
+    "logo": "partners/communaute-makesense-education.webp",
+    "width": 286,
+    "height": 104,
+    "letter": "C"
+  },
+  {
+    "slug": "community-arts-network",
+    "name": "Community Arts Network",
+    "website": "https://www.community-arts.net/",
+    "logo": "partners/community-arts-network.webp",
+    "width": 320,
+    "height": 172,
+    "letter": "C"
+  },
+  {
+    "slug": "community-capacity-builders",
+    "name": "Community Capacity Builders",
+    "website": "https://www.communitycapacity.com.au/",
+    "logo": "partners/community-capacity-builders.webp",
+    "width": 200,
+    "height": 75,
+    "letter": "C"
+  },
+  {
+    "slug": "community-systems-foundation",
+    "name": "Community Systems Foundation",
+    "website": "https://www.communitysystemsfoundation.org/",
+    "logo": "partners/community-systems-foundation.webp",
+    "width": 320,
+    "height": 129,
+    "letter": "C"
+  },
+  {
+    "slug": "commutiny-the-youth-collective-vartaleap-coalition",
+    "name": "ComMutiny – The Youth Collective & vartaLeap Coalition",
+    "website": "https://commutiny.in/",
+    "logo": "partners/commutiny-the-youth-collective-vartaleap-coalition.webp",
+    "width": 243,
+    "height": 90,
+    "letter": "C"
+  },
+  {
+    "slug": "compass-education-2",
+    "name": "Compass Education",
+    "website": "https://compasseducation.org/",
+    "logo": "partners/compass-education-2.webp",
+    "width": 320,
+    "height": 135,
+    "letter": "C"
+  },
+  {
+    "slug": "competences-du-21eme-siecle",
+    "name": "Compétences du 21ème siècle",
+    "website": "https://fresquedessoftskills.org/",
+    "logo": "partners/competences-du-21eme-siecle.webp",
+    "width": 200,
+    "height": 90,
+    "letter": "C"
+  },
+  {
+    "slug": "conference-des-grandes-ecoles",
+    "name": "Conference des Grandes Ecoles",
+    "website": "https://www.cge.asso.fr/",
+    "logo": "partners/conference-des-grandes-ecoles.webp",
+    "width": 320,
+    "height": 105,
+    "letter": "C"
+  },
+  {
+    "slug": "convergences",
+    "name": "Convergences",
+    "website": "https://www.convergences.org/",
+    "logo": "partners/convergences.webp",
+    "width": 300,
+    "height": 81,
+    "letter": "C"
+  },
+  {
+    "slug": "creadop",
+    "name": "CréaDop",
+    "website": "https://www.creadop.com",
+    "logo": "partners/creadop.webp",
+    "width": 200,
+    "height": 82,
+    "letter": "C"
+  },
+  {
+    "slug": "creativity-lab-for-empowerment-and-innovation",
+    "name": "Creativity Lab for Empowerment and Innovation",
+    "website": "https://www.creativitylab.ps/en",
+    "logo": "partners/creativity-lab-for-empowerment-and-innovation.webp",
+    "width": 121,
+    "height": 180,
+    "letter": "C"
+  },
+  {
+    "slug": "crosslabs",
+    "name": "Crosslabs",
+    "website": "https://www.crosslabs.org/",
+    "logo": "partners/crosslabs.webp",
+    "width": 320,
+    "height": 313,
+    "letter": "C"
+  },
+  {
+    "slug": "curiosity-learning",
+    "name": "Curiosity Learning",
+    "website": "https://www.curiositylearning.org",
+    "logo": "partners/curiosity-learning.webp",
+    "width": 274,
+    "height": 79,
+    "letter": "C"
+  },
+  {
+    "slug": "curriculum-for-life",
+    "name": "Curriculum for Life",
+    "website": "https://curriculumforlife.com",
+    "logo": "partners/curriculum-for-life.webp",
+    "width": 320,
+    "height": 227,
+    "letter": "C"
+  },
+  {
+    "slug": "cy-cergy-paris-universite-2",
+    "name": "CY Cergy Paris Université",
+    "website": "https://www.cyu.fr/",
+    "logo": "partners/cy-cergy-paris-universite-2.webp",
+    "width": 320,
+    "height": 107,
+    "letter": "C"
+  },
+  {
+    "slug": "dun-moi-a-lautre",
+    "name": "D’un moi à l’autre",
+    "website": "https://dunmoialautre.com",
+    "logo": "partners/dun-moi-a-lautre.webp",
+    "width": 320,
+    "height": 118,
+    "letter": "D"
+  },
+  {
+    "slug": "dartington-hall-trust",
+    "name": "Dartington Hall Trust",
+    "website": "https://www.dartington.org",
+    "logo": "partners/dartington-hall-trust.webp",
+    "width": 320,
+    "height": 106,
+    "letter": "D"
+  },
+  {
+    "slug": "dawood-public-school",
+    "name": "Dawood Public School",
+    "website": "https://dps.edu.pk",
+    "logo": "partners/dawood-public-school.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "D"
+  },
+  {
+    "slug": "dean-initiative-abuja",
+    "name": "Dean Initiative Abuja",
+    "website": "https://dean.org.ng/",
+    "logo": "partners/dean-initiative-abuja.webp",
+    "width": 221,
+    "height": 228,
+    "letter": "D"
+  },
+  {
+    "slug": "demain-cest-toi",
+    "name": "Demain c’est toi !",
+    "website": "https://www.demain-cest-toi.fr/",
+    "logo": "partners/demain-cest-toi.webp",
+    "width": 320,
+    "height": 105,
+    "letter": "D"
+  },
+  {
+    "slug": "derose-gobelins",
+    "name": "DeROSE Gobelins",
+    "website": "https://derosegobelins.fr/",
+    "logo": "partners/derose-gobelins.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "D"
+  },
+  {
+    "slug": "design-for-change",
+    "name": "Design for Change",
+    "website": "https://www.dfcworld.com/SITE",
+    "logo": "partners/design-for-change.webp",
+    "width": 320,
+    "height": 163,
+    "letter": "D"
+  },
+  {
+    "slug": "design-for-change-spain",
+    "name": "Design for Change Spain",
+    "website": "https://dfcspain.org/",
+    "logo": "partners/design-for-change-spain.webp",
+    "width": 179,
+    "height": 104,
+    "letter": "D"
+  },
+  {
+    "slug": "design-a-thon-works",
+    "name": "Design-a-thon Works",
+    "website": "https://www.designathonworks.com/",
+    "logo": "partners/design-a-thon-works.webp",
+    "width": 320,
+    "height": 107,
+    "letter": "D"
+  },
+  {
+    "slug": "dev4x",
+    "name": "Dev4X",
+    "website": "https://www.dev4x.com",
+    "logo": "partners/dev4x.webp",
+    "width": 320,
+    "height": 128,
+    "letter": "D"
+  },
+  {
+    "slug": "diksha-discovering-inner-knowledge-and-sexual-health-awareness",
+    "name": "DIKSHA: Discovering Inner Knowledge and Sexual Health Awareness",
+    "website": "https://www.facebook.com/DIKSHA.org/",
+    "logo": "partners/diksha-discovering-inner-knowledge-and-sexual-health-awareness.webp",
+    "width": 125,
+    "height": 47,
+    "letter": "D"
+  },
+  {
+    "slug": "doclaluna",
+    "name": "DocLaLuna",
+    "website": "https://www.doclaluna.com/",
+    "logo": "partners/doclaluna.webp",
+    "width": 200,
+    "height": 131,
+    "letter": "D"
+  },
+  {
+    "slug": "doughnut-economics-action-lab",
+    "name": "Doughnut Economics Action Lab",
+    "website": "https://doughnuteconomics.org",
+    "logo": "partners/doughnut-economics-action-lab.webp",
+    "width": 200,
+    "height": 80,
+    "letter": "D"
+  },
+  {
+    "slug": "dream-a-dream",
+    "name": "Dream a Dream",
+    "website": "https://dreamadream.org/",
+    "logo": "partners/dream-a-dream.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "D"
+  },
+  {
+    "slug": "dside-in",
+    "name": "DSIDE IN",
+    "website": "https://dsidein.fr/",
+    "logo": "partners/dside-in.webp",
+    "width": 60,
+    "height": 60,
+    "letter": "D"
+  },
+  {
+    "slug": "dublin-learning-city",
+    "name": "Dublin Learning City",
+    "website": "https://www.dublinlearningcity.ie/",
+    "logo": "partners/dublin-learning-city.webp",
+    "width": 218,
+    "height": 118,
+    "letter": "D"
+  },
+  {
+    "slug": "earthday-org",
+    "name": "Earth Day Network India",
+    "website": "https://www.earthday.org/India/",
+    "logo": "partners/earthday-org.webp",
+    "width": 320,
+    "height": 190,
+    "letter": "E"
+  },
+  {
+    "slug": "earth-speakr",
+    "name": "earth speakr",
+    "website": "https://earthspeakr.art/en/",
+    "logo": "partners/earth-speakr.webp",
+    "width": 320,
+    "height": 185,
+    "letter": "E"
+  },
+  {
+    "slug": "earth-warriors-global",
+    "name": "Earth Warriors Global",
+    "website": "https://www.earthwarriorsglobal.com",
+    "logo": "partners/earth-warriors-global.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "E"
+  },
+  {
+    "slug": "east-side-institute",
+    "name": "East Side Institute",
+    "website": "https://eastsideinstitute.org/",
+    "logo": "partners/east-side-institute.webp",
+    "width": 320,
+    "height": 54,
+    "letter": "E"
+  },
+  {
+    "slug": "eco-lier",
+    "name": "éco-lier",
+    "website": "https://eco-lier.fr",
+    "logo": "partners/eco-lier.webp",
+    "width": 320,
+    "height": 192,
+    "letter": "E"
+  },
+  {
+    "slug": "ecodesign-school",
+    "name": "Ecodesign School",
+    "website": "https://ecodesignschool.org/",
+    "logo": "partners/ecodesign-school.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "E"
+  },
+  {
+    "slug": "ecole-democratique-de-paris",
+    "name": "Ecole Démocratique de Paris",
+    "website": "https://ecole-democratique-paris.org/",
+    "logo": "partners/ecole-democratique-de-paris.webp",
+    "width": 320,
+    "height": 510,
+    "letter": "E"
+  },
+  {
+    "slug": "ecole-du-dialogue",
+    "name": "Ecole du dialogue",
+    "website": "https://www.youtube.com/@ecoledudialogue1481",
+    "logo": "partners/ecole-du-dialogue.webp",
+    "width": 320,
+    "height": 287,
+    "letter": "E"
+  },
+  {
+    "slug": "ecole-francaise-internationale-de-marbella",
+    "name": "École Française Internationale de Marbella",
+    "website": "https://efimarbella.com/",
+    "logo": "partners/ecole-francaise-internationale-de-marbella.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "E"
+  },
+  {
+    "slug": "ecole-nationale-de-commerce-et-de-gestion-de-dakhla-encgd",
+    "name": "École Nationale de Commerce et de Gestion de Dakhla (ENCGD)",
+    "website": "https://encgd.uiz.ac.ma/",
+    "logo": "partners/ecole-nationale-de-commerce-et-de-gestion-de-dakhla-encgd.webp",
+    "width": 320,
+    "height": 160,
+    "letter": "E"
+  },
+  {
+    "slug": "ecole-nationale-superieure-de-creation-industrielle-ensci-les-ateliers",
+    "name": "École Nationale Supérieure de Création Industrielle (ENSCI – Les Ateliers)",
+    "website": "https://www.ensci.com",
+    "logo": "partners/ecole-nationale-superieure-de-creation-industrielle-ensci-les-ateliers.webp",
+    "width": 304,
+    "height": 166,
+    "letter": "E"
+  },
+  {
+    "slug": "ecole-shamengo",
+    "name": "École Shamengo",
+    "website": "https://shamengo.com/fr/",
+    "logo": "partners/ecole-shamengo.webp",
+    "width": 320,
+    "height": 166,
+    "letter": "E"
+  },
+  {
+    "slug": "ecolhuma",
+    "name": "Ecolhuma",
+    "website": "https://ecolhuma.fr/",
+    "logo": "partners/ecolhuma.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "E"
+  },
+  {
+    "slug": "ecolia",
+    "name": "Ecolïa",
+    "website": "https://www.ulteria-ecocampus.fr/",
+    "logo": "partners/ecolia.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "E"
+  },
+  {
+    "slug": "ecomanka",
+    "name": "EcoManka",
+    "website": "https://www.ecomanka.net/",
+    "logo": "partners/ecomanka.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "E"
+  },
+  {
+    "slug": "eden-digital-learning-europe",
+    "name": "EDEN Digital Learning Europe",
+    "website": "https://eden-europe.eu",
+    "logo": "partners/eden-digital-learning-europe.webp",
+    "width": 120,
+    "height": 120,
+    "letter": "E"
+  },
+  {
+    "slug": "edtech-france",
+    "name": "EdTech France",
+    "website": "https://edtechfrance.fr/",
+    "logo": "partners/edtech-france.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "E"
+  },
+  {
+    "slug": "edu-fy-pty-ltd",
+    "name": "Edu-fy Pty Ltd",
+    "website": "https://edu-fy.org",
+    "logo": "partners/edu-fy-pty-ltd.webp",
+    "width": 300,
+    "height": 300,
+    "letter": "E"
+  },
+  {
+    "slug": "education-for-all-coalition",
+    "name": "Education for All Coalition",
+    "website": "https://educationforallcoalition.org",
+    "logo": "partners/education-for-all-coalition.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "E"
+  },
+  {
+    "slug": "educawa",
+    "name": "EDUCAWA",
+    "website": "https://educawa.com/",
+    "logo": "partners/educawa.webp",
+    "width": 320,
+    "height": 97,
+    "letter": "E"
+  },
+  {
+    "slug": "edulab",
+    "name": "eduLAB",
+    "website": "https://www.edu-lab.be/",
+    "logo": "partners/edulab.webp",
+    "width": 320,
+    "height": 107,
+    "letter": "E"
+  },
+  {
+    "slug": "eidos-global",
+    "name": "Eidos Global",
+    "website": "https://www.eidosglobal.org/",
+    "logo": "partners/eidos-global.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "E"
+  },
+  {
+    "slug": "eit-climate-kic",
+    "name": "EIT Climate KIC",
+    "website": "https://www.climate-kic.org/",
+    "logo": "partners/eit-climate-kic.webp",
+    "width": 320,
+    "height": 168,
+    "letter": "E"
+  },
+  {
+    "slug": "eko6",
+    "name": "eko6",
+    "logo": "partners/eko6.webp",
+    "width": 320,
+    "height": 225,
+    "letter": "E"
+  },
+  {
+    "slug": "electeurs-en-herbe",
+    "name": "Électeurs en Herbe",
+    "website": "https://www.electeursenherbe.fr/",
+    "logo": "partners/electeurs-en-herbe.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "E"
+  },
+  {
+    "slug": "elisabeth-neraud-maths-easy",
+    "name": "Elisabeth Neraud – Maths EASY",
+    "website": "https://elisabeth-neraud.com/",
+    "logo": "partners/elisabeth-neraud-maths-easy.webp",
+    "width": 320,
+    "height": 148,
+    "letter": "E"
+  },
+  {
+    "slug": "eloquentia",
+    "name": "Eloquentia",
+    "website": "https://eloquentia.world/#",
+    "logo": "partners/eloquentia.webp",
+    "width": 320,
+    "height": 85,
+    "letter": "E"
+  },
+  {
+    "slug": "emerging-leaders",
+    "name": "Emerging Leaders",
+    "website": "https://www.emerging-leaders.net",
+    "logo": "partners/emerging-leaders.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "E"
+  },
+  {
+    "slug": "empower-nations-initiative",
+    "name": "Empower Nations Initiative",
+    "website": "https://www.empowernationsinitiative.com/",
+    "logo": "partners/empower-nations-initiative.webp",
+    "width": 320,
+    "height": 66,
+    "letter": "E"
+  },
+  {
+    "slug": "empowerable",
+    "name": "EmpowerABLE",
+    "website": "https://www.empowerable.net",
+    "logo": "partners/empowerable.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "E"
+  },
+  {
+    "slug": "energie-jeunes",
+    "name": "Énergie Jeunes",
+    "website": "https://energiejeunes.fr/",
+    "logo": "partners/energie-jeunes.webp",
+    "width": 320,
+    "height": 169,
+    "letter": "E"
+  },
+  {
+    "slug": "engage-e-s-determine-e-s-ed",
+    "name": "Engagé·e·s & Déterminé·e·s (E&D)",
+    "website": "https://www.engagees-determinees.org/",
+    "logo": "partners/engage-e-s-determine-e-s-ed.webp",
+    "width": 320,
+    "height": 239,
+    "letter": "E"
+  },
+  {
+    "slug": "enseignement-catholique-de-gironde",
+    "name": "Enseignement catholique de Gironde",
+    "website": "https://ecg33.fr/",
+    "logo": "partners/enseignement-catholique-de-gironde.webp",
+    "width": 200,
+    "height": 77,
+    "letter": "E"
+  },
+  {
+    "slug": "ensena-peru",
+    "name": "Enseña Perú",
+    "website": "https://ensenaperu.org/",
+    "logo": "partners/ensena-peru.webp",
+    "width": 320,
+    "height": 312,
+    "letter": "E"
+  },
+  {
+    "slug": "entreavec",
+    "name": "Entre&Avec",
+    "website": "https://entreetavec.fr",
+    "logo": "partners/entreavec.webp",
+    "width": 200,
+    "height": 97,
+    "letter": "E"
+  },
+  {
+    "slug": "entreprendre-pour-apprendre",
+    "name": "Entreprendre pour Apprendre",
+    "website": "https://www.entreprendre-pour-apprendre.fr/",
+    "logo": "partners/entreprendre-pour-apprendre.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "E"
+  },
+  {
+    "slug": "entreprendre-pour-apprendre-nouvelle-aquitaine",
+    "name": "Entreprendre pour Apprendre Nouvelle- Aquitaine",
+    "website": "https://www.entreprendre-pour-apprendre.fr/nouvelle-aquitaine",
+    "logo": "partners/entreprendre-pour-apprendre-nouvelle-aquitaine.webp",
+    "width": 320,
+    "height": 145,
+    "letter": "E"
+  },
+  {
+    "slug": "esg-school",
+    "name": "ESG School",
+    "website": "https://esgschool.org",
+    "logo": "partners/esg-school.webp",
+    "width": 320,
+    "height": 185,
+    "letter": "E"
+  },
+  {
+    "slug": "esqese-ict",
+    "name": "ESQESE ICT",
+    "website": "https://www.ict-toulouse.fr/nos-facultes-ecoles-et-instituts/ecole-superieure-pour-la-qualite-lenvironnement-la-securite-et-la-sante-en-entreprise-esqese/",
+    "logo": "partners/esqese-ict.webp",
+    "width": 320,
+    "height": 82,
+    "letter": "E"
+  },
+  {
+    "slug": "essaim",
+    "name": "essaim",
+    "website": "https://essaim-community.com/",
+    "logo": "partners/essaim.webp",
+    "width": 320,
+    "height": 84,
+    "letter": "E"
+  },
+  {
+    "slug": "etre-prof",
+    "name": "Être Prof",
+    "website": "https://etreprof.fr/",
+    "logo": "partners/etre-prof.webp",
+    "width": 300,
+    "height": 315,
+    "letter": "E"
+  },
+  {
+    "slug": "europaische-vereinigung-fur-logosophie-ael",
+    "name": "Europäische Vereinigung für Logosophie (AEL)",
+    "website": "https://logosophie.de",
+    "logo": "partners/europaische-vereinigung-fur-logosophie-ael.webp",
+    "width": 312,
+    "height": 134,
+    "letter": "E"
+  },
+  {
+    "slug": "european-association-of-logosophy",
+    "name": "European Association of Logosophy",
+    "logo": "partners/european-association-of-logosophy.webp",
+    "width": 200,
+    "height": 95,
+    "letter": "E"
+  },
+  {
+    "slug": "european-democratic-education-community-eudec",
+    "name": "European Democratic Education Community (EUDEC)",
+    "website": "https://eudec.org/",
+    "logo": "partners/european-democratic-education-community-eudec.webp",
+    "width": 200,
+    "height": 82,
+    "letter": "E"
+  },
+  {
+    "slug": "eutopique",
+    "name": "eutopique",
+    "website": "https://www.eutopique.com/",
+    "logo": "partners/eutopique.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "E"
+  },
+  {
+    "slug": "evolving-education",
+    "name": "Evolving Education",
+    "website": "https://evolvingeducation.org/en/home/",
+    "logo": "partners/evolving-education.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "E"
+  },
+  {
+    "slug": "evolving-in-education-eie",
+    "name": "Evolving in Education (EIE)",
+    "website": "https://evolvingineducation.org",
+    "logo": "partners/evolving-in-education-eie.webp",
+    "width": 320,
+    "height": 314,
+    "letter": "E"
+  },
+  {
+    "slug": "expo2020-dubai-uae",
+    "name": "Expo2020 Dubai UAE",
+    "website": "https://www.expo2020dubai.com/",
+    "logo": "partners/expo2020-dubai-uae.webp",
+    "width": 300,
+    "height": 159,
+    "letter": "E"
+  },
+  {
+    "slug": "fablab-de-luniversite-libre-de-bruxelles-ulb",
+    "name": "FabLab de l’Université Libre de Bruxelles (ULB)",
+    "website": "https://fablab.ulb.be/",
+    "logo": "partners/fablab-de-luniversite-libre-de-bruxelles-ulb.webp",
+    "width": 320,
+    "height": 226,
+    "letter": "F"
+  },
+  {
+    "slug": "federation-generale-des-pep",
+    "name": "Fédération Générale des PEP",
+    "website": "http://www.lespep.org/",
+    "logo": "partners/federation-generale-des-pep.webp",
+    "width": 320,
+    "height": 310,
+    "letter": "F"
+  },
+  {
+    "slug": "feelgood-forest-bathing",
+    "name": "Feelgood Forest Bathing",
+    "website": "https://feelgood-forest-bathing.com/",
+    "logo": "partners/feelgood-forest-bathing.webp",
+    "width": 320,
+    "height": 187,
+    "letter": "F"
+  },
+  {
+    "slug": "fondation-antoine-de-saint-exupery-pour-la-jeunesse",
+    "name": "Fondation Antoine de Saint Exupéry pour la Jeunesse",
+    "website": "https://www.fasej.org/",
+    "logo": "partners/fondation-antoine-de-saint-exupery-pour-la-jeunesse.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "F"
+  },
+  {
+    "slug": "fondation-bettencourt-schueller",
+    "name": "Fondation Bettencourt-Schueller",
+    "website": "https://www.fondationbs.org/",
+    "logo": "partners/fondation-bettencourt-schueller.webp",
+    "width": 320,
+    "height": 125,
+    "letter": "F"
+  },
+  {
+    "slug": "fondation-pour-lecriture",
+    "name": "Fondation pour l’écriture",
+    "website": "https://academiesciencesmoralesetpolitiques.fr/fondations/fondation-pour-lecriture/",
+    "logo": "partners/fondation-pour-lecriture.webp",
+    "width": 300,
+    "height": 248,
+    "letter": "F"
+  },
+  {
+    "slug": "forum-of-the-future",
+    "name": "Forum of the Future",
+    "website": "https://www.forumofthefuture.org/",
+    "logo": "partners/forum-of-the-future.webp",
+    "width": 200,
+    "height": 102,
+    "letter": "F"
+  },
+  {
+    "slug": "forward-college",
+    "name": "Forward College",
+    "website": "https://forward-college.eu",
+    "logo": "partners/forward-college.webp",
+    "width": 320,
+    "height": 168,
+    "letter": "F"
+  },
+  {
+    "slug": "foundation-tartu-environmental-education-aka-tartu-nature-house",
+    "name": "Foundation Tartu Environmental Education (aka Tartu Nature House)",
+    "website": "https://www.tartuloodusmaja.ee/en/virtual-tour/",
+    "logo": "partners/foundation-tartu-environmental-education-aka-tartu-nature-house.webp",
+    "width": 320,
+    "height": 160,
+    "letter": "F"
+  },
+  {
+    "slug": "france-apprenante",
+    "name": "France Apprenante",
+    "website": "https://www.franceapprenante.com/",
+    "logo": "partners/france-apprenante.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "F"
+  },
+  {
+    "slug": "fratelli-tutti-political-school",
+    "name": "Fratelli Tutti Political School",
+    "website": "https://www.fratellituttipoliticalschool.org/",
+    "logo": "partners/fratelli-tutti-political-school.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "F"
+  },
+  {
+    "slug": "free-the-mind-co",
+    "name": "Free The Mind Co",
+    "website": "https://freethemindco.com/",
+    "logo": "partners/free-the-mind-co.webp",
+    "width": 320,
+    "height": 383,
+    "letter": "F"
+  },
+  {
+    "slug": "friendship-france",
+    "name": "Friendship France",
+    "website": "http://www.friendship.ngo/",
+    "logo": "partners/friendship-france.webp",
+    "width": 200,
+    "height": 51,
+    "letter": "F"
+  },
+  {
+    "slug": "fuhem",
+    "name": "FUHEM",
+    "website": "https://www.fuhem.es/",
+    "logo": "partners/fuhem.webp",
+    "width": 320,
+    "height": 215,
+    "letter": "F"
+  },
+  {
+    "slug": "fundacion-mi-sangre",
+    "name": "Fundacion Mi Sangre",
+    "website": "https://fundacionmisangre.org/",
+    "logo": "partners/fundacion-mi-sangre.webp",
+    "width": 225,
+    "height": 225,
+    "letter": "F"
+  },
+  {
+    "slug": "fundacion-taap",
+    "name": "Fundacion TAAP",
+    "website": "https://fundaciontaap.org/en/home-english-2/",
+    "logo": "partners/fundacion-taap.webp",
+    "width": 225,
+    "height": 225,
+    "letter": "F"
+  },
+  {
+    "slug": "future-for-future",
+    "name": "Future for Future",
+    "website": "https://bj.linkedin.com/company/futureforfuture",
+    "logo": "partners/future-for-future.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "F"
+  },
+  {
+    "slug": "gallileo-coaching",
+    "name": "Gallileo-Coaching",
+    "website": "https://www.gallileo-coaching.com/",
+    "logo": "partners/gallileo-coaching.webp",
+    "width": 185,
+    "height": 149,
+    "letter": "G"
+  },
+  {
+    "slug": "geneva-tsinghua-initiative",
+    "name": "Geneva Tsinghua Initiative",
+    "website": "https://gt-initiative.org/",
+    "logo": "partners/geneva-tsinghua-initiative.webp",
+    "width": 320,
+    "height": 119,
+    "letter": "G"
+  },
+  {
+    "slug": "ghana-planetarium-science-centre",
+    "name": "Ghana Planetarium Science Centre",
+    "website": "https://ghanaplanetarium.com/",
+    "logo": "partners/ghana-planetarium-science-centre.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "G"
+  },
+  {
+    "slug": "girl-up-europe",
+    "name": "Girl Up Europe",
+    "website": "https://girlup.org/",
+    "logo": "partners/girl-up-europe.webp",
+    "width": 320,
+    "height": 338,
+    "letter": "G"
+  },
+  {
+    "slug": "girls-community",
+    "name": "Girls Community",
+    "website": "https://www.fp2030.org/girls-community/?commitmentMakerCategories=FP2030&commitmentMakerTypes=non-government",
+    "logo": "partners/girls-community.webp",
+    "width": 320,
+    "height": 282,
+    "letter": "G"
+  },
+  {
+    "slug": "gis-tepcare-universite-paul-valery-montpellier",
+    "name": "GIS TepCare – Université Paul Valéry Montpellier",
+    "website": "https://tepcare.hypotheses.org",
+    "logo": "partners/gis-tepcare-universite-paul-valery-montpellier.webp",
+    "width": 200,
+    "height": 176,
+    "letter": "G"
+  },
+  {
+    "slug": "global-citizens-generation",
+    "name": "Global Citizens Generation",
+    "website": "https://globalcitizensgen.org",
+    "logo": "partners/global-citizens-generation.webp",
+    "width": 195,
+    "height": 200,
+    "letter": "G"
+  },
+  {
+    "slug": "global-education-futures",
+    "name": "Global Education Futures",
+    "website": "https://globaledufutures.org/",
+    "logo": "partners/global-education-futures.webp",
+    "width": 320,
+    "height": 138,
+    "letter": "G"
+  },
+  {
+    "slug": "global-education-leaders-partnership-gelp",
+    "name": "Global Education Leaders Partnership (GELP)",
+    "website": "https://www.gelpglobal.org/",
+    "logo": "partners/global-education-leaders-partnership-gelp.webp",
+    "width": 320,
+    "height": 318,
+    "letter": "G"
+  },
+  {
+    "slug": "global-entrepreneurship-network",
+    "name": "Global Entrepreneurship Network",
+    "website": "https://www.genglobal.org",
+    "logo": "partners/global-entrepreneurship-network.webp",
+    "width": 320,
+    "height": 119,
+    "letter": "G"
+  },
+  {
+    "slug": "global-independent-schools-association-gisa",
+    "name": "Global Independent Schools Association (GISA)",
+    "website": "https://uk.linkedin.com/company/global-independent-schools-association?trk=public_post_feed-actor-name",
+    "logo": "partners/global-independent-schools-association-gisa.webp",
+    "width": 241,
+    "height": 101,
+    "letter": "G"
+  },
+  {
+    "slug": "global-minnesota",
+    "name": "Global Minnesota",
+    "website": "https://globalminnesota.org/",
+    "logo": "partners/global-minnesota.webp",
+    "width": 300,
+    "height": 300,
+    "letter": "G"
+  },
+  {
+    "slug": "global-mooc-alliance",
+    "name": "Global MOOC Alliance",
+    "website": "https://mooc.global/",
+    "logo": "partners/global-mooc-alliance.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "G"
+  },
+  {
+    "slug": "global-partnership-for-education-gpe",
+    "name": "Global Partnership for Education (GPE)",
+    "website": "https://www.globalpartnership.org/fr\n",
+    "logo": "partners/global-partnership-for-education-gpe.webp",
+    "width": 320,
+    "height": 97,
+    "letter": "G"
+  },
+  {
+    "slug": "global-play-brigade",
+    "name": "Global Play Brigade",
+    "website": "https://www.globalplaybrigade.org/",
+    "logo": "partners/global-play-brigade.webp",
+    "width": 320,
+    "height": 179,
+    "letter": "G"
+  },
+  {
+    "slug": "global-schools-program-an-initiative-of-un-sdsn-2",
+    "name": "Global Schools Program, an initiative of UN SDSN",
+    "website": "https://www.globalschoolsprogram.org/",
+    "logo": "partners/global-schools-program-an-initiative-of-un-sdsn-2.webp",
+    "width": 320,
+    "height": 130,
+    "letter": "G"
+  },
+  {
+    "slug": "global-student-forum",
+    "name": "Global Student Forum",
+    "website": "https://www.globalstudentforum.org/",
+    "logo": "partners/global-student-forum.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "G"
+  },
+  {
+    "slug": "global-youth-news-media",
+    "name": "Global Youth & News Media",
+    "website": "https://www.globalyouthandnewsmediaprize.net",
+    "logo": "partners/global-youth-news-media.webp",
+    "width": 320,
+    "height": 258,
+    "letter": "G"
+  },
+  {
+    "slug": "good-morning-creativity",
+    "name": "GOOD MORNING CREATIVITY",
+    "website": "https://www.goodmorningcreativity.com/",
+    "logo": "partners/good-morning-creativity.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "G"
+  },
+  {
+    "slug": "graines-dentrepreneurs",
+    "name": "Graines d’entrepreneurs",
+    "website": "http://www.grainesentrepreneurs.tn/",
+    "logo": "partners/graines-dentrepreneurs.webp",
+    "width": 320,
+    "height": 103,
+    "letter": "G"
+  },
+  {
+    "slug": "green-mentors",
+    "name": "Green Mentors",
+    "website": "https://greenmentors.in/",
+    "logo": "partners/green-mentors.webp",
+    "width": 320,
+    "height": 175,
+    "letter": "G"
+  },
+  {
+    "slug": "greenbalization",
+    "name": "Greenbalization",
+    "logo": "partners/greenbalization.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "G"
+  },
+  {
+    "slug": "groupe-scolaire-st-vincent",
+    "name": "Groupe scolaire St Vincent",
+    "website": "https://stvincent.eus",
+    "logo": "partners/groupe-scolaire-st-vincent.webp",
+    "width": 320,
+    "height": 233,
+    "letter": "G"
+  },
+  {
+    "slug": "groupement-des-jeunes-universitaires-pour-lavancement-dhaiti-gjupah",
+    "name": "Groupement des Jeunes Universitaires Pour l’Avancement d’Haïti (GJUPAH)",
+    "website": "https://mobile.facebook.com/GJUPAH/?paipv=1&_rdc=11&_rdr",
+    "logo": "partners/groupement-des-jeunes-universitaires-pour-lavancement-dhaiti-gjupah.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "G"
+  },
+  {
+    "slug": "hami-dajuvai-nepali-brothers",
+    "name": "Hami DajuVai  (Nepali Brothers)",
+    "website": "https://hamidajuvai.org.np/",
+    "logo": "partners/hami-dajuvai-nepali-brothers.webp",
+    "width": 320,
+    "height": 448,
+    "letter": "H"
+  },
+  {
+    "slug": "happiness-at-school",
+    "name": "Happiness at School",
+    "website": "https://happinessatschool.org/en",
+    "logo": "partners/happiness-at-school.webp",
+    "width": 189,
+    "height": 267,
+    "letter": "H"
+  },
+  {
+    "slug": "haritadhara-research-development-and-education-foundation-hrdef",
+    "name": "HaritaDhara Research Development and Education Foundation (HRDEF)",
+    "website": "http://www.hrdef.org",
+    "logo": "partners/haritadhara-research-development-and-education-foundation-hrdef.webp",
+    "width": 320,
+    "height": 326,
+    "letter": "H"
+  },
+  {
+    "slug": "harmonic-fabrik",
+    "name": "Harmonic Fabrik",
+    "logo": "partners/harmonic-fabrik.webp",
+    "width": 320,
+    "height": 111,
+    "letter": "H"
+  },
+  {
+    "slug": "harvard-university",
+    "name": "Harvard University",
+    "website": "https://www.harvard.edu/",
+    "logo": "partners/harvard-university.webp",
+    "width": 320,
+    "height": 211,
+    "letter": "H"
+  },
+  {
+    "slug": "hec-paris",
+    "name": "HEC Paris",
+    "website": "https://hec.edu/fr",
+    "logo": "partners/hec-paris.webp",
+    "width": 310,
+    "height": 162,
+    "letter": "H"
+  },
+  {
+    "slug": "home-for-humanity",
+    "name": "Home for Humanity",
+    "website": "https://www.homeforhumanity.earth/",
+    "logo": "partners/home-for-humanity.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "H"
+  },
+  {
+    "slug": "hopeharbor",
+    "name": "HopeHarbor",
+    "website": "https://hopeharborcenter.weebly.com/",
+    "logo": "partners/hopeharbor.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "H"
+  },
+  {
+    "slug": "hypnose-adventures",
+    "name": "Hypnose Adventures",
+    "website": "https://www.hypnose-aventures.com/",
+    "logo": "partners/hypnose-adventures.webp",
+    "width": 320,
+    "height": 187,
+    "letter": "H"
+  },
+  {
+    "slug": "i-we",
+    "name": "i-We",
+    "website": "https://i-we.fr",
+    "logo": "partners/i-we.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "I"
+  },
+  {
+    "slug": "ideaforage-innovations-toynik",
+    "name": "Ideaforage Innovations (Toynik)",
+    "website": "https://toynik.com/",
+    "logo": "partners/ideaforage-innovations-toynik.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "I"
+  },
+  {
+    "slug": "ifcam-luniversite-du-groupe-agricole",
+    "name": "IFCAM : l’Université du Groupe Agricole",
+    "website": "https://www.ca-ifcam.fr/Pages/siif.aspx",
+    "logo": "partners/ifcam-luniversite-du-groupe-agricole.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "I"
+  },
+  {
+    "slug": "ifea",
+    "name": "iféa",
+    "website": "https://ifea.education/en/",
+    "logo": "partners/ifea.webp",
+    "width": 320,
+    "height": 237,
+    "letter": "I"
+  },
+  {
+    "slug": "imaginaction-mentoring",
+    "name": "ImaginAction Mentoring",
+    "website": "https://imaginaction.org/",
+    "logo": "partners/imaginaction-mentoring.webp",
+    "width": 320,
+    "height": 166,
+    "letter": "I"
+  },
+  {
+    "slug": "inheartsight-community",
+    "name": "InHeartSight Community",
+    "website": "https://www.avegailecalzado.com",
+    "logo": "partners/inheartsight-community.webp",
+    "width": 320,
+    "height": 358,
+    "letter": "I"
+  },
+  {
+    "slug": "initiatives-of-change-international",
+    "name": "Initiatives of Change International",
+    "website": "https://iofc.org/en",
+    "logo": "partners/initiatives-of-change-international.webp",
+    "width": 200,
+    "height": 85,
+    "letter": "I"
+  },
+  {
+    "slug": "innae",
+    "name": "InnAÉ",
+    "website": "https://asso-innae.fr/",
+    "logo": "partners/innae.webp",
+    "width": 177,
+    "height": 180,
+    "letter": "I"
+  },
+  {
+    "slug": "innovation-world",
+    "name": "Innovation World",
+    "website": "https://innovationworld.org/",
+    "logo": "partners/innovation-world.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "I"
+  },
+  {
+    "slug": "inspire2live",
+    "name": "Inspire2live",
+    "website": "https://inspire2live.org/",
+    "logo": "partners/inspire2live.webp",
+    "width": 320,
+    "height": 205,
+    "letter": "I"
+  },
+  {
+    "slug": "institut-artsys",
+    "name": "Institut ARTSYS",
+    "website": "https://www.institutartsys.com",
+    "logo": "partners/institut-artsys.webp",
+    "width": 320,
+    "height": 191,
+    "letter": "I"
+  },
+  {
+    "slug": "institut-catholique-de-toulouse",
+    "name": "Institut catholique de Toulouse",
+    "website": "https://www.ict-toulouse.fr/",
+    "logo": "partners/institut-catholique-de-toulouse.webp",
+    "width": 200,
+    "height": 108,
+    "letter": "I"
+  },
+  {
+    "slug": "institut-de-lengagement",
+    "name": "Institut de l’Engagement",
+    "website": "https://www.engagement.fr/",
+    "logo": "partners/institut-de-lengagement.webp",
+    "width": 320,
+    "height": 67,
+    "letter": "I"
+  },
+  {
+    "slug": "institut-de-recherche-pour-le-developpement-ird",
+    "name": "Institut de Recherche pour le Développement (IRD)",
+    "website": "https://en.ird.fr/",
+    "logo": "partners/institut-de-recherche-pour-le-developpement-ird.webp",
+    "width": 320,
+    "height": 263,
+    "letter": "I"
+  },
+  {
+    "slug": "institut-des-defis",
+    "name": "Institut des défis",
+    "website": "https://institutdesdefis.org/fr/acceuil",
+    "logo": "partners/institut-des-defis.webp",
+    "width": 200,
+    "height": 71,
+    "letter": "I"
+  },
+  {
+    "slug": "institut-des-futurs-souhaitables",
+    "name": "Institut des Futurs souhaitables",
+    "website": "https://www.futurs-souhaitables.org",
+    "logo": "partners/institut-des-futurs-souhaitables.webp",
+    "width": 200,
+    "height": 138,
+    "letter": "I"
+  },
+  {
+    "slug": "institut-superieur-de-technologie-ambositra",
+    "name": "Institut Supérieur de Technologie Ambositra",
+    "website": "https://istambositra.mg/",
+    "logo": "partners/institut-superieur-de-technologie-ambositra.webp",
+    "width": 139,
+    "height": 147,
+    "letter": "I"
+  },
+  {
+    "slug": "institute-for-the-future-ku-leuven",
+    "name": "Institute for the Future, KU Leuven",
+    "website": "https://rega.kuleuven.be/if",
+    "logo": "partners/institute-for-the-future-ku-leuven.webp",
+    "width": 320,
+    "height": 290,
+    "letter": "I"
+  },
+  {
+    "slug": "instituto-arvores-vivas",
+    "name": "Instituto Árvores Vivas",
+    "website": "http://www.arvoresvivas.org.br",
+    "logo": "partners/instituto-arvores-vivas.webp",
+    "width": 60,
+    "height": 60,
+    "letter": "I"
+  },
+  {
+    "slug": "instituto-central-coahuila-a-c",
+    "name": "Instituto Central Coahuila A.C.",
+    "website": "https://www.icc.edu.mx/",
+    "logo": "partners/instituto-central-coahuila-a-c.webp",
+    "width": 202,
+    "height": 249,
+    "letter": "I"
+  },
+  {
+    "slug": "interacticubers",
+    "name": "Interacticubers",
+    "website": "https://www.interacticubers.org/",
+    "logo": "partners/interacticubers.webp",
+    "width": 320,
+    "height": 247,
+    "letter": "I"
+  },
+  {
+    "slug": "international-center-for-applied-systems-science-for-sustainable-development",
+    "name": "International Center for Applied Systems Science for Sustainable Development",
+    "website": "https://www.icasssd.org/about-us",
+    "logo": "partners/international-center-for-applied-systems-science-for-sustainable-development.webp",
+    "width": 200,
+    "height": 274,
+    "letter": "I"
+  },
+  {
+    "slug": "international-council-for-open-and-distance-education-icde",
+    "name": "International Council for Open and Distance Education (ICDE)",
+    "website": "https://www.icde.org/",
+    "logo": "partners/international-council-for-open-and-distance-education-icde.webp",
+    "width": 320,
+    "height": 122,
+    "letter": "I"
+  },
+  {
+    "slug": "intersections",
+    "name": "Intersections",
+    "website": "https://www.linkedin.com/in/camille-dsir/",
+    "logo": "partners/intersections.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "I"
+  },
+  {
+    "slug": "isfec-francois-dassise",
+    "name": "ISFEC François d’Assise",
+    "website": "https://www.isfecfrancoisdassise.fr/",
+    "logo": "partners/isfec-francois-dassise.webp",
+    "width": 200,
+    "height": 118,
+    "letter": "I"
+  },
+  {
+    "slug": "junia-grande-ecole-dingenieurs",
+    "name": "JUNIA Grande école d’ingénieurs",
+    "website": "https://www.junia.com/fr/nos-campus/ecole-ingenieur-bordeaux/",
+    "logo": "partners/junia-grande-ecole-dingenieurs.webp",
+    "width": 200,
+    "height": 92,
+    "letter": "J"
+  },
+  {
+    "slug": "kenya-initiative-on-self-sustainabilitykissro-kenya",
+    "name": "Kenya Initiative on Self Sustainability(KISSRO-KENYA)",
+    "website": "https://kissprosustainability.wordpress.com/2023/01/09/kisspro-kenya-an-idea-whose-time-is-now/",
+    "logo": "partners/kenya-initiative-on-self-sustainabilitykissro-kenya.webp",
+    "width": 318,
+    "height": 318,
+    "letter": "K"
+  },
+  {
+    "slug": "kids-4-a-better-world",
+    "name": "Kids 4 a better world",
+    "website": "http://www.k4bworld.com/",
+    "logo": "partners/kids-4-a-better-world.webp",
+    "width": 65,
+    "height": 80,
+    "letter": "K"
+  },
+  {
+    "slug": "kids-education-revolution-teach-for-india",
+    "name": "Kids Education Revolution, Teach For India",
+    "website": "https://www.kidseducationrevolution.org/",
+    "logo": "partners/kids-education-revolution-teach-for-india.webp",
+    "width": 320,
+    "height": 247,
+    "letter": "K"
+  },
+  {
+    "slug": "kidsforsdgs",
+    "name": "KIDs for SDGs",
+    "website": "https://www.kidsforsdgs.org/",
+    "logo": "partners/kidsforsdgs.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "K"
+  },
+  {
+    "slug": "kids-on-earth",
+    "name": "Kids on Earth",
+    "website": "https://www.kidsonearth.org/",
+    "logo": "partners/kids-on-earth.webp",
+    "width": 320,
+    "height": 303,
+    "letter": "K"
+  },
+  {
+    "slug": "kikao-cultures",
+    "name": "KIKAO CULTURES",
+    "website": "https://www.kikaocultures.com/",
+    "logo": "partners/kikao-cultures.webp",
+    "width": 200,
+    "height": 73,
+    "letter": "K"
+  },
+  {
+    "slug": "kinder-republic",
+    "name": "Kinder Republic",
+    "website": "https://kinder.lk",
+    "logo": "partners/kinder-republic.webp",
+    "width": 200,
+    "height": 70,
+    "letter": "K"
+  },
+  {
+    "slug": "kinome-forestlife",
+    "name": "Kinomé, Forest&Life",
+    "website": "https://kinome.fr/en/forestlife/",
+    "logo": "partners/kinome-forestlife.webp",
+    "width": 320,
+    "height": 193,
+    "letter": "K"
+  },
+  {
+    "slug": "knowledgeworks",
+    "name": "KnowledgeWorks",
+    "website": "https://knowledgeworks.org/",
+    "logo": "partners/knowledgeworks.webp",
+    "width": 320,
+    "height": 120,
+    "letter": "K"
+  },
+  {
+    "slug": "kruzhok-movement",
+    "name": "Kruzhok Movement",
+    "website": "https://team.kruzhok.org/en/",
+    "logo": "partners/kruzhok-movement.webp",
+    "width": 320,
+    "height": 84,
+    "letter": "K"
+  },
+  {
+    "slug": "larchipel",
+    "name": "L’Archipel",
+    "website": "https://archipel-drome.com/",
+    "logo": "partners/larchipel.webp",
+    "width": 320,
+    "height": 277,
+    "letter": "L"
+  },
+  {
+    "slug": "lecole-dapres",
+    "name": "L’Ecole d’Après",
+    "website": "https://www.lecoledapres.com",
+    "logo": "partners/lecole-dapres.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "L"
+  },
+  {
+    "slug": "lestrade",
+    "name": "L’estrade",
+    "website": "https://estradevaucresson.eu/",
+    "logo": "partners/lestrade.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "L"
+  },
+  {
+    "slug": "lile-des-possibles",
+    "name": "L’Ile des Possibles",
+    "website": "https://bio.link/liledespossibles",
+    "logo": "partners/lile-des-possibles.webp",
+    "width": 200,
+    "height": 73,
+    "letter": "L"
+  },
+  {
+    "slug": "la-fabrique-des-possibles",
+    "name": "La Fabrique des Possibles",
+    "website": "https://lafabriquedespossibles.org/",
+    "logo": "partners/la-fabrique-des-possibles.webp",
+    "width": 320,
+    "height": 226,
+    "letter": "L"
+  },
+  {
+    "slug": "la-fabrique-du-futur",
+    "name": "La Fabrique du Futur",
+    "website": "https://lafabriquedufutur.global",
+    "logo": "partners/la-fabrique-du-futur.webp",
+    "width": 320,
+    "height": 147,
+    "letter": "L"
+  },
+  {
+    "slug": "la-liberte-vocale",
+    "name": "LA LIBERTE VOCALE",
+    "website": "https://www.lalibertevocale.fr/",
+    "logo": "partners/la-liberte-vocale.webp",
+    "width": 320,
+    "height": 201,
+    "letter": "L"
+  },
+  {
+    "slug": "la-maison-de-la-conversation",
+    "name": "La maison de la Conversation",
+    "website": "https://maisondelaconversation.org",
+    "logo": "partners/la-maison-de-la-conversation.webp",
+    "width": 200,
+    "height": 117,
+    "letter": "L"
+  },
+  {
+    "slug": "la-maison-du-zero-dechet",
+    "name": "La Maison du Zéro Déchet",
+    "website": "https://lamaisonduzerodechet.org/",
+    "logo": "partners/la-maison-du-zero-dechet.webp",
+    "width": 154,
+    "height": 200,
+    "letter": "L"
+  },
+  {
+    "slug": "la-pam",
+    "name": "La PAM",
+    "website": "https://www.lapambrest.fr/",
+    "logo": "partners/la-pam.webp",
+    "width": 320,
+    "height": 260,
+    "letter": "L"
+  },
+  {
+    "slug": "la-plateforme",
+    "name": "La Plateforme",
+    "website": "https://laplateforme.io/",
+    "logo": "partners/la-plateforme.webp",
+    "width": 320,
+    "height": 75,
+    "letter": "L"
+  },
+  {
+    "slug": "la-rochelle-universite",
+    "name": "La Rochelle Université",
+    "website": "https://www.univ-larochelle.fr/",
+    "logo": "partners/la-rochelle-universite.webp",
+    "width": 320,
+    "height": 319,
+    "letter": "L"
+  },
+  {
+    "slug": "labsorbonne-cardie",
+    "name": "Lab’Sorbonne cardie",
+    "website": "https://www.ac-paris.fr/lab-sorbonne-cardie-123073",
+    "logo": "partners/labsorbonne-cardie.webp",
+    "width": 300,
+    "height": 124,
+    "letter": "L"
+  },
+  {
+    "slug": "labo-des-histoires",
+    "name": "Labo des Histoires",
+    "website": "https://labodeshistoires.com/",
+    "logo": "partners/labo-des-histoires.webp",
+    "width": 320,
+    "height": 299,
+    "letter": "L"
+  },
+  {
+    "slug": "labxchange",
+    "name": "LabXchange",
+    "website": "https://www.labxchange.org/",
+    "logo": "partners/labxchange.webp",
+    "width": 318,
+    "height": 159,
+    "letter": "L"
+  },
+  {
+    "slug": "lce-cameroon",
+    "name": "LCE Cameroon",
+    "website": "https://www.lce-cameroon.org/",
+    "logo": "partners/lce-cameroon.webp",
+    "width": 320,
+    "height": 71,
+    "letter": "L"
+  },
+  {
+    "slug": "le-47",
+    "name": "Le 47",
+    "website": "https://opencollective.com/le-47",
+    "logo": "partners/le-47.webp",
+    "width": 164,
+    "height": 153,
+    "letter": "L"
+  },
+  {
+    "slug": "le-bonheur-a-l-ecole",
+    "name": "Le Bonheur à l’ Ecole",
+    "website": "https://lebonheuralecole.org/",
+    "logo": "partners/le-bonheur-a-l-ecole.webp",
+    "width": 200,
+    "height": 84,
+    "letter": "L"
+  },
+  {
+    "slug": "le-bruit-qui-court",
+    "name": "Le Bruit Qui Court",
+    "website": "https://www.le-bruit-qui-court.fr/le-collectif",
+    "logo": "partners/le-bruit-qui-court.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "L"
+  },
+  {
+    "slug": "le-centvingtsept-by-pixelis",
+    "name": "Le centvingtsept by Pixelis",
+    "website": "https://centvingtsept.pixelis.com/",
+    "logo": "partners/le-centvingtsept-by-pixelis.webp",
+    "width": 200,
+    "height": 63,
+    "letter": "L"
+  },
+  {
+    "slug": "la-kle",
+    "name": "Le Komunikado",
+    "website": "https://komunikado.jimdosite.com/",
+    "logo": "partners/la-kle.webp",
+    "width": 320,
+    "height": 82,
+    "letter": "L"
+  },
+  {
+    "slug": "le-vaisseau",
+    "name": "Le Vaisseau",
+    "website": "https://www.levaisseau.com/",
+    "logo": "partners/le-vaisseau.webp",
+    "width": 320,
+    "height": 91,
+    "letter": "L"
+  },
+  {
+    "slug": "league-of-professional-women",
+    "name": "League of Professional Women",
+    "website": "https://communitylpw.wixsite.com/publish",
+    "logo": "partners/league-of-professional-women.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "L"
+  },
+  {
+    "slug": "learning-by-helping",
+    "name": "Learning by Helping",
+    "website": "https://learningbyhelping.com/",
+    "logo": "partners/learning-by-helping.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "L"
+  },
+  {
+    "slug": "learning-creates-australia",
+    "name": "Learning Creates Australia",
+    "website": "https://Learningcreates.org.au",
+    "logo": "partners/learning-creates-australia.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "L"
+  },
+  {
+    "slug": "learning-development-institute",
+    "name": "Learning Development Institute",
+    "website": "https://www.learndev.org",
+    "logo": "partners/learning-development-institute.webp",
+    "width": 225,
+    "height": 199,
+    "letter": "L"
+  },
+  {
+    "slug": "learning-median",
+    "name": "Learning Median",
+    "website": "https://learningmedian.com",
+    "logo": "partners/learning-median.webp",
+    "width": 320,
+    "height": 310,
+    "letter": "L"
+  },
+  {
+    "slug": "learningplanet",
+    "name": "Learning Planet Alliance",
+    "website": "https://www.learning-planet.org/",
+    "logo": "partners/learningplanet.webp",
+    "width": 200,
+    "height": 84,
+    "letter": "L"
+  },
+  {
+    "slug": "learning-planet-institute",
+    "name": "Learning Planet Institute",
+    "website": "https://learningplanetinstitute.org/en",
+    "logo": "partners/learning-planet-institute.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "L"
+  },
+  {
+    "slug": "learning-show",
+    "name": "Learning Show",
+    "website": "https://www.learning-show.com",
+    "logo": "partners/learning-show.webp",
+    "width": 320,
+    "height": 91,
+    "letter": "L"
+  },
+  {
+    "slug": "lecturers-without-borders",
+    "name": "Lecturers without Borders",
+    "website": "https://lewibo.org/",
+    "logo": "partners/lecturers-without-borders.webp",
+    "width": 320,
+    "height": 100,
+    "letter": "L"
+  },
+  {
+    "slug": "leonardo-isast",
+    "name": "Leonardo/ISAST",
+    "website": "https://www.leonardo.info",
+    "logo": "partners/leonardo-isast.webp",
+    "width": 320,
+    "height": 89,
+    "letter": "L"
+  },
+  {
+    "slug": "les-ateliers-du-vivant",
+    "name": "Les Ateliers du Vivant",
+    "website": "https://www.les-ateliers-du-vivant.com/",
+    "logo": "partners/les-ateliers-du-vivant.webp",
+    "width": 320,
+    "height": 158,
+    "letter": "L"
+  },
+  {
+    "slug": "les-augures",
+    "name": "Les Augures",
+    "website": "https://www.lesaugures.com",
+    "logo": "partners/les-augures.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "L"
+  },
+  {
+    "slug": "les-bulles-de-dialogue",
+    "name": "Les Bulles de dialogue",
+    "website": "https://lesbullesdedialogue.org/",
+    "logo": "partners/les-bulles-de-dialogue.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "L"
+  },
+  {
+    "slug": "les-canaux",
+    "name": "LES CANAUX",
+    "website": "https://lescanaux.com/",
+    "logo": "partners/les-canaux.webp",
+    "width": 320,
+    "height": 75,
+    "letter": "L"
+  },
+  {
+    "slug": "les-savanturiers",
+    "name": "Les Savanturiers",
+    "website": "https://les-savanturiers.cri-paris.org/",
+    "logo": "partners/les-savanturiers.webp",
+    "width": 320,
+    "height": 132,
+    "letter": "L"
+  },
+  {
+    "slug": "lets-learn-and-east-side-institute",
+    "name": "Let’s Learn! and East Side Institute",
+    "website": "https://eastsideinstitute.org/lets-learn/",
+    "logo": "partners/lets-learn-and-east-side-institute.webp",
+    "width": 300,
+    "height": 273,
+    "letter": "L"
+  },
+  {
+    "slug": "life-project-4-youth-alliance",
+    "name": "Life Project 4 Youth Alliance",
+    "website": "https://www.lp4y.org/",
+    "logo": "partners/life-project-4-youth-alliance.webp",
+    "width": 320,
+    "height": 275,
+    "letter": "L"
+  },
+  {
+    "slug": "lifebloom",
+    "name": "LiFEbloom",
+    "website": "https://www.lifebloomfoundation.org",
+    "logo": "partners/lifebloom.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "L"
+  },
+  {
+    "slug": "lifelong-learning-platform",
+    "name": "Lifelong Learning Platform",
+    "website": "https://lllplatform.eu/",
+    "logo": "partners/lifelong-learning-platform.webp",
+    "width": 320,
+    "height": 112,
+    "letter": "L"
+  },
+  {
+    "slug": "liid-future-lab",
+    "name": "LIID Future Lab",
+    "website": "https://liid.fr/?lang=en",
+    "logo": "partners/liid-future-lab.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "L"
+  },
+  {
+    "slug": "linka",
+    "name": "Linka",
+    "website": "https://linka.eco/",
+    "logo": "partners/linka.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "L"
+  },
+  {
+    "slug": "loop-center-inc",
+    "name": "LO*OP Center, Inc.",
+    "website": "https://loopcenter.org/",
+    "logo": "partners/loop-center-inc.webp",
+    "width": 310,
+    "height": 169,
+    "letter": "L"
+  },
+  {
+    "slug": "ludofablab",
+    "name": "LudoFabLab",
+    "website": "https://www.linkedin.com/company/ludofablab",
+    "logo": "partners/ludofablab.webp",
+    "width": 200,
+    "height": 193,
+    "letter": "L"
+  },
+  {
+    "slug": "ma-petite-planete",
+    "name": "Ma Petite Planète",
+    "website": "https://mapetiteplanete.org/",
+    "logo": "partners/ma-petite-planete.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "M"
+  },
+  {
+    "slug": "mahalo-voyages",
+    "name": "Mahalo Voyages",
+    "website": "https://www.mahalovoyage.com",
+    "logo": "partners/mahalo-voyages.webp",
+    "width": 320,
+    "height": 204,
+    "letter": "M"
+  },
+  {
+    "slug": "maif",
+    "name": "MAIF",
+    "website": "https://www.maif.fr",
+    "logo": "partners/maif.webp",
+    "width": 320,
+    "height": 251,
+    "letter": "M"
+  },
+  {
+    "slug": "maison-de-lapprendre-lyon",
+    "name": "Maison de l’Apprendre, Lyon",
+    "website": "https://www.maisondelapprendre.org/",
+    "logo": "partners/maison-de-lapprendre-lyon.webp",
+    "width": 320,
+    "height": 305,
+    "letter": "M"
+  },
+  {
+    "slug": "major-money",
+    "name": "Major Money",
+    "website": "https://www.major-money.org/",
+    "logo": "partners/major-money.webp",
+    "width": 320,
+    "height": 355,
+    "letter": "M"
+  },
+  {
+    "slug": "makers-asylum",
+    "name": "Maker’s Asylum",
+    "website": "http://www.makersasylum.com/",
+    "logo": "partners/makers-asylum.webp",
+    "width": 320,
+    "height": 154,
+    "letter": "M"
+  },
+  {
+    "slug": "makersplace",
+    "name": "MakersPlace",
+    "website": "https://makersplacegh.com/",
+    "logo": "partners/makersplace.webp",
+    "width": 320,
+    "height": 123,
+    "letter": "M"
+  },
+  {
+    "slug": "maria-schools",
+    "name": "Maria Schools",
+    "website": "https://www.mariaschools.com",
+    "logo": "partners/maria-schools.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "M"
+  },
+  {
+    "slug": "masterpeace",
+    "name": "MasterPeace",
+    "website": "https://masterpeace.org/",
+    "logo": "partners/masterpeace.webp",
+    "width": 320,
+    "height": 298,
+    "letter": "M"
+  },
+  {
+    "slug": "mat-et-merveilles",
+    "name": "Mat et merveilles",
+    "website": "https://www.facebook.com/people/Mat-Merveilles/61555809123654/?_rdr",
+    "logo": "partners/mat-et-merveilles.webp",
+    "width": 200,
+    "height": 163,
+    "letter": "M"
+  },
+  {
+    "slug": "mentally-aware-nigeria-initiative-mani",
+    "name": "Mentally Aware Nigeria Initiative (MANI)",
+    "website": "https://www.mhinnovation.net/organisations/mentally-aware-nigeria-initiative-mani",
+    "logo": "partners/mentally-aware-nigeria-initiative-mani.webp",
+    "width": 320,
+    "height": 226,
+    "letter": "M"
+  },
+  {
+    "slug": "milan-presse",
+    "name": "MILAN Presse",
+    "website": "https://milan-jeunesse.com/",
+    "logo": "partners/milan-presse.webp",
+    "width": 177,
+    "height": 177,
+    "letter": "M"
+  },
+  {
+    "slug": "ministere-de-leducation-nationale-et-de-la-jeunesse",
+    "name": "Ministère de l’Éducation Nationale et de la Jeunesse",
+    "website": "https://www.education.gouv.fr/",
+    "logo": "partners/ministere-de-leducation-nationale-et-de-la-jeunesse.webp",
+    "width": 320,
+    "height": 251,
+    "letter": "M"
+  },
+  {
+    "slug": "mission-laique-francaise",
+    "name": "Mission Laïque Française",
+    "website": "https://www.mlfmonde.org/",
+    "logo": "partners/mission-laique-francaise.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "M"
+  },
+  {
+    "slug": "mon-quotidien",
+    "name": "Mon Quotidien",
+    "website": "https://monquotidien.playbacpresse.fr/",
+    "logo": "partners/mon-quotidien.webp",
+    "width": 320,
+    "height": 100,
+    "letter": "M"
+  },
+  {
+    "slug": "muni-public-school",
+    "name": "Muni Public School",
+    "website": "https://www.munipublicschool.org/",
+    "logo": "partners/muni-public-school.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "M"
+  },
+  {
+    "slug": "murmurations",
+    "name": "Murmurations",
+    "website": "https://murmurations.me/",
+    "logo": "partners/murmurations.webp",
+    "width": 200,
+    "height": 127,
+    "letter": "M"
+  },
+  {
+    "slug": "my-life-my-education",
+    "name": "My Life, My Education",
+    "website": "https://www.facebook.com/MyLifeMyEducation/?locale=sv_SE",
+    "logo": "partners/my-life-my-education.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "M"
+  },
+  {
+    "slug": "national-institute-of-education-singapore",
+    "name": "National Institute of Education, Singapore",
+    "website": "https://www.nie.edu.sg",
+    "logo": "partners/national-institute-of-education-singapore.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "N"
+  },
+  {
+    "slug": "nbe-editions",
+    "name": "NBE Editions",
+    "website": "https://www.grandprixlitteraire.fr/",
+    "logo": "partners/nbe-editions.webp",
+    "width": 244,
+    "height": 35,
+    "letter": "N"
+  },
+  {
+    "slug": "netalys",
+    "name": "Netalys",
+    "website": "https://www.netalys.fr/",
+    "logo": "partners/netalys.webp",
+    "width": 320,
+    "height": 97,
+    "letter": "N"
+  },
+  {
+    "slug": "netedu-project",
+    "name": "NetEdu Project",
+    "website": "https://www.neteduproject.org/",
+    "logo": "partners/netedu-project.webp",
+    "width": 320,
+    "height": 143,
+    "letter": "N"
+  },
+  {
+    "slug": "netzwerk-spiel-kultur-prenzlauer-berg",
+    "name": "Netzwerk Spiel/Kultur Prenzlauer Berg",
+    "website": "https://www.netzwerkspielkultur.de/",
+    "logo": "partners/netzwerk-spiel-kultur-prenzlauer-berg.webp",
+    "width": 225,
+    "height": 225,
+    "letter": "N"
+  },
+  {
+    "slug": "news-decoder",
+    "name": "News Decoder",
+    "website": "https://news-decoder.com/",
+    "logo": "partners/news-decoder.webp",
+    "width": 320,
+    "height": 86,
+    "letter": "N"
+  },
+  {
+    "slug": "nextgennav",
+    "name": "NextGenNav",
+    "website": "https://nextgennav.org/",
+    "logo": "partners/nextgennav.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "N"
+  },
+  {
+    "slug": "nile-girls-forum",
+    "name": "Nile Girls Forum",
+    "website": "https://www.nilegirlsforum.org/",
+    "logo": "partners/nile-girls-forum.webp",
+    "width": 257,
+    "height": 196,
+    "letter": "N"
+  },
+  {
+    "slug": "nordic-bildung",
+    "name": "Nordic Bildung",
+    "website": "https://nordicbildung.org/",
+    "logo": "partners/nordic-bildung.webp",
+    "width": 320,
+    "height": 488,
+    "letter": "N"
+  },
+  {
+    "slug": "north-star-self-directed-learning-for-teens-inc",
+    "name": "North Star: Self-Directed Learning for Teens, Inc.",
+    "website": "https://northstarteens.org",
+    "logo": "partners/north-star-self-directed-learning-for-teens-inc.webp",
+    "width": 196,
+    "height": 196,
+    "letter": "N"
+  },
+  {
+    "slug": "nos-vies-bas-carbone",
+    "name": "Nos vies bas carbone",
+    "website": "https://www.nosviesbascarbone.org/",
+    "logo": "partners/nos-vies-bas-carbone.webp",
+    "width": 180,
+    "height": 50,
+    "letter": "N"
+  },
+  {
+    "slug": "noscophilia",
+    "name": "Noscophilia",
+    "website": "https://linktr.ee/noscophilia",
+    "logo": "partners/noscophilia.webp",
+    "width": 320,
+    "height": 236,
+    "letter": "N"
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "website": "https://www.notion.com/",
+    "logo": "partners/notion.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "N"
+  },
+  {
+    "slug": "notre-casa",
+    "name": "Notre Casa",
+    "website": "https://notrecasa.org",
+    "logo": "partners/notre-casa.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "N"
+  },
+  {
+    "slug": "nourish-initiative",
+    "name": "NOURISH Initiative",
+    "logo": "partners/nourish-initiative.webp",
+    "width": 320,
+    "height": 147,
+    "letter": "N"
+  },
+  {
+    "slug": "nous-sommes-vivants",
+    "name": "nous sommes vivants",
+    "website": "https://noussommesvivants.co/",
+    "logo": "partners/nous-sommes-vivants.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "N"
+  },
+  {
+    "slug": "nouvelle-conscience-podcast",
+    "name": "Nouvelle Conscience Podcast",
+    "website": "https://tepcare.hypotheses.org",
+    "logo": "partners/nouvelle-conscience-podcast.webp",
+    "width": 200,
+    "height": 141,
+    "letter": "N"
+  },
+  {
+    "slug": "oasis-fontmarie",
+    "name": "Oasis Fontmarie",
+    "website": "https://www.oasisfontmarie.fr/",
+    "logo": "partners/oasis-fontmarie.webp",
+    "width": 320,
+    "height": 111,
+    "letter": "O"
+  },
+  {
+    "slug": "oecd",
+    "name": "OECD",
+    "website": "https://www.oecd.org",
+    "logo": "partners/oecd.webp",
+    "width": 320,
+    "height": 331,
+    "letter": "O"
+  },
+  {
+    "slug": "office-for-climate-education",
+    "name": "Office for Climate Education",
+    "website": "https://www.oce.global/",
+    "logo": "partners/office-for-climate-education.webp",
+    "width": 300,
+    "height": 127,
+    "letter": "O"
+  },
+  {
+    "slug": "oikos-international",
+    "name": "oikos International",
+    "website": "https://oikos-international.org/",
+    "logo": "partners/oikos-international.webp",
+    "width": 320,
+    "height": 141,
+    "letter": "O"
+  },
+  {
+    "slug": "olecio",
+    "name": "Olecio",
+    "website": "https://olecio.com/",
+    "logo": "partners/olecio.webp",
+    "width": 320,
+    "height": 125,
+    "letter": "O"
+  },
+  {
+    "slug": "one-resilient-earth",
+    "name": "One Resilient Earth",
+    "website": "https://oneresilientearth.org/",
+    "logo": "partners/one-resilient-earth.webp",
+    "width": 320,
+    "height": 248,
+    "letter": "O"
+  },
+  {
+    "slug": "onisep",
+    "name": "ONISEP",
+    "website": "https://www.onisep.fr/ ",
+    "logo": "partners/onisep.webp",
+    "width": 320,
+    "height": 68,
+    "letter": "O"
+  },
+  {
+    "slug": "opepa-organizacion-para-la-educacion-y-proteccion-ambiental",
+    "name": "OpEPA – Organización para la Educación y Protección Ambiental",
+    "website": "https://opepa.org",
+    "logo": "partners/opepa-organizacion-para-la-educacion-y-proteccion-ambiental.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "O"
+  },
+  {
+    "slug": "parentalite",
+    "name": "Parentalité +",
+    "website": "https://parentaliteplus.fr",
+    "logo": "partners/parentalite.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "P"
+  },
+  {
+    "slug": "parents-international",
+    "name": "Parents International",
+    "website": "https://parentsinternational.org/",
+    "logo": "partners/parents-international.webp",
+    "width": 320,
+    "height": 454,
+    "letter": "P"
+  },
+  {
+    "slug": "pause-calin",
+    "name": "PAUSE-CALIN",
+    "website": "https://pausecalin.fr/",
+    "logo": "partners/pause-calin.webp",
+    "width": 60,
+    "height": 60,
+    "letter": "P"
+  },
+  {
+    "slug": "peri-bumi",
+    "name": "PERI BUMI",
+    "website": "https://peribumi.id/about-us/who-we-are",
+    "logo": "partners/peri-bumi.webp",
+    "width": 320,
+    "height": 226,
+    "letter": "P"
+  },
+  {
+    "slug": "playbac",
+    "name": "PlayBac",
+    "website": "https://www.playbacpresse.fr/",
+    "logo": "partners/playbac.webp",
+    "width": 320,
+    "height": 75,
+    "letter": "P"
+  },
+  {
+    "slug": "ponsamaro",
+    "name": "Ponsamaro",
+    "website": "https://ponsamaro.substack.com",
+    "logo": "partners/ponsamaro.webp",
+    "width": 320,
+    "height": 88,
+    "letter": "P"
+  },
+  {
+    "slug": "private-elementary-school-of-democratic-education-kosice-slovakia",
+    "name": "Private Elementary School of Democratic Education (Kosice, Slovakia)",
+    "website": "https://slobodnaskola.sk/en/home/",
+    "logo": "partners/private-elementary-school-of-democratic-education-kosice-slovakia.webp",
+    "width": 320,
+    "height": 127,
+    "letter": "P"
+  },
+  {
+    "slug": "pro-bono-lab",
+    "name": "Pro Bono Lab",
+    "logo": "partners/pro-bono-lab.webp",
+    "width": 200,
+    "height": 141,
+    "letter": "P"
+  },
+  {
+    "slug": "professors-without-borders",
+    "name": "Professors Without Borders",
+    "website": "https://prowibo.org/",
+    "logo": "partners/professors-without-borders.webp",
+    "width": 60,
+    "height": 60,
+    "letter": "P"
+  },
+  {
+    "slug": "project-unschooling",
+    "name": "Project Unschooling",
+    "website": "https://projectunschooling.com/",
+    "logo": "partners/project-unschooling.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "P"
+  },
+  {
+    "slug": "projet-moteur",
+    "name": "Projet Moteur",
+    "website": "https://www.leprojetmoteur.org",
+    "logo": "partners/projet-moteur.webp",
+    "width": 320,
+    "height": 165,
+    "letter": "P"
+  },
+  {
+    "slug": "quality-education-for-sustainable-social-transformation",
+    "name": "Quality Education for Sustainable Social Transformation",
+    "website": "https://quest-eu.org/",
+    "logo": "partners/quality-education-for-sustainable-social-transformation.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "Q"
+  },
+  {
+    "slug": "quietam-studio-psi",
+    "name": "QUIETAM STUDIO / PSI",
+    "website": "https://www.maia-education.fr/",
+    "logo": "partners/quietam-studio-psi.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "Q"
+  },
+  {
+    "slug": "r-a-d-initiative",
+    "name": "R.A.D. Initiative",
+    "website": "https://www.radinitiative.org/",
+    "logo": "partners/r-a-d-initiative.webp",
+    "width": 320,
+    "height": 286,
+    "letter": "R"
+  },
+  {
+    "slug": "radical-learning",
+    "name": "Radical Learning",
+    "website": "https://www.radical-learning.org/",
+    "logo": "partners/radical-learning.webp",
+    "width": 320,
+    "height": 51,
+    "letter": "R"
+  },
+  {
+    "slug": "rainbow-chimney-educational-aids",
+    "name": "Rainbow Chimney Educational Aids",
+    "website": "https://rainbowchimney.ae/",
+    "logo": "partners/rainbow-chimney-educational-aids.webp",
+    "width": 320,
+    "height": 309,
+    "letter": "R"
+  },
+  {
+    "slug": "read-foundation",
+    "name": "READ Foundation",
+    "website": "https://readfoundation.org.uk/",
+    "logo": "partners/read-foundation.webp",
+    "width": 320,
+    "height": 68,
+    "letter": "R"
+  },
+  {
+    "slug": "real-school-budapest",
+    "name": "Real School Budapest",
+    "website": "https://www.realschool.eu/?gclid=Cj0KCQiA0fr_BRDaARIsAABw4Etf_B3Y_tm9flbSAqz7mvKo6zKasapmkXnda7GvLh9x750bvskX9YgaAly_EALw_wcB",
+    "logo": "partners/real-school-budapest.webp",
+    "width": 225,
+    "height": 225,
+    "letter": "R"
+  },
+  {
+    "slug": "reboot-the-future",
+    "name": "Reboot the Future",
+    "website": "https://www.rebootthefuture.org/",
+    "logo": "partners/reboot-the-future.webp",
+    "width": 320,
+    "height": 212,
+    "letter": "R"
+  },
+  {
+    "slug": "reconnaitre-open-recognition-alliance",
+    "name": "Reconnaître – Open Recognition Alliance",
+    "website": "https://reconnaitre.openrecognition.org",
+    "logo": "partners/reconnaitre-open-recognition-alliance.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "R"
+  },
+  {
+    "slug": "reflexe-mediation",
+    "name": "Réflexe Médiation",
+    "website": "https://www.guillaumecoudray.fr/",
+    "logo": "partners/reflexe-mediation.webp",
+    "width": 320,
+    "height": 193,
+    "letter": "R"
+  },
+  {
+    "slug": "regroupement-des-professeur-e-s-duniversites-dhaiti-coordination-departementale-de-louest-repuh-ouest",
+    "name": "REGROUPEMENT DES PROFESSEUR.E.S D’UNIVERSITES D’HAITI – COORDINATION DEPARTEMENTALE DE L’OUEST (REPUH-OUEST)",
+    "website": "https://www.repuhaiti.org/",
+    "logo": "partners/regroupement-des-professeur-e-s-duniversites-dhaiti-coordination-departementale-de-louest-repuh-ouest.webp",
+    "width": 320,
+    "height": 259,
+    "letter": "R"
+  },
+  {
+    "slug": "remake-learning",
+    "name": "Remake Learning",
+    "website": "https://remakelearning.org/ ",
+    "logo": "partners/remake-learning.webp",
+    "width": 320,
+    "height": 108,
+    "letter": "R"
+  },
+  {
+    "slug": "renaissance-ecologique",
+    "name": "Renaissance Ecologique",
+    "website": "https://renaissanceecologique.org/",
+    "logo": "partners/renaissance-ecologique.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "R"
+  },
+  {
+    "slug": "res-publica",
+    "name": "Res Publica",
+    "website": "https://www.respublica-conseil.fr/",
+    "logo": "partners/res-publica.webp",
+    "width": 320,
+    "height": 94,
+    "letter": "R"
+  },
+  {
+    "slug": "right-centric-education-network",
+    "name": "Right-Centric Education Network",
+    "website": "https://rights-centric.education/",
+    "logo": "partners/right-centric-education-network.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "R"
+  },
+  {
+    "slug": "rising-academies",
+    "name": "Rising Academies",
+    "website": "https://www.risingacademies.com/",
+    "logo": "partners/rising-academies.webp",
+    "width": 320,
+    "height": 234,
+    "letter": "R"
+  },
+  {
+    "slug": "riverstone-village",
+    "name": "Riverstone Village",
+    "website": "https://riverstonevillage.org.za/",
+    "logo": "partners/riverstone-village.webp",
+    "width": 287,
+    "height": 176,
+    "letter": "R"
+  },
+  {
+    "slug": "salzburg-global-seminar",
+    "name": "Salzburg Global Seminar",
+    "website": "https://www.salzburgglobal.org/",
+    "logo": "partners/salzburg-global-seminar.webp",
+    "width": 320,
+    "height": 361,
+    "letter": "S"
+  },
+  {
+    "slug": "samavira-meditation",
+    "name": "Samavira Meditation",
+    "website": "https://samavirameditation.com/signup",
+    "logo": "partners/samavira-meditation.webp",
+    "width": 200,
+    "height": 47,
+    "letter": "S"
+  },
+  {
+    "slug": "sarl-visions-solutions-rh",
+    "name": "sarl visions & solutions RH",
+    "website": "https://www.visions-solutions.fr/",
+    "logo": "partners/sarl-visions-solutions-rh.webp",
+    "width": 320,
+    "height": 144,
+    "letter": "S"
+  },
+  {
+    "slug": "satgana",
+    "name": "Satgana",
+    "website": "https://satgana.com/",
+    "logo": "partners/satgana.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "S"
+  },
+  {
+    "slug": "saviesa-think-tank",
+    "name": "Saviesa Think Tank",
+    "logo": "partners/saviesa-think-tank.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "S"
+  },
+  {
+    "slug": "scaling4good",
+    "name": "scaling4good",
+    "website": "https://scaling4good.com/",
+    "logo": "partners/scaling4good.webp",
+    "width": 320,
+    "height": 178,
+    "letter": "S"
+  },
+  {
+    "slug": "sceaux-smart",
+    "name": "Sceaux Smart",
+    "website": "https://www.sceauxsmart.com",
+    "logo": "partners/sceaux-smart.webp",
+    "width": 320,
+    "height": 148,
+    "letter": "S"
+  },
+  {
+    "slug": "scholavie",
+    "name": "ScholaVie",
+    "website": "https://scholavie.fr/",
+    "logo": "partners/scholavie.webp",
+    "width": 320,
+    "height": 101,
+    "letter": "S"
+  },
+  {
+    "slug": "school-of-the-future-international-academy-sofia",
+    "name": "School of the Future International Academy (SoFIA)",
+    "website": "https://sofianet.uk/",
+    "logo": "partners/school-of-the-future-international-academy-sofia.webp",
+    "width": 320,
+    "height": 113,
+    "letter": "S"
+  },
+  {
+    "slug": "school-without-frontiers",
+    "name": "sChOoL????‍♀️withOuT frOntiers⛵",
+    "website": "https://schoolwithoutfrontiers.org/",
+    "logo": "partners/school-without-frontiers.webp",
+    "width": 320,
+    "height": 374,
+    "letter": "S"
+  },
+  {
+    "slug": "sciado-partenaires",
+    "name": "SCIADO PARTENAIRES",
+    "logo": "partners/sciado-partenaires.webp",
+    "width": 200,
+    "height": 113,
+    "letter": "S"
+  },
+  {
+    "slug": "scienceathome-center-for-hybrid-intelligence-aarhus-university",
+    "name": "ScienceAtHome, Center for Hybrid Intelligence, Aarhus University",
+    "website": "https://www.scienceathome.org/",
+    "logo": "partners/scienceathome-center-for-hybrid-intelligence-aarhus-university.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "S"
+  },
+  {
+    "slug": "sdg-solution-space",
+    "name": "SDG Solution Space",
+    "website": "https://sdgsolutionspace.org/",
+    "logo": "partners/sdg-solution-space.webp",
+    "width": 320,
+    "height": 140,
+    "letter": "S"
+  },
+  {
+    "slug": "sdg4-youth-student-network",
+    "name": "SDG4 Youth & Student Network",
+    "website": "https://www.unesco.org/sdg4education2030/en/global-education-cooperation-mechanism-platforms/sdg4-youth-network",
+    "logo": "partners/sdg4-youth-student-network.webp",
+    "width": 200,
+    "height": 50,
+    "letter": "S"
+  },
+  {
+    "slug": "seed-sustainability-and-environmental-education",
+    "name": "SEEd (Sustainability and Environmental Education)",
+    "website": "https://se-ed.co.uk/",
+    "logo": "partners/seed-sustainability-and-environmental-education.webp",
+    "width": 320,
+    "height": 83,
+    "letter": "S"
+  },
+  {
+    "slug": "seed-care-support-foundation",
+    "name": "SEED Care & Support Foundation",
+    "website": "https://seedfoundation.ng/",
+    "logo": "partners/seed-care-support-foundation.webp",
+    "width": 320,
+    "height": 88,
+    "letter": "S"
+  },
+  {
+    "slug": "siaya-community-library",
+    "name": "Siaya Community Library",
+    "website": "https://www.siayacommunitylibrary.org/",
+    "logo": "partners/siaya-community-library.webp",
+    "width": 247,
+    "height": 320,
+    "letter": "S"
+  },
+  {
+    "slug": "skills-builder-partnership",
+    "name": "Skills Builder Partnership",
+    "website": "https://www.skillsbuilder.org/",
+    "logo": "partners/skills-builder-partnership.webp",
+    "width": 320,
+    "height": 94,
+    "letter": "S"
+  },
+  {
+    "slug": "smart-investment-institute",
+    "name": "SMART Investment Institute",
+    "website": "https://smartinvestmentinstitute.org",
+    "logo": "partners/smart-investment-institute.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "S"
+  },
+  {
+    "slug": "smile-squad",
+    "name": "Smile Squad",
+    "website": "https://www.smilesquad.info/",
+    "logo": "partners/smile-squad.webp",
+    "width": 320,
+    "height": 150,
+    "letter": "S"
+  },
+  {
+    "slug": "snowball-effect",
+    "name": "Snowball Effect",
+    "website": "https://www.snowball-effect.org/",
+    "logo": "partners/snowball-effect.webp",
+    "width": 237,
+    "height": 144,
+    "letter": "S"
+  },
+  {
+    "slug": "soconomy-2",
+    "name": "Soconomy",
+    "website": "https://socionomy.net/",
+    "logo": "partners/soconomy-2.webp",
+    "width": 60,
+    "height": 60,
+    "letter": "S"
+  },
+  {
+    "slug": "solair",
+    "name": "SolAir",
+    "website": "https://www.solairlab.org/",
+    "logo": "partners/solair.webp",
+    "width": 200,
+    "height": 89,
+    "letter": "S"
+  },
+  {
+    "slug": "square-peg",
+    "name": "Square Peg",
+    "website": "https://www.teamsquarepeg.co.uk/",
+    "logo": "partners/square-peg.webp",
+    "width": 320,
+    "height": 213,
+    "letter": "S"
+  },
+  {
+    "slug": "st-josephs-junior-school-kimilili",
+    "name": "St. Joseph’s Junior School – KImilili",
+    "logo": "partners/st-josephs-junior-school-kimilili.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "S"
+  },
+  {
+    "slug": "standard-chartered-foundation",
+    "name": "Standard Chartered Foundation",
+    "website": "https://www.sc.com/en/sustainability/investing-in-communities/scfoundation/",
+    "logo": "partners/standard-chartered-foundation.webp",
+    "width": 320,
+    "height": 298,
+    "letter": "S"
+  },
+  {
+    "slug": "start-your-spark",
+    "name": "START your SPARK",
+    "website": "https://www.linkedin.com/in/simbali/",
+    "logo": "partners/start-your-spark.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "S"
+  },
+  {
+    "slug": "stem-club-project-africa",
+    "name": "STEM Club Project Africa",
+    "website": "https://www.linkedin.com/company/stemclubafrica/",
+    "logo": "partners/stem-club-project-africa.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "S"
+  },
+  {
+    "slug": "stephanie-sewell-education",
+    "name": "Stephanie Sewell Education",
+    "website": "http://www.stephaniesewell.ca",
+    "logo": "partners/stephanie-sewell-education.webp",
+    "width": 320,
+    "height": 137,
+    "letter": "S"
+  },
+  {
+    "slug": "stride-learning-association",
+    "name": "STRIDE Learning Association",
+    "website": "https://stride-learning.ch/",
+    "logo": "partners/stride-learning-association.webp",
+    "width": 320,
+    "height": 122,
+    "letter": "S"
+  },
+  {
+    "slug": "study-hall-educational-foundation-shef",
+    "name": "Study Hall Educational Foundation (SHEF)",
+    "website": "https://www.shef.ngo",
+    "logo": "partners/study-hall-educational-foundation-shef.webp",
+    "width": 184,
+    "height": 71,
+    "letter": "S"
+  },
+  {
+    "slug": "sudbury-international",
+    "name": "Sudbury International",
+    "website": "https://www.sudbury-international.org/",
+    "logo": "partners/sudbury-international.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "S"
+  },
+  {
+    "slug": "superkind-fundraising-c-i-c",
+    "name": "SuperKind Fundraising C.I.C.",
+    "website": "https://www.superkind.org",
+    "logo": "partners/superkind-fundraising-c-i-c.webp",
+    "width": 240,
+    "height": 245,
+    "letter": "S"
+  },
+  {
+    "slug": "sustainable-outreach-strategies",
+    "name": "Sustainable Outreach Strategies",
+    "website": "https://sostogether.wixsite.com/s-o-s",
+    "logo": "partners/sustainable-outreach-strategies.webp",
+    "width": 320,
+    "height": 193,
+    "letter": "S"
+  },
+  {
+    "slug": "sw-arles-2",
+    "name": "SW Arles",
+    "logo": "partners/sw-arles-2.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "S"
+  },
+  {
+    "slug": "synlab",
+    "name": "SynLab",
+    "website": "https://syn-lab.fr/en/",
+    "logo": "partners/synlab.webp",
+    "width": 320,
+    "height": 160,
+    "letter": "S"
+  },
+  {
+    "slug": "tadam",
+    "name": "TADAM",
+    "website": "https://www.tadam-asso.org",
+    "logo": "partners/tadam.webp",
+    "width": 200,
+    "height": 104,
+    "letter": "T"
+  },
+  {
+    "slug": "tamkeen-community-foundation-for-human-development",
+    "name": "Tamkeen Community Foundation for Human Development",
+    "website": "https://tamkeencommunity.org/",
+    "logo": "partners/tamkeen-community-foundation-for-human-development.webp",
+    "width": 320,
+    "height": 146,
+    "letter": "T"
+  },
+  {
+    "slug": "teach-for-afghanistan",
+    "name": "Teach For Afghanistan",
+    "website": "https://catalyst2030.net/organisations/teach-for-afghanistan-tao/",
+    "logo": "partners/teach-for-afghanistan.webp",
+    "width": 320,
+    "height": 354,
+    "letter": "T"
+  },
+  {
+    "slug": "teach-for-bulgaria",
+    "name": "Teach for Bulgaria",
+    "website": "https://zaednovchas.bg/en/",
+    "logo": "partners/teach-for-bulgaria.webp",
+    "width": 320,
+    "height": 171,
+    "letter": "T"
+  },
+  {
+    "slug": "teach-for-portugal",
+    "name": "Teach For Portugal",
+    "website": "https://teachforportugal.org/",
+    "logo": "partners/teach-for-portugal.webp",
+    "width": 320,
+    "height": 247,
+    "letter": "T"
+  },
+  {
+    "slug": "teach-for-somalia",
+    "name": "Teach for Somalia",
+    "website": "https://teachforall.org/network-partners/regions-africa",
+    "logo": "partners/teach-for-somalia.webp",
+    "width": 320,
+    "height": 181,
+    "letter": "T"
+  },
+  {
+    "slug": "teach-the-nation",
+    "name": "Teach the Nation",
+    "website": "https://teachthenation.org/",
+    "logo": "partners/teach-the-nation.webp",
+    "width": 320,
+    "height": 87,
+    "letter": "T"
+  },
+  {
+    "slug": "teachers-network",
+    "name": "Teachers Network",
+    "website": "https://www.ogretmenagi.org/",
+    "logo": "partners/teachers-network.webp",
+    "width": 320,
+    "height": 146,
+    "letter": "T"
+  },
+  {
+    "slug": "team4tech",
+    "name": "Team4Tech",
+    "website": "https://team4tech.org",
+    "logo": "partners/team4tech.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "T"
+  },
+  {
+    "slug": "teamee",
+    "name": "Teamee",
+    "website": "https://fr.linkedin.com/company/teamee",
+    "logo": "partners/teamee.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "T"
+  },
+  {
+    "slug": "techlerator",
+    "name": "Techlerator",
+    "website": "https://techlerator.com",
+    "logo": "partners/techlerator.webp",
+    "width": 320,
+    "height": 69,
+    "letter": "T"
+  },
+  {
+    "slug": "telemaque",
+    "name": "Télémaque",
+    "website": "https://www.telemaque.org/",
+    "logo": "partners/telemaque.webp",
+    "width": 320,
+    "height": 102,
+    "letter": "T"
+  },
+  {
+    "slug": "tem-press",
+    "name": "TEM PRESS",
+    "website": "http://www.tem-press.fr/",
+    "logo": "partners/tem-press.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "T"
+  },
+  {
+    "slug": "10-in-10-complexity-university",
+    "name": "Ten in Ten",
+    "website": "https://www.xinx.co/",
+    "logo": "partners/10-in-10-complexity-university.webp",
+    "width": 320,
+    "height": 168,
+    "letter": "T"
+  },
+  {
+    "slug": "territoire-apprenant",
+    "name": "Territoire Apprenant",
+    "website": "https://territoiresapprenants.fr/",
+    "logo": "partners/territoire-apprenant.webp",
+    "width": 320,
+    "height": 60,
+    "letter": "T"
+  },
+  {
+    "slug": "the-beit-project",
+    "name": "The Beit Project",
+    "website": "https://thebeitproject.org/",
+    "logo": "partners/the-beit-project.webp",
+    "width": 320,
+    "height": 51,
+    "letter": "T"
+  },
+  {
+    "slug": "the-break",
+    "name": "The Break",
+    "website": "https://thebreak-experience.com/",
+    "logo": "partners/the-break.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "T"
+  },
+  {
+    "slug": "the-climate-sociologist",
+    "name": "The Climate Sociologist",
+    "website": "https://www.theclimatesociologist.org/home",
+    "logo": "partners/the-climate-sociologist.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "T"
+  },
+  {
+    "slug": "the-club-of-rome",
+    "name": "The Club of Rome",
+    "website": "https://www.clubofrome.org/",
+    "logo": "partners/the-club-of-rome.webp",
+    "width": 320,
+    "height": 273,
+    "letter": "T"
+  },
+  {
+    "slug": "the-dais",
+    "name": "The Dais",
+    "website": "https://www.thedais.co.in/",
+    "logo": "partners/the-dais.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "T"
+  },
+  {
+    "slug": "the-educators-lab",
+    "name": "The Educators’ Lab",
+    "website": "https://theeducatorslab.com",
+    "logo": "partners/the-educators-lab.webp",
+    "width": 320,
+    "height": 147,
+    "letter": "T"
+  },
+  {
+    "slug": "the-flourish-project",
+    "name": "The Flourish Project",
+    "website": "https://www.flourishproject.net/",
+    "logo": "partners/the-flourish-project.webp",
+    "width": 256,
+    "height": 96,
+    "letter": "T"
+  },
+  {
+    "slug": "the-fresh-look-africa",
+    "name": "The Fresh Look Africa",
+    "website": "https://www.thefreshlookafrica.com",
+    "logo": "partners/the-fresh-look-africa.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "T"
+  },
+  {
+    "slug": "the-liberation-of-education",
+    "name": "The Liberation of Education",
+    "website": "https://liberationofeducation.org/",
+    "logo": "partners/the-liberation-of-education.webp",
+    "width": 200,
+    "height": 134,
+    "letter": "T"
+  },
+  {
+    "slug": "the-london-interdisciplinary-school-lis",
+    "name": "The London Interdisciplinary School (LIS)",
+    "website": "https://www.lis.ac.uk/",
+    "logo": "partners/the-london-interdisciplinary-school-lis.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "T"
+  },
+  {
+    "slug": "the-peace-pad",
+    "name": "The Peace Pad",
+    "website": "https://www.thepeacepad.org/",
+    "logo": "partners/the-peace-pad.webp",
+    "width": 320,
+    "height": 118,
+    "letter": "T"
+  },
+  {
+    "slug": "the-pie-news",
+    "name": "The PIE News",
+    "website": "https://thepienews.com/",
+    "logo": "partners/the-pie-news.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "T"
+  },
+  {
+    "slug": "the-spark-movement",
+    "name": "The Spark Movement",
+    "website": "https://thesparkmovement.com",
+    "logo": "partners/the-spark-movement.webp",
+    "width": 200,
+    "height": 140,
+    "letter": "T"
+  },
+  {
+    "slug": "the-sustainability-institute",
+    "name": "The Sustainability Institute",
+    "website": "https://www.sustainabilityinstitute.net/",
+    "logo": "partners/the-sustainability-institute.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "T"
+  },
+  {
+    "slug": "the-teacher-foundation",
+    "name": "The Teacher Foundation",
+    "website": "https://www.teacherfoundation.org/",
+    "logo": "partners/the-teacher-foundation.webp",
+    "width": 320,
+    "height": 192,
+    "letter": "T"
+  },
+  {
+    "slug": "the-weaving-lab",
+    "name": "The Weaving Lab",
+    "website": "https://weavinglab.org/ ",
+    "logo": "partners/the-weaving-lab.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "T"
+  },
+  {
+    "slug": "the-wellbeing-project",
+    "name": "The Wellbeing Project",
+    "website": "https://wellbeing-project.org/",
+    "logo": "partners/the-wellbeing-project.webp",
+    "width": 320,
+    "height": 169,
+    "letter": "T"
+  },
+  {
+    "slug": "the-youth-cafe",
+    "name": "The Youth Café",
+    "website": "https://www.theyouthcafe.com/",
+    "logo": "partners/the-youth-cafe.webp",
+    "width": 320,
+    "height": 156,
+    "letter": "T"
+  },
+  {
+    "slug": "thelcee",
+    "name": "THELCEE",
+    "website": "https://thelcee.fr/",
+    "logo": "partners/thelcee.webp",
+    "width": 113,
+    "height": 113,
+    "letter": "T"
+  },
+  {
+    "slug": "thinkers-meet-up",
+    "name": "Thinkers Meet Up",
+    "website": "https://www.thinkersmeetup.com",
+    "logo": "partners/thinkers-meet-up.webp",
+    "width": 320,
+    "height": 298,
+    "letter": "T"
+  },
+  {
+    "slug": "ticket-for-change",
+    "name": "Ticket for Change",
+    "website": "https://www.ticketforchange.org/",
+    "logo": "partners/ticket-for-change.webp",
+    "width": 320,
+    "height": 69,
+    "letter": "T"
+  },
+  {
+    "slug": "together-for-earth",
+    "name": "Together For Earth",
+    "website": "https://www.together-for-earth.org/",
+    "logo": "partners/together-for-earth.webp",
+    "width": 320,
+    "height": 109,
+    "letter": "T"
+  },
+  {
+    "slug": "towson-university",
+    "name": "Towson University",
+    "website": "https://www.towson.edu/",
+    "logo": "partners/towson-university.webp",
+    "width": 320,
+    "height": 110,
+    "letter": "T"
+  },
+  {
+    "slug": "tsinghua-university",
+    "name": "Tsinghua University",
+    "website": "https://www.tsinghua.edu.cn/en/index.htm",
+    "logo": "partners/tsinghua-university.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "T"
+  },
+  {
+    "slug": "ugsel",
+    "name": "UGSEL",
+    "website": "https://www.ugsel.org/comite-ugsel-gironde",
+    "logo": "partners/ugsel.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "U"
+  },
+  {
+    "slug": "un-live-museum-for-the-united-nations",
+    "name": "UN Live – Museum for the United Nations",
+    "website": "https://museumfortheun.org",
+    "logo": "partners/un-live-museum-for-the-united-nations.webp",
+    "width": 320,
+    "height": 346,
+    "letter": "U"
+  },
+  {
+    "slug": "un-sustainable-development-solutions-network-sdsn",
+    "name": "UN Sustainable Development Solutions Network (SDSN)",
+    "website": "https://www.unsdsn.org/",
+    "logo": "partners/un-sustainable-development-solutions-network-sdsn.webp",
+    "width": 320,
+    "height": 137,
+    "letter": "U"
+  },
+  {
+    "slug": "unesco",
+    "name": "UNESCO",
+    "website": "https://en.unesco.org/",
+    "logo": "partners/unesco.webp",
+    "width": 320,
+    "height": 214,
+    "letter": "U"
+  },
+  {
+    "slug": "unesco-global-network-of-learning-cities",
+    "name": "UNESCO Global Network of Learning Cities",
+    "website": "https://uil.unesco.org/lifelong-learning/learning-cities",
+    "logo": "partners/unesco-global-network-of-learning-cities.webp",
+    "width": 320,
+    "height": 194,
+    "letter": "U"
+  },
+  {
+    "slug": "uni-vert-haiti",
+    "name": "Uni-Vert Haïti",
+    "website": "https://www.facebook.com/univerthaiti2030",
+    "logo": "partners/uni-vert-haiti.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "U"
+  },
+  {
+    "slug": "unicef",
+    "name": "UNICEF",
+    "website": "https://www.unicef.org/",
+    "logo": "partners/unicef.webp",
+    "width": 320,
+    "height": 171,
+    "letter": "U"
+  },
+  {
+    "slug": "united-arab-emirates-university",
+    "name": "United Arab Emirates University",
+    "website": "https://www.uaeu.ac.ae/en/",
+    "logo": "partners/united-arab-emirates-university.webp",
+    "width": 300,
+    "height": 52,
+    "letter": "U"
+  },
+  {
+    "slug": "united-nations-university-2",
+    "name": "United Nations University",
+    "website": "https://unu.edu/",
+    "logo": "partners/united-nations-university-2.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "U"
+  },
+  {
+    "slug": "united-nations-youth-office",
+    "name": "United Nations Youth Office",
+    "logo": "partners/united-nations-youth-office.webp",
+    "width": 320,
+    "height": 138,
+    "letter": "U"
+  },
+  {
+    "slug": "uniting-for-children-and-youth",
+    "name": "Uniting for Children and Youth",
+    "website": "http://www.ucyottawa.com",
+    "logo": "partners/uniting-for-children-and-youth.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "U"
+  },
+  {
+    "slug": "universidad-nacional-autonoma-de-mexico-unam",
+    "name": "Universidad Nacional Autónoma de México (UNAM)",
+    "website": "https://www.unam.mx/",
+    "logo": "partners/universidad-nacional-autonoma-de-mexico-unam.webp",
+    "width": 320,
+    "height": 286,
+    "letter": "U"
+  },
+  {
+    "slug": "universite-catholique-de-louvain",
+    "name": "Université catholique de Louvain",
+    "website": "https://uclouvain.be/fr/index.html",
+    "logo": "partners/universite-catholique-de-louvain.webp",
+    "width": 320,
+    "height": 74,
+    "letter": "U"
+  },
+  {
+    "slug": "universite-de-geneve",
+    "name": "Université de Genève",
+    "website": "https://www.unige.ch/",
+    "logo": "partners/universite-de-geneve.webp",
+    "width": 320,
+    "height": 92,
+    "letter": "U"
+  },
+  {
+    "slug": "universite-de-paris",
+    "name": "Université de Paris",
+    "website": "https://u-paris.fr/",
+    "logo": "partners/universite-de-paris.webp",
+    "width": 320,
+    "height": 122,
+    "letter": "U"
+  },
+  {
+    "slug": "universite-du-facteur-humain",
+    "name": "Université du Facteur Humain",
+    "website": "https://universitedufacteurhumain.com/",
+    "logo": "partners/universite-du-facteur-humain.webp",
+    "width": 320,
+    "height": 477,
+    "letter": "U"
+  },
+  {
+    "slug": "universite-internationale-de-la-mer-inter-ocean-climate-school-iocs",
+    "name": "Université Internationale de la Mer, Inter- Ocean-Climate School (IOCS)",
+    "website": "https://oceansclimate.wixsite.com/oceansclimate/",
+    "logo": "partners/universite-internationale-de-la-mer-inter-ocean-climate-school-iocs.webp",
+    "width": 320,
+    "height": 240,
+    "letter": "U"
+  },
+  {
+    "slug": "university-of-st-gallen",
+    "name": "University of St. Gallen",
+    "website": "https://www.unisg.ch/en/",
+    "logo": "partners/university-of-st-gallen.webp",
+    "width": 320,
+    "height": 67,
+    "letter": "U"
+  },
+  {
+    "slug": "ur-foap-cnam-paris",
+    "name": "UR FoAp, Cnam Paris",
+    "website": "https://foap.cnam.fr/laboratoire-foap/laboratoire-formation-et-apprentissages-professionnels-725159.kjsp",
+    "logo": "partners/ur-foap-cnam-paris.webp",
+    "width": 320,
+    "height": 156,
+    "letter": "U"
+  },
+  {
+    "slug": "valerie-cazenabe-orthopedagogue",
+    "name": "valérie cazenabe orthopédagogue",
+    "logo": "partners/valerie-cazenabe-orthopedagogue.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "V"
+  },
+  {
+    "slug": "varkey-foundation",
+    "name": "Varkey Foundation",
+    "website": "https://www.varkeyfoundation.org/",
+    "logo": "partners/varkey-foundation.webp",
+    "width": 320,
+    "height": 136,
+    "letter": "V"
+  },
+  {
+    "slug": "verslehaut",
+    "name": "VersLeHaut",
+    "website": "https://www.verslehaut.org/",
+    "logo": "partners/verslehaut.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "V"
+  },
+  {
+    "slug": "vernissage-sun-a-man-fishing-on-a-rowboat",
+    "name": "Vidya-Kelie",
+    "website": "http://vidyakelie.fr/en/portfolio/",
+    "logo": "partners/vernissage-sun-a-man-fishing-on-a-rowboat.webp",
+    "width": 196,
+    "height": 200,
+    "letter": "V"
+  },
+  {
+    "slug": "vikipedia-a-regenerative-hub-for-young-minds",
+    "name": "Vikipedia( A regenerative hub for young minds)",
+    "logo": "partners/vikipedia-a-regenerative-hub-for-young-minds.webp",
+    "width": 200,
+    "height": 189,
+    "letter": "V"
+  },
+  {
+    "slug": "ville-de-paris",
+    "name": "Ville de Paris",
+    "website": "https://www.paris.fr/",
+    "logo": "partners/ville-de-paris.webp",
+    "width": 320,
+    "height": 281,
+    "letter": "V"
+  },
+  {
+    "slug": "vivace",
+    "name": "VIVACE",
+    "website": "http://www.studio-vivace.com",
+    "logo": "partners/vivace.webp",
+    "width": 206,
+    "height": 180,
+    "letter": "V"
+  },
+  {
+    "slug": "w3b-education",
+    "name": "W3B Education",
+    "website": "https://joinw3b.org",
+    "logo": "partners/w3b-education.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "W"
+  },
+  {
+    "slug": "we-love-reading",
+    "name": "We Love Reading",
+    "website": "https://welovereading.org/",
+    "logo": "partners/we-love-reading.webp",
+    "width": 320,
+    "height": 307,
+    "letter": "W"
+  },
+  {
+    "slug": "weave",
+    "name": "Weave",
+    "website": "https://weaveglobal.org/",
+    "logo": "partners/weave.webp",
+    "width": 320,
+    "height": 70,
+    "letter": "W"
+  },
+  {
+    "slug": "wecanaccess",
+    "name": "WeCanAccess",
+    "website": "https://wecanaccess.com/",
+    "logo": "partners/wecanaccess.webp",
+    "width": 320,
+    "height": 207,
+    "letter": "W"
+  },
+  {
+    "slug": "wise",
+    "name": "WISE",
+    "website": "https://www.wise-qatar.org/",
+    "logo": "partners/wise.webp",
+    "width": 320,
+    "height": 70,
+    "letter": "W"
+  },
+  {
+    "slug": "wondering-school",
+    "name": "Wondering School",
+    "website": "https://wonderingschool.org",
+    "logo": "partners/wondering-school.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "W"
+  },
+  {
+    "slug": "wondrousound",
+    "name": "wondrousound",
+    "website": "https://wondrousound.com/",
+    "logo": "partners/wondrousound.webp",
+    "width": 200,
+    "height": 76,
+    "letter": "W"
+  },
+  {
+    "slug": "words-of-impact",
+    "name": "Words of Impact",
+    "logo": "partners/words-of-impact.webp",
+    "width": 200,
+    "height": 107,
+    "letter": "W"
+  },
+  {
+    "slug": "world-systems-solutions",
+    "name": "World Systems Solutions",
+    "website": "https://wssnow.org/",
+    "logo": "partners/world-systems-solutions.webp",
+    "width": 200,
+    "height": 200,
+    "letter": "W"
+  },
+  {
+    "slug": "world-teen-parliament",
+    "name": "World Teen Parliament",
+    "website": "https://www.blubworld.com/world-teen-parliament",
+    "logo": "partners/world-teen-parliament.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "W"
+  },
+  {
+    "slug": "world-youth-alliance",
+    "name": "World Youth Alliance",
+    "website": "https://www.wya.net/",
+    "logo": "partners/world-youth-alliance.webp",
+    "width": 320,
+    "height": 264,
+    "letter": "W"
+  },
+  {
+    "slug": "worlds-fair-bid-committee-educational-fund-world-expo-fund",
+    "name": "World’s Fair Bid Committee Educational Fund/World Expo Fund",
+    "website": "https://wfbcef.org/",
+    "logo": "partners/worlds-fair-bid-committee-educational-fund-world-expo-fund.webp",
+    "width": 315,
+    "height": 194,
+    "letter": "W"
+  },
+  {
+    "slug": "worlds-largest-lesson",
+    "name": "World’s Largest Lesson",
+    "website": "https://worldslargestlesson.globalgoals.org/",
+    "logo": "partners/worlds-largest-lesson.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "W"
+  },
+  {
+    "slug": "worldview-journeys",
+    "name": "Worldview Journeys",
+    "website": "https://worldviewjourneys.com",
+    "logo": "partners/worldview-journeys.webp",
+    "width": 320,
+    "height": 138,
+    "letter": "W"
+  },
+  {
+    "slug": "wow-news",
+    "name": "WoW! News",
+    "website": "https://www.wow-news.eu/",
+    "logo": "partners/wow-news.webp",
+    "width": 225,
+    "height": 225,
+    "letter": "W"
+  },
+  {
+    "slug": "write-and-create",
+    "name": "Write and Create",
+    "logo": "partners/write-and-create.webp",
+    "width": 320,
+    "height": 180,
+    "letter": "W"
+  },
+  {
+    "slug": "y-east",
+    "name": "Y-East",
+    "website": "https://y-east.org/",
+    "logo": "partners/y-east.webp",
+    "width": 320,
+    "height": 213,
+    "letter": "Y"
+  },
+  {
+    "slug": "yak-coaching",
+    "name": "Ya+k Coaching",
+    "website": "https://www.yaplusk-coaching.fr/",
+    "logo": "partners/yak-coaching.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "Y"
+  },
+  {
+    "slug": "ynov",
+    "name": "Ynov",
+    "website": "https://www.ynov.com/campus/lille",
+    "logo": "partners/ynov.webp",
+    "width": 320,
+    "height": 184,
+    "letter": "Y"
+  },
+  {
+    "slug": "youraccess-online",
+    "name": "YourAccess Online",
+    "website": "https://youraccess.online/",
+    "logo": "partners/youraccess-online.webp",
+    "width": 320,
+    "height": 156,
+    "letter": "Y"
+  },
+  {
+    "slug": "youth-climate-leaders",
+    "name": "Youth Climate Leaders",
+    "website": "https://sustainable-energy.eco/partner/ycl/",
+    "logo": "partners/youth-climate-leaders.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "Y"
+  },
+  {
+    "slug": "youth-colab",
+    "name": "Youth Co:Lab",
+    "website": "https://www.youthcolab.org/",
+    "logo": "partners/youth-colab.webp",
+    "width": 320,
+    "height": 318,
+    "letter": "Y"
+  },
+  {
+    "slug": "youth-for-sustainability-india-alliance",
+    "name": "Youth for Sustainability India Alliance",
+    "website": "https://www.yfsindiaalliance.com/",
+    "logo": "partners/youth-for-sustainability-india-alliance.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "Y"
+  },
+  {
+    "slug": "youth-inclusion-network",
+    "name": "Youth Inclusion Network",
+    "website": "https://www.yinglobal.org/",
+    "logo": "partners/youth-inclusion-network.webp",
+    "width": 211,
+    "height": 59,
+    "letter": "Y"
+  },
+  {
+    "slug": "youth-incubator",
+    "name": "Youth Incubator",
+    "website": "https://www.youthincubator.org/",
+    "logo": "partners/youth-incubator.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "Y"
+  },
+  {
+    "slug": "youth-talks",
+    "name": "Youth Talks",
+    "website": "https://youth-talks.org/",
+    "logo": "partners/youth-talks.webp",
+    "width": 182,
+    "height": 200,
+    "letter": "Y"
+  },
+  {
+    "slug": "youthxyouth",
+    "name": "YouthxYouth",
+    "website": "https://www.youthxyouth.com/",
+    "logo": "partners/youthxyouth.webp",
+    "width": 320,
+    "height": 314,
+    "letter": "Y"
+  },
+  {
+    "slug": "ze-game",
+    "name": "ze.game",
+    "website": "https://ze.game/",
+    "logo": "partners/ze-game.webp",
+    "width": 320,
+    "height": 320,
+    "letter": "Z"
+  }
+]

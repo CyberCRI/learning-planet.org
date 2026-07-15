@@ -90,6 +90,16 @@
     "partnersTitle": "Partners",
     "partnersEmpty": "Partner organisations will be listed here soon."
   },
+  "partners": {
+    "title": "Our partners",
+    "allHeading": "All our partners",
+    "searchLabel": "Partner name",
+    "searchPlaceholder": "Search partners",
+    "filterLabel": "Filter by first letter",
+    "all": "All",
+    "count": "{count} partners",
+    "noResults": "No partners match your search."
+  },
   "footer": {
     "tagline": "Uniting to Transform Education",
     "explore": "Explore",

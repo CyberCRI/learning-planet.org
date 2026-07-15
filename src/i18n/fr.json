@@ -13,5 +13,15 @@
     "languageSwitch": "English",
     "languageLabel": "Langue",
     "poweredBy": "Avec le soutien de"
+  },
+  "partners": {
+    "title": "Nos partenaires",
+    "allHeading": "Tous nos partenaires",
+    "searchLabel": "Nom du partenaire",
+    "searchPlaceholder": "Rechercher un partenaire",
+    "filterLabel": "Filtrer par première lettre",
+    "all": "Tous",
+    "count": "{count} partenaires",
+    "noResults": "Aucun partenaire ne correspond à votre recherche."
   }
 }

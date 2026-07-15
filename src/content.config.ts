@@ -55,16 +55,4 @@ const speakers = defineCollection({
     }),
 });
 
-/** Partners. Shipped EMPTY (held behind the `partners` flag). */
-const partners = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/partners' }),
-  schema: ({ image }) =>
-    z.object({
-      name: z.string(),
-      logo: image(),
-      url: z.string().url().optional(),
-      tier: z.enum(['lead', 'partner', 'supporter']).optional(),
-    }),
-});
-
-export const collections = { events, speakers, partners };
+export const collections = { events, speakers };
