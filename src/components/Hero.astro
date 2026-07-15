@@ -4,6 +4,7 @@ import PoweredBy from './PoweredBy.astro';
 import hero from '~/assets/LPF27_Hero1.png';
 import { SITE, LINKS } from '~/site';
 import { useTranslations, localizedPath, type Locale } from '~/i18n/utils';
+import { withBase } from '~/lib/paths';
 
 interface Props {
   locale: Locale;
@@ -43,6 +44,18 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
       </p>
 
       <p class="hero-note">{t('hero.note')}</p>
+
+      <p class="add-to-calendar">
+        <span class="atc-label">{t('hero.addToCalendar')}</span>
+        <a href={withBase('lpf-2027.ics')} download>{t('hero.calendarIcs')}</a>
+        <a
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=LearningPlanet%20Festival%202027&dates=20270125/20270130&details=https%3A%2F%2Ffestival.learning-planet.org%2F"
+          target="_blank"
+          rel="noopener"
+        >
+          {t('hero.calendarGoogle')}
+        </a>
+      </p>
 
       <div class="hero-cta">
         <a class="btn btn-primary" href={localizedPath('replays', locale)}>{t('hero.watchReplays')}</a>
@@ -189,7 +202,21 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
     max-width: 30rem;
     font-size: var(--fs-400);
     color: var(--ink-soft);
+    margin: 0 0 var(--sp-3);
+  }
+  .add-to-calendar {
+    font-size: var(--fs-300);
+    color: var(--ink-soft);
     margin: 0 0 var(--sp-4);
+  }
+  .atc-label {
+    margin-right: 0.4em;
+  }
+  .add-to-calendar a {
+    color: var(--c-deep-teal);
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+    margin-right: 0.9em;
   }
   .hero-cta {
     display: flex;

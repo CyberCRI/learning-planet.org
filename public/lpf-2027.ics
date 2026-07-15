@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//LearningPlanet Festival//LPF 2027//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:lpf-2027@festival.learning-planet.org
+DTSTAMP:20260715T120000Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270130
+SUMMARY:LearningPlanet Festival 2027
+DESCRIPTION:The LearningPlanet Festival returns for its 8th edition\, 25-29 January 2027\, celebrating the International Day of Education. Programme and participation details: https://festival.learning-planet.org/
+URL:https://festival.learning-planet.org/
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

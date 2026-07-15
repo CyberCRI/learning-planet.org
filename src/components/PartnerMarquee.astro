@@ -1,0 +1,194 @@
+---
+/**
+ * Partner-logo marquee (adopted from design-lab scenario 4): makes the
+ * "500+ partners" impact figure tangible with two counter-scrolling rows
+ * of logos sampled evenly across the full partner directory. Rendered on
+ * the homepage after the impact numbers; gated by show.partners upstream.
+ */
+import partners from '~/data/partners.json';
+import { useTranslations, localizedPath, type Locale } from '~/i18n/utils';
+import { withBase } from '~/lib/paths';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+// Logos that sit well in a single-height row (not too tall/narrow, not too wide).
+const usable = partners.filter((p) => {
+  if (!p.logo || !p.width || !p.height) return false;
+  const ratio = p.width / p.height;
+  return ratio >= 1.1 && ratio <= 4.5;
+});
+
+// Deterministic even sample across the whole list (~48 logos).
+const step = Math.max(1, Math.floor(usable.length / 48));
+const picks = usable.filter((_, i) => i % step === 0).slice(0, 48);
+
+const half = Math.ceil(picks.length / 2);
+const rows = [picks.slice(0, half), picks.slice(half)];
+---
+
+<section class="section marquee" aria-labelledby="marquee-title">
+  <div class="container marquee-head">
+    <p class="eyebrow">{t('partners.title')}</p>
+    <h2 id="marquee-title" class="h-bold marquee-title">
+      {partners.length} {t('impact.partners')}
+    </h2>
+    <a class="marquee-link" href={localizedPath('partners', locale)}>
+      {t('partners.seeAll')} <span aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  {/* Logos load eagerly on purpose: lazy images inside a transform-animated
+      track resolve their viewport position unreliably and stay blank. */}
+  <div class="marquee-rows">
+    {
+      rows.map((row, r) => (
+        <div class="marquee-row">
+          <div class:list={['marquee-track', { 'marquee-track-2': r === 1 }]}>
+            <div class="marquee-set">
+              {row.map((p) => (
+                <div class="chip">
+                  <img src={withBase(p.logo)} alt={p.name} height="40" decoding="async" />
+                </div>
+              ))}
+            </div>
+            <div class="marquee-set" aria-hidden="true">
+              {row.map((p) => (
+                <div class="chip">
+                  <img src={withBase(p.logo)} alt="" height="40" decoding="async" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <p class="marquee-note container">{t('partners.selectionNote', { count: partners.length })}</p>
+</section>
+
+<style>
+  .marquee {
+    background: var(--paper-2);
+    overflow: hidden;
+  }
+  .marquee-head {
+    margin-bottom: var(--sp-4);
+  }
+  .marquee-title {
+    font-size: var(--fs-800);
+    margin: 0 0 var(--sp-2);
+  }
+  .marquee-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--c-deep-teal);
+    text-decoration: none;
+  }
+  .marquee-link:hover {
+    gap: 0.7rem;
+  }
+  .marquee-link span {
+    transition: transform 0.15s ease;
+  }
+
+  .marquee-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .marquee-row {
+    overflow: hidden;
+  }
+  .marquee-track {
+    display: flex;
+    gap: 1rem;
+    width: max-content;
+    animation: marquee-scroll 70s linear infinite;
+  }
+  .marquee-track-2 {
+    animation-name: marquee-scroll-reverse;
+    animation-duration: 80s;
+  }
+  .marquee-set {
+    display: flex;
+    gap: 1rem;
+    flex: none;
+  }
+  .marquee:hover .marquee-track,
+  .marquee:focus-within .marquee-track {
+    animation-play-state: paused;
+  }
+
+  .chip {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    padding: 0.6rem 1rem;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+  }
+  .chip img {
+    height: 40px;
+    width: auto;
+    max-width: 160px;
+    object-fit: contain;
+    filter: grayscale(1) opacity(0.72);
+    transition: filter 0.2s ease, opacity 0.2s ease;
+  }
+  .chip:hover img {
+    filter: none;
+    opacity: 1;
+  }
+
+  .marquee-note {
+    margin-top: var(--sp-4);
+    text-align: center;
+    font-size: var(--fs-300);
+    color: var(--ink-faint);
+  }
+
+  @keyframes marquee-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes marquee-scroll-reverse {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+      width: auto;
+      justify-content: center;
+      padding-inline: clamp(1.1rem, 4vw, 2.5rem);
+    }
+    /* the visible set must wrap too, or it stays one long overflowing row */
+    .marquee-set {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .marquee-set[aria-hidden='true'] {
+      display: none;
+    }
+  }
+</style>

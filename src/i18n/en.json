@@ -22,7 +22,10 @@
     "saveTheDateKicker": "Save the date",
     "note": "The LearningPlanet Festival returns in January 2027 for its 8th edition, celebrating the International Day of Education on 24 January. More details on the programme and opportunities to participate will be announced soon.",
     "watchReplays": "Watch replays",
-    "stayInformed": "Stay informed"
+    "stayInformed": "Stay informed",
+    "addToCalendar": "Add to calendar:",
+    "calendarIcs": "Apple / Outlook (.ics)",
+    "calendarGoogle": "Google Calendar"
   },
   "ticker": {
     "shaping": "Shaping the futures of learning",
@@ -42,7 +45,13 @@
     "heading": "Questions guiding LPF 2027"
   },
   "curated": {
+    "eyebrow": "The 2027 format",
     "heading": "A focused and curated 2027 edition",
+    "formatLabel": "The format",
+    "focusLabel": "The focus",
+    "codesignLabel": "Co-design 2028",
+    "codesignText": "Interested in shaping a renewed, open Festival model from 2028 onwards?",
+    "codesignCta": "Express interest",
     "p1": "In 2027, the LearningPlanet Festival will take place in a more <strong>focused and curated format</strong>, organised around selected online and in-person moments led by the Learning Planet Institute and co-designed with strategic partners.",
     "p2": "The programme will focus on the six priority areas outlined above, with <strong>youth agency</strong> running as a cross-cutting theme throughout.",
     "p3": "<strong>While there will not be an open call for events this year,</strong> we are beginning to explore <strong>what a renewed open and decentralised Festival model could look like from 2028 onwards</strong>. If you would like to be involved in this co-design process, please express your interest through this <a href=\"{form}\" target=\"_blank\" rel=\"noopener\">form</a>. We will soon share a survey and further details on potential workshops from September onwards."
@@ -92,6 +101,8 @@
   },
   "partners": {
     "title": "Our partners",
+    "seeAll": "See all partners",
+    "selectionNote": "A selection of the {count} organisations in the Festival community.",
     "allHeading": "All our partners",
     "searchLabel": "Partner name",
     "searchPlaceholder": "Search partners",

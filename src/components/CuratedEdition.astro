@@ -1,4 +1,11 @@
 ---
+/**
+ * "A focused and curated 2027 edition" as an editorial spread (adopted from
+ * design-lab scenario 4). Hierarchy per editorial feedback: "The format"
+ * (p1) and "The focus" (p2) carry the section in a wide, large-type main
+ * column; the no-open-call message (p3) and the co-design card sit in a
+ * quiet side rail. Paragraph copy is the confirmed curated.* strings.
+ */
 import { LINKS } from '~/site';
 import { useTranslations, type Locale } from '~/i18n/utils';
 
@@ -11,39 +18,132 @@ const t = useTranslations(locale);
 
 <section class="section curated" aria-labelledby="curated-title">
   <div class="container">
+    <p class="eyebrow">{t('curated.eyebrow')}</p>
     <h2 id="curated-title" class="h-bold curated-title">{t('curated.heading')}</h2>
-    <div class="curated-body">
-      <p set:html={t('curated.p1')} />
-      <p set:html={t('curated.p2')} />
-      <p set:html={t('curated.p3', { form: LINKS.coDesignForm })} />
+
+    <div class="cur-grid">
+      <div class="cur-main">
+        <div class="cur-block">
+          <p class="cur-label">{t('curated.formatLabel')}</p>
+          <p class="cur-lede" set:html={t('curated.p1')} />
+        </div>
+        <div class="cur-block">
+          <p class="cur-label">{t('curated.focusLabel')}</p>
+          <p class="cur-lede" set:html={t('curated.p2')} />
+        </div>
+      </div>
+
+      <aside class="cur-side">
+        <blockquote class="cur-quote">
+          <p set:html={t('curated.p3', { form: LINKS.coDesignForm })} />
+        </blockquote>
+        <div class="cur-card">
+          <p class="cur-label cur-card-label">{t('curated.codesignLabel')}</p>
+          <p class="cur-card-text">{t('curated.codesignText')}</p>
+          <a class="btn cur-btn" href={LINKS.coDesignForm} target="_blank" rel="noopener">{t('curated.codesignCta')}</a>
+        </div>
+      </aside>
     </div>
   </div>
 </section>
 
 <style>
   .curated {
-    background: var(--paper);
+    background: var(--paper-2);
   }
   .curated-title {
-    font-size: var(--fs-800);
-    margin-bottom: var(--sp-3);
+    font-size: var(--fs-900);
+    margin-bottom: var(--sp-5);
+    max-width: 18ch;
   }
-  .curated-body p {
-    font-size: var(--fs-500);
-    color: var(--ink-soft);
-    max-width: 65ch;
+  .cur-grid {
+    display: grid;
+    gap: var(--sp-5);
+  }
+  @media (min-width: 900px) {
+    .cur-grid {
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: var(--sp-6);
+      align-items: start;
+    }
+  }
+
+  /* Main column — the format & the focus, generous editorial scale. */
+  .cur-main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+  }
+  .cur-block + .cur-block {
+    border-top: 1px solid var(--line-strong);
+    padding-top: var(--sp-4);
+  }
+  .cur-label {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: var(--fs-300);
+    font-weight: 600;
+    color: var(--ink-faint);
     margin: 0 0 var(--sp-2);
   }
-  .curated-body p:last-child {
-    margin-bottom: 0;
+  .cur-lede {
+    font-size: var(--fs-600);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 34ch;
+    margin: 0;
   }
-  .curated-body :global(strong) {
+  .cur-lede :global(strong) {
     color: var(--ink);
   }
-  .curated-body :global(a) {
+
+  /* Side rail — the no-open-call message + co-design card. */
+  .cur-side {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+  }
+  .cur-quote {
+    margin: 0;
+    border-left: 5px solid var(--c-coral);
+    padding-left: var(--sp-3);
+  }
+  .cur-quote p {
+    font-size: var(--fs-400);
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .cur-quote :global(strong) {
+    color: var(--ink);
+    font-weight: 700;
+  }
+  .cur-quote :global(a) {
     color: var(--c-deep-teal);
-    font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 0.15em;
+  }
+
+  .cur-card {
+    background: var(--c-deep-teal);
+    color: var(--paper);
+    border-radius: var(--radius);
+    padding: var(--sp-3);
+  }
+  .cur-card-label {
+    color: var(--c-yellow);
+  }
+  .cur-card-text {
+    color: var(--paper);
+    font-size: var(--fs-400);
+    margin: 0 0 var(--sp-2);
+  }
+  .cur-btn {
+    background: var(--c-yellow);
+    color: var(--ink);
+  }
+  .cur-btn:hover {
+    background: var(--white);
   }
 </style>

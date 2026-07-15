@@ -14,8 +14,23 @@
     "languageLabel": "Langue",
     "poweredBy": "Avec le soutien de"
   },
+  "hero": {
+    "addToCalendar": "Ajouter au calendrier :",
+    "calendarIcs": "Apple / Outlook (.ics)",
+    "calendarGoogle": "Google Agenda"
+  },
+  "curated": {
+    "eyebrow": "Le format 2027",
+    "formatLabel": "Le format",
+    "focusLabel": "Les priorités",
+    "codesignLabel": "Co-design 2028",
+    "codesignText": "Envie de contribuer à un modèle de Festival renouvelé et ouvert à partir de 2028 ?",
+    "codesignCta": "Exprimer mon intérêt"
+  },
   "partners": {
     "title": "Nos partenaires",
+    "seeAll": "Voir tous les partenaires",
+    "selectionNote": "Une sélection des {count} organisations de la communauté du Festival.",
     "allHeading": "Tous nos partenaires",
     "searchLabel": "Nom du partenaire",
     "searchPlaceholder": "Rechercher un partenaire",
