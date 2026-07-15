@@ -1,6 +1,7 @@
 ---
 import Logo from './Logo.astro';
 import { visibleNav } from '~/lib/nav';
+import { show } from '~/config';
 import { useTranslations, localizedPath, alternatePath, otherLocale, type Locale } from '~/i18n/utils';
 
 interface Props {
@@ -12,6 +13,8 @@ const nav = visibleNav();
 const here = Astro.url.pathname.replace(/\/$/, '') || '/';
 const other = otherLocale(locale);
 const switchHref = alternatePath(Astro.url.pathname, other);
+// FR pages always keep their "English" link so visitors landing on /fr/ aren't stranded
+const showLangSwitch = show.languageSwitch || locale !== 'en';
 
 function hrefFor(item: { path: string; anchor?: string }) {
   const base = localizedPath(item.path, locale);
@@ -45,9 +48,13 @@ function isCurrent(item: { path: string; anchor?: string }) {
     </nav>
 
     <div class="header-actions">
-      <a class="lang-switch" href={switchHref} hreflang={other} lang={other}>
-        {t('common.languageSwitch')}
-      </a>
+      {
+        showLangSwitch && (
+          <a class="lang-switch" href={switchHref} hreflang={other} lang={other}>
+            {t('common.languageSwitch')}
+          </a>
+        )
+      }
       <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav">
         <span class="visually-hidden">{t('common.menu')}</span>
         <span class="bars" aria-hidden="true"></span>
@@ -64,11 +71,15 @@ function isCurrent(item: { path: string; anchor?: string }) {
           </li>
         ))
       }
-      <li>
-        <a class="lang-switch-m" href={switchHref} hreflang={other} lang={other}>
-          {t('common.languageSwitch')}
-        </a>
-      </li>
+      {
+        showLangSwitch && (
+          <li>
+            <a class="lang-switch-m" href={switchHref} hreflang={other} lang={other}>
+              {t('common.languageSwitch')}
+            </a>
+          </li>
+        )
+      }
     </ul>
   </div>
 </header>

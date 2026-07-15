@@ -10,6 +10,7 @@ export const show = {
   programme: false, // events collection — held until the programme is confirmed
   speakers: false, // speakers collection — held
   partners: true, // partner directory — 507 orgs imported from learning-planet.org
+  languageSwitch: false, // header "Français" link — held until FR translations are complete (FR pages still keep their "English" link back)
 } as const;
 
 export type FeatureFlag = keyof typeof show;
