@@ -298,12 +298,13 @@ function legalNotice(locale: Locale): LegalPage {
         },
         {
           heading: 'Conception et réalisation',
-          html: `<p>Design et développement : Learning Planet Institute.</p>`,
+          html: `<p>Design et développement : Learning Planet Institute.</p>
+<p>Les illustrations du festival présentes sur ce site — dont l’illustration de la page d’accueil et l’image de partage sur les réseaux sociaux — ont été créées par le Learning Planet Institute à l’aide d’outils d’intelligence artificielle générative.</p>`,
         },
         {
           heading: 'Propriété intellectuelle',
           html: `<p>Sauf mention contraire, les contenus éditoriaux (textes) de ce site sont mis à disposition sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" target="_blank" rel="noopener">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>, avec attribution : « LearningPlanet Festival — Learning Planet Institute ».</p>
-<p>Cette licence ne s’applique pas aux logos et marques (Learning Planet Institute, LearningPlanet Festival, nom et emblème de l’UNESCO), ni aux contenus de tiers (logos des organisations partenaires, photographies des intervenant·es, vidéos), qui restent la propriété de leurs titulaires respectifs et ne peuvent être réutilisés sans leur autorisation.</p>`,
+<p>Cette licence ne s’applique pas aux logos et marques (Learning Planet Institute, LearningPlanet Festival, nom et emblème de l’UNESCO), aux illustrations du festival (créées à l’aide d’outils d’intelligence artificielle générative), ni aux contenus de tiers (logos des organisations partenaires, photographies des intervenant·es, vidéos), qui restent la propriété de leurs titulaires respectifs et ne peuvent être réutilisés sans leur autorisation.</p>`,
         },
         {
           heading: 'Liens externes',
@@ -338,12 +339,13 @@ function legalNotice(locale: Locale): LegalPage {
       },
       {
         heading: 'Design and development',
-        html: `<p>Design and development: Learning Planet Institute.</p>`,
+        html: `<p>Design and development: Learning Planet Institute.</p>
+<p>The festival illustrations on this site — including the homepage artwork and the social-sharing image — were created by the Learning Planet Institute using generative-AI tools.</p>`,
       },
       {
         heading: 'Intellectual property',
         html: `<p>Unless stated otherwise, the editorial content (texts) of this site is made available under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0 International licence (CC BY 4.0)</a>, with attribution: “LearningPlanet Festival — Learning Planet Institute”.</p>
-<p>This licence does not extend to logos and trademarks (Learning Planet Institute, LearningPlanet Festival, the UNESCO name and emblem) or to third-party materials (partner organisation logos, speaker photographs, videos), which remain the property of their respective owners and may not be reused without their permission.</p>`,
+<p>This licence does not extend to logos and trademarks (Learning Planet Institute, LearningPlanet Festival, the UNESCO name and emblem), to the festival illustrations (created using generative-AI tools), or to third-party materials (partner organisation logos, speaker photographs, videos), which remain the property of their respective owners and may not be reused without their permission.</p>`,
       },
       {
         heading: 'External links',

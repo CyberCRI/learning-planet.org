@@ -65,6 +65,9 @@ const socials = [
       <li><button type="button" data-open-cookie-banner>{t('cookieConsent.manage')}</button></li>
     </ul>
     <p class="footer-mission">{SITE.mission}</p>
+    <p class="footer-ai-credit">
+      <a href={localizedPath('legal-notice', locale)}>{t('footer.aiCredit')}</a>
+    </p>
   </div>
 </footer>
 
@@ -131,6 +134,19 @@ const socials = [
   }
   .footer-mission {
     font-style: italic;
+  }
+  /* AI-artwork transparency credit — its own quiet full-width row. */
+  .footer-ai-credit {
+    flex-basis: 100%;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .footer-ai-credit a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+  .footer-ai-credit a:hover {
+    color: var(--white);
   }
   .footer-bottom p {
     margin: 0;
