@@ -1,0 +1,155 @@
+---
+/**
+ * DESIGN LAB (temporary) — Scenario 3 "Festival poster", themes section.
+ * Replaces ThemesGrid.astro's card grid with a full-bleed "lineup wall":
+ * six stacked, edge-to-edge colour rows (like a festival poster's line-up)
+ * that expand via <details> to reveal each theme's framing question.
+ * themeShade map and on-dark logic copied from ThemesGrid.astro verbatim.
+ */
+import { themes } from '~/data/themes';
+import { useTranslations, type Locale } from '~/i18n/utils';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+// Dark brand companion per bright, for each row's answer-band tint.
+const themeShade: Record<string, string> = {
+  '--c-green': '--c-deep-green',
+  '--c-blue': '--c-deep-teal',
+  '--c-lilac': '--c-slate',
+  '--c-coral': '--c-brown',
+  '--c-yellow': '--c-olive',
+  '--c-deep-green': '--c-deep-teal',
+};
+// Bright fills take dark ink; the lone deep-green row takes white.
+const onDark = new Set(['--c-deep-green']);
+---
+
+{/* No id="themes"/"themes-title" here: ThemesGrid claims those, and the
+    comparison page renders both components on one document. */}
+<section class="wall" aria-labelledby="wall-title">
+  <div class="container wall-head">
+    <p class="eyebrow">{t('themes.eyebrow')}</p>
+    <h2 id="wall-title" class="h-bold wall-heading">{t('themes.heading')}</h2>
+  </div>
+
+  {
+    themes.map((th) => (
+      <details
+        class:list={['wall-row', { 'on-dark': onDark.has(th.color) }]}
+        style={`--fill: var(${th.color}); --shade: var(${themeShade[th.color] ?? '--c-deep-teal'});`}
+      >
+        <summary class="wall-summary">
+          <div class="container wall-line">
+            <h3 class="wall-title">{th.title}</h3>
+            <span class="wall-plus" aria-hidden="true">+</span>
+          </div>
+        </summary>
+        <div class="wall-answer">
+          <div class="container">
+            <p class="wall-q">{th.question}</p>
+          </div>
+        </div>
+      </details>
+    ))
+  }
+</section>
+
+<style>
+  .wall {
+    background: var(--paper);
+  }
+  .wall-head {
+    margin-bottom: var(--sp-4);
+    padding-block-start: var(--sp-6);
+  }
+  .wall-heading {
+    font-size: var(--fs-900);
+  }
+
+  .wall-row {
+    background: var(--fill);
+    color: var(--ink);
+  }
+  .wall-row.on-dark {
+    color: var(--white);
+  }
+
+  .wall-summary {
+    cursor: pointer;
+    list-style: none;
+    display: block;
+    padding-block: clamp(1.1rem, 2.6vw, 1.9rem);
+    transition: background-color 0.15s ease;
+  }
+  .wall-summary::-webkit-details-marker {
+    display: none;
+  }
+  .wall-summary:hover {
+    background: color-mix(in srgb, var(--fill) 86%, var(--ink) 14%);
+  }
+  .wall-summary:focus-visible {
+    outline: var(--focus);
+    outline-offset: -4px;
+  }
+
+  .wall-line {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--sp-3);
+  }
+  .wall-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(1.9rem, 1rem + 3.8vw, 4.1rem);
+    line-height: 0.95;
+    letter-spacing: -0.015em;
+    color: inherit;
+    margin: 0;
+  }
+  .wall-plus {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 1rem + 2vw, 2.6rem);
+    line-height: 1;
+    transition: transform 0.18s ease;
+  }
+  .wall-row[open] .wall-plus {
+    transform: rotate(45deg);
+  }
+
+  .wall-answer {
+    background: color-mix(in srgb, var(--shade) 24%, var(--fill));
+    border-top: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+  }
+  .wall-q {
+    padding-block: var(--sp-3);
+    font-size: var(--fs-600);
+    font-family: var(--font-body);
+    max-width: 54ch;
+    margin: 0;
+    color: inherit;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wall-summary,
+    .wall-plus {
+      transition: none;
+    }
+  }
+</style>
+
+<script>
+  // Small screens: open every row by default so the questions are readable
+  // without requiring a tap on every single one.
+  if (window.matchMedia('(max-width: 700px)').matches) {
+    document.querySelectorAll('.wall-row').forEach((d) => {
+      (d as HTMLDetailsElement).open = true;
+    });
+  }
+</script>
