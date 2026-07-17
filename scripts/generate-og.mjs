@@ -217,13 +217,15 @@ function dateNode({ fontSize, mainColor, coral }) {
           type: 'span',
           props: {
             style: { color: mainColor },
-            children: '25–29 JANUARY ',
+            children: '25–29 JANUARY',
           },
         },
         {
           type: 'span',
           props: {
-            style: { color: coral },
+            // satori swallows a span's trailing space — the word gap must be
+            // an explicit margin (≈0.24em for Archivo Narrow bold).
+            style: { color: coral, marginLeft: Math.round(fontSize * 0.24) },
             children: '2027',
           },
         },
