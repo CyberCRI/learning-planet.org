@@ -1,0 +1,6 @@
+# learning-planet.org — Learning Planet Festival 2027
+User-agent: *
+Allow: /
+
+# Live domain; update if the site ever moves (e.g. festival.learning-planet.org).
+Sitemap: https://learning-planet.org/sitemap-index.xml
