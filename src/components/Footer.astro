@@ -72,10 +72,12 @@ const socials = [
 </footer>
 
 <style>
+  /* No top margin: light pages get their spacing from the last section's own
+     padding, and the homepage's dark CTA band stacks flush against the footer
+     instead of leaving a stray strip of page background between two dark blocks. */
   .site-footer {
     background: var(--ink);
     color: rgba(255, 255, 255, 0.82);
-    margin-top: var(--sp-6);
   }
   .footer-top {
     padding-block: var(--sp-5) var(--sp-3);
