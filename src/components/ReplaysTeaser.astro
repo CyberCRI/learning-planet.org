@@ -18,8 +18,16 @@ const t = useTranslations(locale);
       <h2 id="replays-title" class="h-bold replays-h">{t('replays.teaserHeading')}</h2>
       <p class="replays-text">{t('replays.teaserText')}</p>
       <div class="replays-cta">
-        <a class="btn btn-primary" href={LINKS.youtube2026Playlist} target="_blank" rel="noopener">{t('replays.highlights2026')}</a>
-        <a class="btn btn-outline" href={LINKS.youtubeChannel} target="_blank" rel="noopener">{t('replays.allReplays')}</a>
+        <a class="btn btn-primary" href={LINKS.youtube2026Playlist} target="_blank" rel="noopener">
+          {t('replays.highlights2026')}
+          <span class="btn-ext" aria-hidden="true">↗</span>
+          <span class="visually-hidden">{t('common.opensNewTab')}</span>
+        </a>
+        <a class="btn btn-outline" href={LINKS.youtubeChannel} target="_blank" rel="noopener">
+          {t('replays.allReplays')}
+          <span class="btn-ext" aria-hidden="true">↗</span>
+          <span class="visually-hidden">{t('common.opensNewTab')}</span>
+        </a>
       </div>
     </div>
 
@@ -53,6 +61,10 @@ const t = useTranslations(locale);
     display: flex;
     flex-wrap: wrap;
     gap: var(--sp-2);
+  }
+  .btn-ext {
+    font-size: 0.85em;
+    margin-left: 0.1rem;
   }
   .replays-grid {
     display: grid;

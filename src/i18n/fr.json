@@ -12,7 +12,8 @@
   "common": {
     "languageSwitch": "English",
     "languageLabel": "Langue",
-    "poweredBy": "Avec le soutien de"
+    "poweredBy": "Avec le soutien de",
+    "opensNewTab": "(s'ouvre dans un nouvel onglet)"
   },
   "hero": {
     "addToCalendar": "Ajouter au calendrier :",
@@ -44,6 +45,11 @@
     "becomeText": "Nous invitons toutes les organisations qui partagent notre vision à rejoindre le Festival en tant que partenaires officiels.",
     "becomeCtaPrimary": "Devenir partenaire du Festival",
     "becomeCtaSecondary": "Écrivez-nous"
+  },
+  "replays": {
+    "highlights2026": "Temps forts 2026 sur YouTube",
+    "allReplays": "Tous les replays sur YouTube",
+    "lpf2026Highlights": "Temps forts LPF 2026 sur YouTube"
   },
   "footer": {
     "aiCredit": "Illustrations du festival créées avec l'aide de l'IA — voir les mentions légales",

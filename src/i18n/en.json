@@ -15,7 +15,8 @@
     "menu": "Menu",
     "close": "Close",
     "backToHome": "Back to home",
-    "poweredBy": "Powered by"
+    "poweredBy": "Powered by",
+    "opensNewTab": "(opens in a new tab)"
   },
   "hero": {
     "returns": "The festival returns",
@@ -70,9 +71,9 @@
     "intro": "Catch up on sessions from past editions on our YouTube channel.",
     "teaserHeading": "Relive past editions",
     "teaserText": "Explore conversations from previous editions of the LearningPlanet Festival, free to watch anytime. Browse the full archive or dive into the 2026 highlights.",
-    "highlights2026": "2026 Highlights",
-    "allReplays": "All replays",
-    "lpf2026Highlights": "LPF 2026 Highlights"
+    "highlights2026": "2026 highlights on YouTube",
+    "allReplays": "All replays on YouTube",
+    "lpf2026Highlights": "LPF 2026 highlights on YouTube"
   },
   "stayInformed": {
     "eyebrow": "Don't miss the announcement",

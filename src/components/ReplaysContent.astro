@@ -18,9 +18,13 @@ const t = useTranslations(locale);
   <div class="replay-links">
     <a class="btn btn-primary" href={LINKS.youtubeChannel} target="_blank" rel="noopener">
       {t('replays.allReplays')}
+      <span class="btn-ext" aria-hidden="true">↗</span>
+      <span class="visually-hidden">{t('common.opensNewTab')}</span>
     </a>
     <a class="btn btn-outline" href={LINKS.youtube2026Playlist} target="_blank" rel="noopener">
       {t('replays.lpf2026Highlights')}
+      <span class="btn-ext" aria-hidden="true">↗</span>
+      <span class="visually-hidden">{t('common.opensNewTab')}</span>
     </a>
   </div>
 
@@ -35,6 +39,10 @@ const t = useTranslations(locale);
     flex-wrap: wrap;
     gap: 0.8rem;
     margin-bottom: var(--sp-5);
+  }
+  .btn-ext {
+    font-size: 0.85em;
+    margin-left: 0.1rem;
   }
   .replay-grid {
     display: grid;
