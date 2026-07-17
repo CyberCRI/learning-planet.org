@@ -1,5 +1,5 @@
 /**
- * Curated replay highlights from the LearningPlanet Festival 2026 Replays
+ * Curated replay highlights from the Learning Planet Festival 2026 Replays
  * playlist. The first three are the homepage-featured highlights (the
  * teaser slices 0–3); all six show on the Replays page. Titles confirmed
  * via YouTube oEmbed July 2026; emoji stripped from the MOOD title and

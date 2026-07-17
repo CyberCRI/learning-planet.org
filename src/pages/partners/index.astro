@@ -18,7 +18,7 @@ const intro =
 
 <BaseLayout
   title={t('partners.title')}
-  description="An open coalition of more than 500 partner organisations worldwide supporting the LearningPlanet Festival."
+  description="An open coalition of more than 500 partner organisations worldwide supporting the Learning Planet Festival."
   path="partners"
   locale={locale}
   noindex={!hasPartners}
@@ -28,7 +28,7 @@ const intro =
       <PartnersWall locale={locale} intro={intro} />
     ) : (
       <>
-        <PageHero eyebrow="LearningPlanet Festival 2027" title={t('partners.title')} intro={intro} />
+        <PageHero eyebrow="Learning Planet Festival 2027" title={t('partners.title')} intro={intro} />
         <EmptyState title={t('partners.title')} message={t('held.partnersEmpty')} locale={locale} />
       </>
     )

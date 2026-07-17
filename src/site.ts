@@ -3,7 +3,7 @@
  * Keep all outbound URLs here so they're easy to audit/update.
  */
 export const SITE = {
-  name: 'LearningPlanet Festival',
+  name: 'Learning Planet Festival',
   // Site descriptor (from og:site_name on the live site).
   descriptor: 'Uniting to Transform Education',
   // The movement's mission line.
@@ -11,7 +11,7 @@ export const SITE = {
 } as const;
 
 export const EDITION = {
-  label: 'LearningPlanet Festival 2027',
+  label: 'Learning Planet Festival 2027',
   // Dates confirmed by the July 2026 editorial review.
   when: '25–29 January 2027',
 } as const;

@@ -16,12 +16,12 @@ const hasSpeakers = show.speakers && speakers.length > 0;
 
 <BaseLayout
   title={t('held.speakersTitle')}
-  description="Les intervenants du LearningPlanet Festival 2027. Annoncés prochainement."
+  description="Les intervenants du Learning Planet Festival 2027. Annoncés prochainement."
   path="speakers"
   locale={locale}
   noindex={!hasSpeakers}
 >
-  <PageHero eyebrow="LearningPlanet Festival 2027" title={t('held.speakersTitle')} />
+  <PageHero eyebrow="Learning Planet Festival 2027" title={t('held.speakersTitle')} />
 
   {
     hasSpeakers ? (

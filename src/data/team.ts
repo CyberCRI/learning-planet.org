@@ -1,5 +1,5 @@
 /**
- * LearningPlanet Festival team — list revised per the July 2026 editorial
+ * Learning Planet Festival team — list revised per the July 2026 editorial
  * review (positions, companies, divisions, LinkedIn, headshots).
  * Sorted by the original WordPress menu_order.
  *
@@ -25,7 +25,7 @@ export type TeamMember = {
 export const team: TeamMember[] = [
   {
     name: 'Olivier Bréchard',
-    position: 'Director, LearningPlanet International Relations & Festival',
+    position: 'Director, Learning Planet International Relations & Festival',
     organisation: 'Learning Planet Institute',
     linkedin: 'https://fr.linkedin.com/in/olivier-brechard-1b104011',
     photo: olivier,
@@ -33,35 +33,35 @@ export const team: TeamMember[] = [
   {
     name: 'Katherine Brown',
     position: 'Project Manager, Learning Ecosystems, Education for Human Flourishing',
-    organisation: 'LearningPlanet Alliance',
+    organisation: 'Learning Planet Alliance',
     linkedin: 'https://www.linkedin.com/in/katherine-brown-a5a0ba149/',
     photo: katherine,
   },
   {
     name: 'Ikya Kondapolu',
-    position: 'Project Manager, LearningPlanet Festival',
-    organisation: 'LearningPlanet Alliance',
+    position: 'Project Manager, Learning Planet Festival',
+    organisation: 'Learning Planet Alliance',
     linkedin: 'https://www.linkedin.com/in/ikya-kondapolu/',
     photo: ikya,
   },
   {
     name: 'Ilia Lysenko',
     position: 'Project Manager, Peace Programmes',
-    organisation: 'LearningPlanet Alliance',
+    organisation: 'Learning Planet Alliance',
     linkedin: 'https://www.linkedin.com/in/lysenkoils/',
     photo: ilia,
   },
   {
     name: 'Edward Stevenette',
     position: 'Project Manager, Youth Programmes',
-    organisation: 'LearningPlanet Alliance',
+    organisation: 'Learning Planet Alliance',
     linkedin: 'https://fr.linkedin.com/in/edwardstevenette',
     photo: edward,
   },
   {
     name: 'Damien Sueur',
     position: 'Head of digital & audiovisual projects',
-    organisation: 'LearningPlanet Alliance',
+    organisation: 'Learning Planet Alliance',
     linkedin: 'https://fr.linkedin.com/in/damien-rayuela-sueur',
     photo: damien,
   },

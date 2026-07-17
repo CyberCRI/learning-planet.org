@@ -15,9 +15,9 @@ export type TimelineEntry = {
 export const timeline: TimelineEntry[] = [
   {
     date: '24 January 2020',
-    title: 'The Birth of the LearningPlanet Festival',
+    title: 'The Birth of the Learning Planet Festival',
     description:
-      'The LearningPlanet Festival was first launched in 2020 by the Learning Planet Institute in partnership with UNESCO, to celebrate the International Day of Education.',
+      'The Learning Planet Festival was first launched in 2020 by the Learning Planet Institute in partnership with UNESCO, to celebrate the International Day of Education.',
   },
   {
     date: '2021–2025',
@@ -28,7 +28,7 @@ export const timeline: TimelineEntry[] = [
   },
   {
     date: 'September 2024',
-    title: 'Launch of the LearningPlanet Youth Design Challenge (YDC)',
+    title: 'Launch of the Learning Planet Youth Design Challenge (YDC)',
     href: 'https://www.learningplanetinstitute.org/en/programs/lp-ydc/',
     description:
       'Launched at the United Nations General Assembly in September 2024, the annual Youth Design Challenge empowers youth aged 15–26 to develop practical social impact projects addressing Peace, Wellbeing, and Sustainability. Its 2025–2026 edition attracted 3,200 sign-ups and 702 project submissions from 109 countries, with 60 finalists selected for an intensive learning and support programme.',

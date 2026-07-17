@@ -34,11 +34,11 @@ function privacyPolicy(locale: Locale): LegalPage {
     return {
       title: 'Politique de confidentialité',
       metaDescription:
-        'Comment le Learning Planet Institute protège vos données personnelles sur le site du LearningPlanet Festival : données collectées, finalités, durées de conservation et vos droits.',
+        'Comment le Learning Planet Institute protège vos données personnelles sur le site du Learning Planet Festival : données collectées, finalités, durées de conservation et vos droits.',
       updated: 'Dernière mise à jour : juillet 2026',
       sections: [
         {
-          html: `<p>Le site du LearningPlanet Festival est édité par le Learning Planet Institute. Nous nous engageons à protéger les données personnelles conformément à la loi n° 78-17 du 6 janvier 1978 (« Informatique et Libertés ») et au Règlement général sur la protection des données (RGPD, UE 2016/679).</p>`,
+          html: `<p>Le site du Learning Planet Festival est édité par le Learning Planet Institute. Nous nous engageons à protéger les données personnelles conformément à la loi n° 78-17 du 6 janvier 1978 (« Informatique et Libertés ») et au Règlement général sur la protection des données (RGPD, UE 2016/679).</p>`,
         },
         {
           heading: '1. Responsable de traitement',
@@ -104,11 +104,11 @@ function privacyPolicy(locale: Locale): LegalPage {
   return {
     title: 'Privacy policy',
     metaDescription:
-      'How the Learning Planet Institute protects your personal data on the LearningPlanet Festival website: what we collect, why, how long we keep it, and your rights.',
+      'How the Learning Planet Institute protects your personal data on the Learning Planet Festival website: what we collect, why, how long we keep it, and your rights.',
     updated: 'Last updated: July 2026',
     sections: [
       {
-        html: `<p>The LearningPlanet Festival website is published by the Learning Planet Institute. We are committed to protecting personal data in accordance with French law No. 78-17 of 6 January 1978 (“Informatique et Libertés”) and the EU General Data Protection Regulation (GDPR, EU 2016/679).</p>`,
+        html: `<p>The Learning Planet Festival website is published by the Learning Planet Institute. We are committed to protecting personal data in accordance with French law No. 78-17 of 6 January 1978 (“Informatique et Libertés”) and the EU General Data Protection Regulation (GDPR, EU 2016/679).</p>`,
       },
       {
         heading: '1. Data controller',
@@ -178,11 +178,11 @@ function cookiesPolicy(locale: Locale): LegalPage {
     return {
       title: 'Politique de cookies',
       metaDescription:
-        'Les cookies utilisés par le site du LearningPlanet Festival : mesure d’audience Matomo auto-hébergée soumise à votre consentement, et rien d’autre. Modifiez votre choix à tout moment.',
+        'Les cookies utilisés par le site du Learning Planet Festival : mesure d’audience Matomo auto-hébergée soumise à votre consentement, et rien d’autre. Modifiez votre choix à tout moment.',
       updated: 'Dernière mise à jour : juillet 2026',
       sections: [
         {
-          html: `<p>La présente politique explique quels cookies et technologies similaires sont utilisés sur ce site, et comment gérer vos préférences. Elle s’applique au site du LearningPlanet Festival. Pour en savoir plus sur le traitement de vos données, consultez notre <a href="${privacyLink}">politique de confidentialité</a>.</p>`,
+          html: `<p>La présente politique explique quels cookies et technologies similaires sont utilisés sur ce site, et comment gérer vos préférences. Elle s’applique au site du Learning Planet Festival. Pour en savoir plus sur le traitement de vos données, consultez notre <a href="${privacyLink}">politique de confidentialité</a>.</p>`,
         },
         {
           heading: 'Qu’est-ce qu’un cookie ?',
@@ -228,11 +228,11 @@ function cookiesPolicy(locale: Locale): LegalPage {
   return {
     title: 'Cookies policy',
     metaDescription:
-      'The cookies used by the LearningPlanet Festival website: self-hosted Matomo analytics, set only with your consent — and nothing else. Change your choice at any time.',
+      'The cookies used by the Learning Planet Festival website: self-hosted Matomo analytics, set only with your consent — and nothing else. Change your choice at any time.',
     updated: 'Last updated: July 2026',
     sections: [
       {
-        html: `<p>This policy explains which cookies and similar technologies are used on this site and how to manage your preferences. It applies to the LearningPlanet Festival website. For more about how we handle your data, see our <a href="${privacyLink}">privacy policy</a>.</p>`,
+        html: `<p>This policy explains which cookies and similar technologies are used on this site and how to manage your preferences. It applies to the Learning Planet Festival website. For more about how we handle your data, see our <a href="${privacyLink}">privacy policy</a>.</p>`,
       },
       {
         heading: 'What are cookies?',
@@ -280,7 +280,7 @@ function legalNotice(locale: Locale): LegalPage {
     return {
       title: 'Mentions légales',
       metaDescription:
-        'Mentions légales du site du LearningPlanet Festival : éditeur, direction de la publication, hébergement, propriété intellectuelle et droit applicable.',
+        'Mentions légales du site du Learning Planet Festival : éditeur, direction de la publication, hébergement, propriété intellectuelle et droit applicable.',
       updated: 'Dernière mise à jour : juillet 2026',
       sections: [
         {
@@ -289,7 +289,7 @@ function legalNotice(locale: Locale): LegalPage {
         },
         {
           heading: 'Direction de la publication',
-          html: `<p>L’équipe LearningPlanet Alliance<br />${mail(CONTACT)}</p>`,
+          html: `<p>L’équipe Learning Planet Alliance<br />${mail(CONTACT)}</p>`,
         },
         {
           heading: 'Hébergement',
@@ -303,8 +303,8 @@ function legalNotice(locale: Locale): LegalPage {
         },
         {
           heading: 'Propriété intellectuelle',
-          html: `<p>Sauf mention contraire, les contenus éditoriaux (textes) de ce site sont mis à disposition sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" target="_blank" rel="noopener">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>, avec attribution : « LearningPlanet Festival — Learning Planet Institute ».</p>
-<p>Cette licence ne s’applique pas aux logos et marques (Learning Planet Institute, LearningPlanet Festival, nom et emblème de l’UNESCO), aux illustrations du festival (créées à l’aide d’outils d’intelligence artificielle générative), ni aux contenus de tiers (logos des organisations partenaires, photographies des intervenant·es, vidéos), qui restent la propriété de leurs titulaires respectifs et ne peuvent être réutilisés sans leur autorisation.</p>`,
+          html: `<p>Sauf mention contraire, les contenus éditoriaux (textes) de ce site sont mis à disposition sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" target="_blank" rel="noopener">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>, avec attribution : « Learning Planet Festival — Learning Planet Institute ».</p>
+<p>Cette licence ne s’applique pas aux logos et marques (Learning Planet Institute, Learning Planet Festival, nom et emblème de l’UNESCO), aux illustrations du festival (créées à l’aide d’outils d’intelligence artificielle générative), ni aux contenus de tiers (logos des organisations partenaires, photographies des intervenant·es, vidéos), qui restent la propriété de leurs titulaires respectifs et ne peuvent être réutilisés sans leur autorisation.</p>`,
         },
         {
           heading: 'Liens externes',
@@ -321,7 +321,7 @@ function legalNotice(locale: Locale): LegalPage {
   return {
     title: 'Legal notice',
     metaDescription:
-      'Legal notice for the LearningPlanet Festival website: publisher, publication management, hosting, intellectual property and applicable law.',
+      'Legal notice for the Learning Planet Festival website: publisher, publication management, hosting, intellectual property and applicable law.',
     updated: 'Last updated: July 2026',
     sections: [
       {
@@ -330,7 +330,7 @@ function legalNotice(locale: Locale): LegalPage {
       },
       {
         heading: 'Publication management',
-        html: `<p>The LearningPlanet Alliance Team<br />${mail(CONTACT)}</p>`,
+        html: `<p>The Learning Planet Alliance Team<br />${mail(CONTACT)}</p>`,
       },
       {
         heading: 'Hosting',
@@ -344,8 +344,8 @@ function legalNotice(locale: Locale): LegalPage {
       },
       {
         heading: 'Intellectual property',
-        html: `<p>Unless stated otherwise, the editorial content (texts) of this site is made available under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0 International licence (CC BY 4.0)</a>, with attribution: “LearningPlanet Festival — Learning Planet Institute”.</p>
-<p>This licence does not extend to logos and trademarks (Learning Planet Institute, LearningPlanet Festival, the UNESCO name and emblem), to the festival illustrations (created using generative-AI tools), or to third-party materials (partner organisation logos, speaker photographs, videos), which remain the property of their respective owners and may not be reused without their permission.</p>`,
+        html: `<p>Unless stated otherwise, the editorial content (texts) of this site is made available under the <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0 International licence (CC BY 4.0)</a>, with attribution: “Learning Planet Festival — Learning Planet Institute”.</p>
+<p>This licence does not extend to logos and trademarks (Learning Planet Institute, Learning Planet Festival, the UNESCO name and emblem), to the festival illustrations (created using generative-AI tools), or to third-party materials (partner organisation logos, speaker photographs, videos), which remain the property of their respective owners and may not be reused without their permission.</p>`,
       },
       {
         heading: 'External links',
