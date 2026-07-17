@@ -1,0 +1,141 @@
+---
+/**
+ * DESIGN LAB (temporary) — hub for the who-we-are page team review.
+ * Three full-page variants; pick one, then this whole directory,
+ * src/components/lab/ and the astro.config.mjs sitemap exclusion are retired.
+ */
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { withBase } from '~/lib/paths';
+
+const variants = [
+  {
+    href: 'design-lab/who-we-are/a/',
+    key: 'A',
+    name: 'Refined editorial',
+    color: 'var(--c-green)',
+    blurb:
+      'Same sections, elevated craft: asymmetric organiser spread, hairline-divided goals, ledger timeline. Calm, magazine-like.',
+  },
+  {
+    href: 'design-lab/who-we-are/b/',
+    key: 'B',
+    name: 'The movement story',
+    color: 'var(--c-coral)',
+    blurb:
+      'A narrative arc: dark poster-scale manifesto opening fused with the impact numbers, organisers as two identity bands, sticky-chapter journey.',
+  },
+  {
+    href: 'design-lab/who-we-are/c/',
+    key: 'C',
+    name: 'The lineup wall family',
+    color: 'var(--c-blue)',
+    blurb:
+      'The third poster in the wall family: giant “2020” hero, goals as a full-bleed colour wall, hairline team photo wall.',
+  },
+];
+---
+
+<BaseLayout
+  title="Design lab — Who we are"
+  description="Temporary team-review page: three design variants for the who-we-are page."
+  path="design-lab/who-we-are"
+  locale="en"
+  noindex
+>
+  <section class="section container">
+    <p class="eyebrow">Design lab · team review</p>
+    <h1 class="h-bold hub-title">Who we are — three variants</h1>
+    <p class="hub-note">
+      Same locked copy and data on all three; only the design changes. Each opens as a full live
+      page. These previews are noindexed and excluded from the sitemap.
+    </p>
+
+    <ul class="hub-list" role="list">
+      {
+        variants.map((v) => (
+          <li class="hub-card" style={`--accent: ${v.color}`}>
+            <a href={withBase(v.href)}>
+              <span class="hub-key h-bold" aria-hidden="true">
+                {v.key}
+              </span>
+              <span class="hub-body">
+                <span class="hub-name h-bold">{v.name}</span>
+                <span class="hub-blurb">{v.blurb}</span>
+              </span>
+              <span class="hub-arrow" aria-hidden="true">
+                →
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  .hub-title {
+    font-size: var(--fs-800);
+    margin-block: var(--sp-2) var(--sp-3);
+  }
+  .hub-note {
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin-bottom: var(--sp-5);
+  }
+  .hub-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-3);
+  }
+  .hub-card a {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-4);
+    padding: var(--sp-4);
+    background: var(--paper-2);
+    border-left: 6px solid var(--accent);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--ink);
+    transition: background 0.15s ease;
+  }
+  .hub-card a:hover {
+    background: color-mix(in srgb, var(--accent) 14%, var(--paper-2));
+  }
+  .hub-key {
+    font-size: var(--fs-800);
+    line-height: 1;
+    color: var(--accent);
+    min-width: 2.2rem;
+    text-align: center;
+  }
+  .hub-body {
+    display: grid;
+    gap: 0.3rem;
+  }
+  .hub-name {
+    font-size: var(--fs-600);
+  }
+  .hub-blurb {
+    color: var(--ink-soft);
+    font-size: var(--fs-400);
+  }
+  .hub-arrow {
+    margin-left: auto;
+    font-size: var(--fs-600);
+    color: var(--ink-faint);
+  }
+
+  @media (max-width: 560px) {
+    .hub-card a {
+      gap: var(--sp-3);
+      padding: var(--sp-3);
+    }
+    .hub-key {
+      font-size: var(--fs-700);
+    }
+  }
+</style>

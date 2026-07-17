@@ -1,0 +1,286 @@
+---
+/**
+ * DESIGN LAB (temporary) — Variant B: "The movement story".
+ * A narrative-arc restructuring of the who-we-are page: statement → proof →
+ * who's behind it → what unites them → how far it's come → the people → join.
+ * Delete together with src/pages/design-lab/ once a variant is chosen.
+ */
+import { Image } from 'astro:assets';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import LabBanner from '~/components/lab/LabBanner.astro';
+import StatCounters from '~/components/StatCounters.astro';
+import PoweredBy from '~/components/PoweredBy.astro';
+import SharedGoals from '~/components/SharedGoals.astro';
+import Timeline from '~/components/Timeline.astro';
+import TeamGrid from '~/components/TeamGrid.astro';
+import StayInformedCta from '~/components/StayInformedCta.astro';
+import lpiColour from '~/assets/brand/lpi-colour.png';
+import unesco from '~/assets/brand/unesco.svg';
+import { intro, organisers } from '~/data/whoWeAre';
+import { useTranslations } from '~/i18n/utils';
+
+const locale = 'en';
+const t = useTranslations(locale);
+
+// Split the locked intro at its third sentence: the first two sentences
+// become the poster statement, the rest becomes the quieter supporting line.
+// Copy is untouched — only the split point changes, for layout only.
+const splitAt = intro.indexOf('It has become');
+const statement = intro.slice(0, splitAt).trim();
+const rest = intro.slice(splitAt);
+const [pre, post] = statement.split('a global movement');
+---
+
+<BaseLayout
+  title="Who we are — Design B"
+  description="Design-lab preview: movement-story variant of the who-we-are page."
+  path="design-lab/who-we-are/b"
+  locale="en"
+  noindex
+>
+  <LabBanner label="Variant B — The movement story" />
+
+  <section class="manifesto" aria-labelledby="wwa-title">
+    <hr class="rainbow-rule manifesto-rule" aria-hidden="true" />
+    <div class="container">
+      <p class="eyebrow manifesto-eyebrow">{t('whoWeAre.title')}</p>
+      <h1 id="wwa-title" class="manifesto-title">
+        {pre}<span class="accent">a global movement</span>{post}
+      </h1>
+      <p class="manifesto-rest">{rest}</p>
+    </div>
+  </section>
+
+  <StatCounters locale="en" />
+
+  <section class="org-band org-band-lpi" aria-labelledby="org-lpi-title">
+    <div class="container org-grid">
+      <p class="eyebrow org-eyebrow">{t('whoWeAre.organisers')}</p>
+      <div class="org-media">
+        <Image src={lpiColour} alt="Learning Planet Institute" width={301} height={283} />
+      </div>
+      <div class="org-text-cell org-text-cell-lpi">
+        <h2 id="org-lpi-title" class="h-bold org-name">{organisers.lpi.name}</h2>
+        {organisers.lpi.paragraphs.map((p) => <p class="org-text" set:html={p} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="org-band org-band-unesco" aria-labelledby="org-unesco-title">
+    <div class="container org-grid org-grid-unesco">
+      <div class="org-text-cell org-text-cell-unesco">
+        <h2 id="org-unesco-title" class="h-bold org-name">{organisers.unesco.name}</h2>
+        {organisers.unesco.paragraphs.map((p) => <p class="org-text" set:html={p} />)}
+      </div>
+      <div class="org-media org-media-unesco">
+        <Image class="unesco-logo" src={unesco} alt="UNESCO" width={200} height={43} />
+      </div>
+    </div>
+    <div class="container">
+      <div class="org-powered">
+        <PoweredBy label={t('common.poweredBy')} variant="light" size="lg" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section container shared-goals-section" aria-labelledby="goals-title">
+    <h2 id="goals-title" class="h-bold section-h">{t('whoWeAre.sharedGoals')}</h2>
+    <SharedGoals />
+  </section>
+
+  <section class="journey" aria-labelledby="journey-title">
+    <div class="container journey-grid">
+      <h2 id="journey-title" class="h-bold journey-heading">{t('whoWeAre.journey')}</h2>
+      <Timeline />
+    </div>
+  </section>
+
+  <section class="team-band" aria-labelledby="team-title">
+    <div class="container section">
+      <h2 id="team-title" class="h-bold section-h">{t('whoWeAre.team')}</h2>
+      <TeamGrid locale="en" />
+    </div>
+  </section>
+
+  <StayInformedCta locale="en" />
+</BaseLayout>
+
+<style>
+  /* ---------- 1. Manifesto opening ---------- */
+  .manifesto {
+    position: relative;
+    background: var(--ink);
+    color: var(--paper);
+    padding-block: clamp(4rem, 9vw, 7rem) var(--sp-5);
+  }
+  .manifesto-rule {
+    position: absolute;
+    inset: 0 0 auto 0;
+    margin: 0;
+    border: 0;
+  }
+  .manifesto-eyebrow {
+    color: var(--c-yellow);
+    animation: fade-up 0.5s ease-out both;
+  }
+  .manifesto-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-700);
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+    max-width: 36ch;
+    text-wrap: balance;
+    color: var(--paper);
+    animation: fade-up 0.5s ease-out 0.1s both;
+  }
+  .manifesto-title .accent {
+    color: var(--c-coral);
+  }
+  .manifesto-rest {
+    color: color-mix(in srgb, var(--paper) 88%, var(--ink));
+    font-size: var(--fs-500);
+    max-width: 60ch;
+    margin-top: var(--sp-3);
+    margin-bottom: 0;
+    animation: fade-up 0.5s ease-out 0.2s both;
+  }
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .manifesto-eyebrow,
+    .manifesto-title,
+    .manifesto-rest {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* ---------- 3. Organiser identity bands ---------- */
+  .org-band-lpi {
+    background: var(--paper);
+  }
+  .org-band-unesco {
+    background: var(--paper-2);
+  }
+  .org-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
+    padding-block: var(--sp-6);
+  }
+  .org-band-lpi .org-eyebrow {
+    grid-column: 1 / -1;
+  }
+  .org-grid-unesco {
+    grid-template-columns: 1fr 300px;
+  }
+  .org-media img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+  }
+  .org-media-unesco {
+    order: 2;
+  }
+  .org-media-unesco img {
+    max-width: 200px;
+  }
+  /* UNESCO's source fill is white; tint to ink on this light ground —
+     filter values copied exactly from PoweredBy.astro's ".light .pb-unesco". */
+  .unesco-logo {
+    filter: brightness(0) saturate(100%) invert(13%) sepia(28%) saturate(1100%) hue-rotate(150deg)
+      brightness(95%);
+    opacity: 0.9;
+  }
+  .org-text-cell {
+    border-top: 6px solid var(--c-green);
+    padding-top: var(--sp-3);
+    max-width: 62ch;
+  }
+  .org-text-cell-unesco {
+    border-top-color: var(--c-blue);
+  }
+  .org-name {
+    font-size: var(--fs-800);
+    margin-bottom: var(--sp-3);
+  }
+  .org-text {
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .org-text + .org-text {
+    margin-top: var(--sp-2);
+  }
+  .org-text :global(strong) {
+    color: var(--ink);
+  }
+  .org-powered {
+    border-top: 1px solid var(--line);
+    margin-top: var(--sp-5);
+    padding-top: var(--sp-4);
+    padding-bottom: var(--sp-6);
+  }
+
+  /* ---------- 4. Shared goals ---------- */
+  .section-h {
+    font-size: var(--fs-800);
+    margin-bottom: var(--sp-4);
+  }
+
+  /* ---------- 5. Journey ---------- */
+  .journey {
+    background: var(--paper);
+  }
+  .journey-grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    padding-block: var(--sp-6);
+  }
+  .journey-heading {
+    font-size: var(--fs-800);
+    position: sticky;
+    top: calc(85px + 1.5rem);
+    align-self: start;
+  }
+
+  /* ---------- 6. The team ---------- */
+  .team-band {
+    background: var(--paper-2);
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 880px) {
+    .org-grid,
+    .org-grid-unesco {
+      grid-template-columns: 1fr;
+    }
+    .org-media-unesco {
+      order: 0;
+    }
+    .org-media img {
+      max-width: 180px;
+      margin-bottom: var(--sp-2);
+    }
+    .org-media-unesco img {
+      max-width: 140px;
+    }
+    .journey-grid {
+      grid-template-columns: 1fr;
+    }
+    .journey-heading {
+      position: static;
+    }
+  }
+</style>

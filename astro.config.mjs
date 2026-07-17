@@ -15,6 +15,9 @@ const heldRoutes = [];
 if (!show.programme) heldRoutes.push('programme', 'event');
 if (!show.speakers) heldRoutes.push('speakers', 'speaker');
 if (!show.partners) heldRoutes.push('partners');
+// Temporary team-review previews — always out of the sitemap (pages are also
+// noindexed). Remove together with src/pages/design-lab/.
+heldRoutes.push('design-lab');
 const heldRe = heldRoutes.length
   ? new RegExp(`/(?:fr/)?(?:${heldRoutes.join('|')})(?:/|$)`)
   : null;

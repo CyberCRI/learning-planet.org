@@ -1,0 +1,417 @@
+---
+/**
+ * DESIGN LAB (temporary) — Variant A: "Refined editorial".
+ * Same locked content/data as WhoWeAreContent.astro, elevated editorial craft:
+ * asymmetric organiser spread, hairline-divided goals grid, ledger-style
+ * timeline. Calm confidence, magazine feature — no full-bleed colour walls.
+ */
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import LabBanner from '~/components/lab/LabBanner.astro';
+import PageHero from '~/components/PageHero.astro';
+import PoweredBy from '~/components/PoweredBy.astro';
+import StatCounters from '~/components/StatCounters.astro';
+import StayInformedCta from '~/components/StayInformedCta.astro';
+import { Image } from 'astro:assets';
+import { intro, organisers, sharedGoals } from '~/data/whoWeAre';
+import { timeline } from '~/data/timeline';
+import { team } from '~/data/team';
+import { useTranslations, type Locale } from '~/i18n/utils';
+
+const locale: Locale = 'en';
+const t = useTranslations(locale);
+
+// Rotate brand brights across the timeline markers (same cycle as Timeline.astro).
+const tlAccents = ['--c-green', '--c-blue', '--c-lilac', '--c-coral', '--c-yellow'];
+---
+
+<BaseLayout
+  title="Who we are — Design A"
+  description="Design-lab preview: refined editorial variant of the who-we-are page."
+  path="design-lab/who-we-are/a"
+  locale="en"
+  noindex
+>
+  <LabBanner label="Variant A — Refined editorial" />
+
+  <PageHero eyebrow="Learning Planet Festival" title={t('whoWeAre.title')} />
+
+  <section class="section origins" aria-labelledby="origins-title">
+    <div class="container">
+      <h2 id="origins-title" class="visually-hidden">Origins</h2>
+      <div class="tick" aria-hidden="true"></div>
+      <p class="lede">{intro}</p>
+
+      <div class="organisers">
+        <article class="org org-lpi" aria-labelledby="org-lpi-title">
+          <h3 id="org-lpi-title" class="org-name h-bold">
+            {organisers.lpi.name}
+            <span class="org-bar org-bar-lpi" aria-hidden="true"></span>
+          </h3>
+          <p class="org-text" set:html={organisers.lpi.paragraphs[0]} />
+          <p class="org-text org-callout" set:html={organisers.lpi.paragraphs[1]} />
+        </article>
+
+        <article class="org org-unesco" aria-labelledby="org-unesco-title">
+          <h3 id="org-unesco-title" class="org-name h-bold">
+            {organisers.unesco.name}
+            <span class="org-bar org-bar-unesco" aria-hidden="true"></span>
+          </h3>
+          <p class="org-text" set:html={organisers.unesco.paragraphs[0]} />
+        </article>
+      </div>
+
+      <div class="lockup">
+        <PoweredBy label={t('common.poweredBy')} variant="light" size="lg" />
+      </div>
+    </div>
+  </section>
+
+  <StatCounters locale="en" />
+
+  <section class="section container" aria-labelledby="goals-title">
+    <div class="tick" aria-hidden="true"></div>
+    <h2 id="goals-title" class="h-bold section-h">{t('whoWeAre.sharedGoals')}</h2>
+
+    <ul class="goals-grid" role="list">
+      {
+        sharedGoals.map((goal, i) => (
+          <li class="goal-cell">
+            <div class="goal-meta" aria-hidden="true">
+              <span class="goal-swatch" style={`background: var(${goal.color})`} />
+              <span class="goal-num">{String(i + 1).padStart(2, '0')}</span>
+            </div>
+            <h3 class="goal-title h-bold">{goal.title}</h3>
+            <p class="goal-desc">{goal.description}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="section container" aria-labelledby="journey-title">
+    <div class="tick" aria-hidden="true"></div>
+    <h2 id="journey-title" class="h-bold section-h">{t('whoWeAre.journey')}</h2>
+
+    <ol class="ledger" role="list">
+      {
+        timeline.map((entry, i) => (
+          <li class="ledger-item" style={`--accent: var(${tlAccents[i % tlAccents.length]})`}>
+            <div class="ledger-when">
+              <span class="ledger-dot" aria-hidden="true" />
+              <span class="ledger-date">{entry.date}</span>
+            </div>
+            <div class="ledger-body">
+              <h3 class="ledger-title h-bold">
+                {entry.href ? (
+                  <a href={entry.href} target="_blank" rel="noopener">
+                    {entry.title}
+                  </a>
+                ) : (
+                  entry.title
+                )}
+              </h3>
+              <p class="ledger-desc" set:html={entry.description} />
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="section container" aria-labelledby="team-title">
+    <div class="tick" aria-hidden="true"></div>
+    <h2 id="team-title" class="h-bold section-h">{t('whoWeAre.team')}</h2>
+
+    <ul class="team-grid" role="list">
+      {
+        team.map((member) => (
+          <li class="team-card">
+            <Image
+              class="team-photo"
+              src={member.photo}
+              alt={member.name}
+              width={200}
+              height={200}
+              loading="lazy"
+            />
+            <h3 class="team-name">{member.name}</h3>
+            <p class="team-role">{member.position}</p>
+            <a class="team-linkedin" href={member.linkedin} target="_blank" rel="noopener">
+              {t('whoWeAre.followLinkedIn')}
+              <span class="visually-hidden"> — {member.name}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <StayInformedCta locale="en" />
+</BaseLayout>
+
+<style>
+  /* ---------- shared editorial primitives ---------- */
+  .tick {
+    width: 72px;
+    height: 5px;
+    background: var(--grad-festival);
+    border-radius: 999px;
+    margin-bottom: var(--sp-3);
+  }
+  .section-h {
+    font-size: var(--fs-800);
+    margin-bottom: var(--sp-5);
+  }
+
+  /* ---------- origins ---------- */
+  .origins {
+    padding-block: var(--sp-7) var(--sp-6);
+  }
+  .lede {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: var(--fs-600);
+    line-height: 1.45;
+    color: var(--ink);
+    max-width: 58ch;
+    margin-bottom: var(--sp-6);
+  }
+
+  .organisers {
+    display: grid;
+    gap: var(--sp-5);
+  }
+  @media (min-width: 900px) {
+    .organisers {
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: var(--sp-6);
+      align-items: start;
+    }
+  }
+
+  .org-name {
+    font-size: var(--fs-700);
+    margin-bottom: var(--sp-3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+  .org-bar {
+    display: block;
+    width: 44px;
+    height: 5px;
+    border-radius: 999px;
+  }
+  .org-bar-lpi {
+    background: var(--c-green);
+  }
+  .org-bar-unesco {
+    background: var(--c-blue);
+  }
+
+  .org-text {
+    font-size: var(--fs-400);
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .org-text + .org-text {
+    margin-top: var(--sp-3);
+  }
+  .org-text :global(strong) {
+    color: var(--ink);
+  }
+
+  .org-callout {
+    border-left: 5px solid var(--c-coral);
+    padding-left: var(--sp-3);
+  }
+
+  .lockup {
+    margin-top: var(--sp-6);
+    padding-top: var(--sp-4);
+    border-top: 1px solid var(--line);
+  }
+
+  /* ---------- shared goals ---------- */
+  .goals-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 900px) {
+    .goals-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+  }
+  .goal-cell {
+    border-top: 1px solid var(--line-strong);
+    padding: var(--sp-4) 0;
+  }
+  @media (min-width: 900px) {
+    .goal-cell {
+      padding: var(--sp-4) var(--sp-4) var(--sp-4) 0;
+    }
+    .goal-cell:nth-child(odd) {
+      border-right: 1px solid var(--line-strong);
+      padding-right: var(--sp-4);
+    }
+    .goal-cell:nth-child(even) {
+      padding-left: var(--sp-4);
+    }
+  }
+  .goal-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: var(--sp-2);
+  }
+  .goal-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+  }
+  .goal-num {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-500);
+    color: var(--ink-faint);
+  }
+  .goal-title {
+    font-size: var(--fs-600);
+    margin-bottom: var(--sp-2);
+  }
+  .goal-desc {
+    font-size: var(--fs-400);
+    color: var(--ink-soft);
+    max-width: 44ch;
+    margin: 0;
+  }
+
+  /* ---------- journey ledger ---------- */
+  .ledger {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .ledger-item {
+    border-top: 1px solid var(--line);
+    padding-block: var(--sp-4);
+    display: grid;
+    gap: var(--sp-2);
+  }
+  .ledger-item:first-child {
+    border-top: none;
+  }
+  @media (min-width: 760px) {
+    .ledger-item {
+      grid-template-columns: 9.5rem 1fr;
+      gap: var(--sp-4);
+    }
+  }
+  .ledger-when {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .ledger-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+  .ledger-date {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: var(--fs-400);
+    color: var(--c-deep-teal);
+  }
+  .ledger-title {
+    font-size: var(--fs-600);
+    margin-bottom: 0.4rem;
+  }
+  .ledger-title a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.18em;
+  }
+  .ledger-title a:hover {
+    color: var(--c-deep-teal);
+  }
+  .ledger-desc {
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0;
+  }
+  .ledger-desc :global(a) {
+    color: var(--c-deep-teal);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  /* ---------- team ---------- */
+  .team-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--sp-4) var(--sp-3);
+  }
+  .team-card {
+    text-align: center;
+  }
+  .team-photo {
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 0.9rem;
+    border: 3px solid var(--white);
+    box-shadow: 0 0 0 2px var(--line-strong);
+    transition: box-shadow 0.15s ease;
+  }
+  .team-card:hover .team-photo,
+  .team-card:focus-within .team-photo {
+    box-shadow: 0 0 0 2px var(--c-deep-teal);
+  }
+  .team-name {
+    font-size: var(--fs-500);
+    margin-bottom: 0.15rem;
+  }
+  .team-role {
+    font-size: var(--fs-300);
+    color: var(--ink-soft);
+    margin: 0 0 0.5rem;
+    min-height: 2.4em;
+  }
+  .team-linkedin {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--fs-300);
+    color: var(--c-deep-teal);
+    text-decoration: none;
+  }
+  .team-linkedin:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 880px) {
+    .team-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 560px) {
+    .team-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

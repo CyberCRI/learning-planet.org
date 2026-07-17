@@ -1,0 +1,65 @@
+---
+/**
+ * DESIGN LAB (temporary) — slim identification strip shown at the top of every
+ * /design-lab/ preview page so a variant is never mistaken for the live site.
+ * Delete together with src/pages/design-lab/.
+ */
+import { withBase } from '~/lib/paths';
+
+interface Props {
+  label: string;
+}
+const { label } = Astro.props;
+---
+
+<div class="lab-banner">
+  <div class="container lab-inner">
+    <span class="lab-tag">Design lab</span>
+    <span class="lab-label">{label}</span>
+    <a class="lab-back" href={withBase('design-lab/who-we-are/')}>Back to comparison <span aria-hidden="true">→</span></a>
+  </div>
+</div>
+
+<style>
+  .lab-banner {
+    background: var(--ink);
+    color: var(--paper);
+    border-bottom: 3px solid var(--c-yellow);
+  }
+  .lab-inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    padding-block: 0.55rem;
+  }
+  .lab-tag {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: var(--fs-300);
+    background: var(--c-yellow);
+    color: var(--ink);
+    border-radius: 999px;
+    padding: 0.1rem 0.7rem;
+  }
+  .lab-label {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--fs-400);
+    letter-spacing: 0.02em;
+  }
+  .lab-back {
+    margin-left: auto;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--fs-300);
+    color: var(--c-blue);
+    text-decoration: none;
+  }
+  .lab-back:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+</style>
