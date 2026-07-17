@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import PageHero from '~/components/PageHero.astro';
-import ThemesGrid from '~/components/ThemesGrid.astro';
+import ThemesLineup from '~/components/ThemesLineup.astro';
 import EmptyState from '~/components/EmptyState.astro';
 import { safeCollection } from '~/lib/collections';
 import { show } from '~/config';
@@ -45,5 +45,5 @@ const hasProgramme = show.programme && events.length > 0;
     )
   }
 
-  {show.themes && <ThemesGrid locale={locale} />}
+  {show.themes && <ThemesLineup locale={locale} />}
 </BaseLayout>

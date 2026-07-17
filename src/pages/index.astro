@@ -2,7 +2,7 @@
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Hero from '~/components/Hero.astro';
 import MovementSection from '~/components/MovementSection.astro';
-import ThemesGrid from '~/components/ThemesGrid.astro';
+import ThemesLineup from '~/components/ThemesLineup.astro';
 import CuratedEdition from '~/components/CuratedEdition.astro';
 import StatCounters from '~/components/StatCounters.astro';
 import PartnerMarquee from '~/components/PartnerMarquee.astro';
@@ -21,7 +21,7 @@ const locale = 'en';
   locale={locale}
 >
   <Hero locale={locale} />
-  {show.themes && <ThemesGrid locale={locale} />}
+  {show.themes && <ThemesLineup locale={locale} />}
   <CuratedEdition locale={locale} />
   <MovementSection locale={locale} />
   <StatCounters locale={locale} />

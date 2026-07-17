@@ -12,7 +12,6 @@ const SITE = 'https://festival.learning-planet.org';
 // Held routes are noindexed while their flag is OFF — keep them out of the
 // sitemap too, so search engines aren't pointed at "to be announced" pages.
 const heldRoutes = [];
-heldRoutes.push('design-lab'); // temporary team-review previews — always noindexed, never in the sitemap
 if (!show.programme) heldRoutes.push('programme', 'event');
 if (!show.speakers) heldRoutes.push('speakers', 'speaker');
 if (!show.partners) heldRoutes.push('partners');

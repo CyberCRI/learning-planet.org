@@ -1,10 +1,9 @@
 ---
 /**
- * DESIGN LAB (temporary) — Scenario 3 "Festival poster", themes section.
- * Replaces ThemesGrid.astro's card grid with a full-bleed "lineup wall":
- * six stacked, edge-to-edge colour rows (like a festival poster's line-up)
- * that expand via <details> to reveal each theme's framing question.
- * themeShade map and on-dark logic copied from ThemesGrid.astro verbatim.
+ * Key themes as a full-bleed "lineup wall" (team-adopted over the card grid,
+ * July 2026): six stacked, edge-to-edge colour rows — like a festival
+ * poster's line-up — that expand via <details> to reveal each theme's
+ * framing question. Rows auto-open on small screens.
  */
 import { themes } from '~/data/themes';
 import { useTranslations, type Locale } from '~/i18n/utils';
@@ -28,12 +27,10 @@ const themeShade: Record<string, string> = {
 const onDark = new Set(['--c-deep-green']);
 ---
 
-{/* No id="themes"/"themes-title" here: ThemesGrid claims those, and the
-    comparison page renders both components on one document. */}
-<section class="wall" aria-labelledby="wall-title">
+<section class="wall" id="themes" aria-labelledby="themes-title">
   <div class="container wall-head">
     <p class="eyebrow">{t('themes.eyebrow')}</p>
-    <h2 id="wall-title" class="h-bold wall-heading">{t('themes.heading')}</h2>
+    <h2 id="themes-title" class="h-bold wall-heading">{t('themes.heading')}</h2>
   </div>
 
   {
