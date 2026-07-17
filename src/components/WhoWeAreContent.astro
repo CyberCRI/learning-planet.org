@@ -1,10 +1,16 @@
 ---
-import PageHero from './PageHero.astro';
-import SharedGoals from './SharedGoals.astro';
-import Timeline from './Timeline.astro';
-import TeamGrid from './TeamGrid.astro';
+/**
+ * Who-we-are page body — design-lab round 4 final (team decision 2026-07-17):
+ * variant C's "lineup wall family" page opened by variant B's dark manifesto
+ * intro, with no stats band. Prose stays on quiet grounds; the walls carry
+ * the colour.
+ */
+import { Image } from 'astro:assets';
 import PoweredBy from './PoweredBy.astro';
-import { intro, organisers } from '~/data/whoWeAre';
+import StayInformedCta from './StayInformedCta.astro';
+import { intro, organisers, sharedGoals } from '~/data/whoWeAre';
+import { timeline } from '~/data/timeline';
+import { team } from '~/data/team';
 import { useTranslations, type Locale } from '~/i18n/utils';
 
 interface Props {
@@ -12,66 +18,267 @@ interface Props {
 }
 const { locale } = Astro.props;
 const t = useTranslations(locale);
+
+// Split the intro for layout only (copy stays verbatim, in order): the first
+// two sentences become the poster statement, the rest the supporting line.
+// Both splits fall back gracefully if the prose is later edited/translated.
+const SPLIT_MARK = 'It has become';
+const ACCENT = 'a global movement';
+const splitAt = intro.indexOf(SPLIT_MARK);
+const statement = splitAt === -1 ? intro : intro.slice(0, splitAt).trim();
+const rest = splitAt === -1 ? '' : intro.slice(splitAt);
+const accentAt = statement.indexOf(ACCENT);
+const pre = accentAt === -1 ? statement : statement.slice(0, accentAt);
+const post = accentAt === -1 ? '' : statement.slice(accentAt + ACCENT.length);
+
+// Bright -> dark-companion map (same pairing ThemesLineup.astro / SharedGoals.astro
+// use for their answer-band tints — the pre-validated AA combos).
+const shadeOf: Record<string, string> = {
+  '--c-green': '--c-deep-green',
+  '--c-blue': '--c-deep-teal',
+  '--c-lilac': '--c-slate',
+  '--c-coral': '--c-brown',
+};
+
+// Journey rows cycle the five brand brights, same rotation as Timeline.astro.
+const tlAccents = ['--c-green', '--c-blue', '--c-lilac', '--c-coral', '--c-yellow'];
 ---
 
-<PageHero title={t('whoWeAre.title')} />
+<!-- Manifesto intro (from design B) -->
+<section class="manifesto" aria-labelledby="wwa-title">
+  <hr class="rainbow-rule manifesto-rule" aria-hidden="true" />
+  <div class="container">
+    <p class="eyebrow manifesto-eyebrow">{t('whoWeAre.title')}</p>
+    <h1 id="wwa-title" class="manifesto-title">
+      {pre}{accentAt !== -1 && <span class="accent">{ACCENT}</span>}{post}
+    </h1>
+    {rest && <p class="manifesto-rest">{rest}</p>}
+  </div>
+</section>
 
-<section class="section container">
-  <p class="wwa-intro prose">{intro}</p>
+<!-- Organisers — two colour-blocked prose panels -->
+<section class="organisers-section" aria-labelledby="organisers-title">
+  <div class="container org-head">
+    <p class="eyebrow" id="organisers-title">{t('whoWeAre.organisers')}</p>
+  </div>
 
-  <div class="organisers">
-    <article class="organiser">
-      <h2 class="org-name">{organisers.lpi.name}</h2>
-      {organisers.lpi.paragraphs.map((p) => <p class="org-text" set:html={p} />)}
+  <div class="org-grid">
+    <article class="org-panel org-lpi">
+      <div class="org-inner">
+        <h2 class="org-name h-bold">{organisers.lpi.name}</h2>
+        {organisers.lpi.paragraphs.map((p) => <p class="org-text" set:html={p} />)}
+      </div>
     </article>
-    <article class="organiser">
-      <h2 class="org-name">{organisers.unesco.name}</h2>
-      {organisers.unesco.paragraphs.map((p) => <p class="org-text" set:html={p} />)}
+    <article class="org-panel org-unesco">
+      <div class="org-inner">
+        <h2 class="org-name h-bold">{organisers.unesco.name}</h2>
+        {organisers.unesco.paragraphs.map((p) => <p class="org-text" set:html={p} />)}
+      </div>
     </article>
   </div>
 
-  <div class="organisers-powered">
+  <div class="org-powered">
     <PoweredBy label={t('common.poweredBy')} variant="light" size="lg" />
   </div>
 </section>
 
-<section class="section container shared-goals-section">
-  <h2 class="h-bold section-h">{t('whoWeAre.sharedGoals')}</h2>
-  <SharedGoals />
+<!-- Shared goals — full-bleed colour wall -->
+<section class="wall goals-wall" id="shared-goals" aria-labelledby="goals-title">
+  <div class="container wall-head">
+    <h2 id="goals-title" class="h-bold wall-heading">{t('whoWeAre.sharedGoals')}</h2>
+  </div>
+
+  {
+    sharedGoals.map((goal, i) => (
+      <details
+        class="wall-row"
+        style={`--fill: var(${goal.color}); --shade: var(${shadeOf[goal.color] ?? '--c-deep-teal'});`}
+      >
+        <summary class="wall-summary">
+          <div class="container wall-line">
+            <span class="wall-num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            <h3 class="wall-title">{goal.title}</h3>
+            <span class="wall-plus" aria-hidden="true">+</span>
+          </div>
+        </summary>
+        <div class="wall-answer">
+          <div class="container">
+            <p class="wall-desc">{goal.description}</p>
+          </div>
+        </div>
+      </details>
+    ))
+  }
 </section>
 
-<section class="section container">
-  <h2 class="h-bold section-h">{t('whoWeAre.journey')}</h2>
-  <Timeline />
+<!-- Journey — full-bleed hairline rows -->
+<section class="journey-section" aria-labelledby="journey-title">
+  <div class="container journey-head">
+    <h2 id="journey-title" class="h-bold journey-heading">{t('whoWeAre.journey')}</h2>
+  </div>
+
+  <ol role="list" class="journey-list">
+    {
+      timeline.map((entry, i) => (
+        <li class="journey-row" style={`--accent: var(${tlAccents[i % tlAccents.length]})`}>
+          <div class="container journey-grid">
+            <div class="journey-when">
+              <p class="journey-date h-bold">{entry.date}</p>
+            </div>
+            <div class="journey-body">
+              <h3 class="journey-title h-bold">
+                {entry.href ? (
+                  <a href={entry.href} target="_blank" rel="noopener">
+                    {entry.title}
+                  </a>
+                ) : (
+                  entry.title
+                )}
+              </h3>
+              <p class="journey-desc" set:html={entry.description} />
+            </div>
+          </div>
+        </li>
+      ))
+    }
+  </ol>
 </section>
 
-<section class="section container team-section">
-  <h2 class="h-bold section-h">{t('whoWeAre.team')}</h2>
-  <TeamGrid locale={locale} />
+<!-- Team — hairline photo wall -->
+<section class="team-section" aria-labelledby="team-title">
+  <div class="container team-head">
+    <h2 id="team-title" class="h-bold team-heading">{t('whoWeAre.team')}</h2>
+  </div>
+
+  <ul role="list" class="team-wall">
+    <li class="team-cell divider-cell" aria-hidden="true">
+      <span class="divider-num h-bold">{team.length}</span>
+    </li>
+    {
+      team.map((member) => (
+        <li class="team-cell member-cell">
+          <Image
+            class="member-photo"
+            src={member.photo}
+            alt={member.name}
+            width={400}
+            height={400}
+            loading="lazy"
+          />
+          <div class="member-info">
+            <p class="member-name">{member.name}</p>
+            <p class="member-role">{member.position}</p>
+            <a class="member-linkedin" href={member.linkedin} target="_blank" rel="noopener">
+              {t('whoWeAre.followLinkedIn')}
+              <span class="visually-hidden"> — {member.name}</span>
+            </a>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
 </section>
+
+<StayInformedCta locale={locale} />
 
 <style>
-  .wwa-intro {
-    font-family: var(--font-display);
-    font-weight: 500;
-    font-size: var(--fs-600);
-    line-height: 1.4;
-    color: var(--ink);
-    max-width: 60ch;
-    margin-bottom: var(--sp-5);
+  /* ---------- manifesto intro (from design B) ---------- */
+  .manifesto {
+    position: relative;
+    background: var(--ink);
+    color: var(--paper);
+    /* roomier bottom than design B had: no dark stats band follows here */
+    padding-block: clamp(4rem, 9vw, 7rem) clamp(3rem, 6vw, 4.5rem);
   }
-  .organisers {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--sp-4);
+  .manifesto-rule {
+    position: absolute;
+    inset: 0 0 auto 0;
+    margin: 0;
+    border: 0;
   }
-  .org-name {
+  .manifesto-eyebrow {
+    color: var(--c-yellow);
+    animation: fade-up 0.5s ease-out both;
+  }
+  .manifesto-title {
     font-family: var(--font-display);
     font-weight: 700;
-    text-transform: uppercase;
-    font-size: var(--fs-600);
+    font-size: var(--fs-700);
+    line-height: 1.22;
+    letter-spacing: -0.01em;
+    max-width: 36ch;
+    text-wrap: balance;
+    color: var(--paper);
+    animation: fade-up 0.5s ease-out 0.1s both;
+  }
+  .manifesto-title .accent {
+    color: var(--c-coral);
+  }
+  .manifesto-rest {
+    color: color-mix(in srgb, var(--paper) 88%, var(--ink));
+    font-size: var(--fs-500);
+    max-width: 60ch;
+    margin-top: var(--sp-3);
+    margin-bottom: 0;
+    animation: fade-up 0.5s ease-out 0.2s both;
+  }
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .manifesto-eyebrow,
+    .manifesto-title,
+    .manifesto-rest {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* ---------- organisers ---------- */
+  .organisers-section {
+    background: var(--paper);
+  }
+  .org-head {
+    padding-block-start: var(--sp-6);
+  }
+  .org-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+  }
+  .org-panel {
+    padding: clamp(1.6rem, 3.5vw, 3rem);
+    border-top: 6px solid transparent;
+  }
+  .org-lpi {
+    background: color-mix(in srgb, var(--c-green) 12%, var(--paper));
+    border-top-color: var(--c-green);
+  }
+  .org-unesco {
+    background: color-mix(in srgb, var(--c-blue) 12%, var(--paper));
+    border-top-color: var(--c-blue);
+  }
+  .org-inner {
+    max-width: 34rem;
+  }
+  .org-name {
+    font-size: var(--fs-700);
+    margin-bottom: var(--sp-3);
+  }
+  .org-lpi .org-name {
+    color: var(--c-deep-green);
+  }
+  .org-unesco .org-name {
     color: var(--c-deep-teal);
-    margin-bottom: 0.6rem;
   }
   .org-text {
     color: var(--ink-soft);
@@ -83,24 +290,290 @@ const t = useTranslations(locale);
   .org-text :global(strong) {
     color: var(--ink);
   }
-  .organisers-powered {
-    margin-top: var(--sp-5);
-    padding-top: var(--sp-4);
+  .org-powered {
+    background: var(--paper);
     border-top: 1px solid var(--line);
-  }
-  .section-h {
-    font-size: var(--fs-800);
-    margin-bottom: var(--sp-4);
-  }
-  .shared-goals-section,
-  .team-section {
-    background: var(--paper-2);
-    border-radius: var(--radius);
+    padding-block: var(--sp-4);
+    display: flex;
+    justify-content: center;
   }
 
-  @media (max-width: 720px) {
-    .organisers {
+  @media (max-width: 880px) {
+    .org-grid {
       grid-template-columns: 1fr;
     }
   }
+
+  /* ---------- shared goals wall (pattern from ThemesLineup.astro) ---------- */
+  .wall {
+    background: var(--paper);
+  }
+  .wall-head {
+    padding-block: var(--sp-6) var(--sp-4);
+  }
+  .wall-heading {
+    font-size: var(--fs-900);
+  }
+
+  .wall-row {
+    background: var(--fill);
+    color: var(--ink);
+  }
+
+  .wall-summary {
+    cursor: pointer;
+    list-style: none;
+    display: block;
+    padding-block: clamp(1.1rem, 2.6vw, 1.9rem);
+    transition: background-color 0.15s ease;
+  }
+  .wall-summary::-webkit-details-marker {
+    display: none;
+  }
+  .wall-summary:hover {
+    background: color-mix(in srgb, var(--fill) 86%, var(--ink) 14%);
+  }
+  .wall-summary:focus-visible {
+    outline: var(--focus);
+    outline-offset: -4px;
+  }
+
+  .wall-line {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: var(--sp-3);
+  }
+  .wall-num {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-600);
+    opacity: 0.65;
+    color: inherit;
+  }
+  .wall-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(1.9rem, 1rem + 3.8vw, 4.1rem);
+    line-height: 0.95;
+    letter-spacing: -0.015em;
+    color: inherit;
+    margin: 0;
+    flex: 1;
+  }
+  .wall-plus {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 1rem + 2vw, 2.6rem);
+    line-height: 1;
+    color: inherit;
+    transition: transform 0.18s ease;
+    margin-left: auto;
+  }
+  .wall-row[open] .wall-plus {
+    transform: rotate(45deg);
+  }
+
+  .wall-answer {
+    background: color-mix(in srgb, var(--shade) 24%, var(--fill));
+    border-top: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+  }
+  .wall-desc {
+    padding-block: var(--sp-3);
+    font-size: var(--fs-500);
+    font-family: var(--font-body);
+    max-width: 54ch;
+    margin: 0;
+    color: inherit;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .wall-summary,
+    .wall-plus {
+      transition: none;
+    }
+  }
+
+  /* ---------- journey rows ---------- */
+  .journey-section {
+    background: var(--paper);
+  }
+  .journey-head {
+    padding-block: var(--sp-6) var(--sp-4);
+  }
+  .journey-heading {
+    font-size: var(--fs-900);
+  }
+  .journey-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .journey-row {
+    border-top: 1px solid var(--line);
+  }
+  .journey-row:nth-child(odd) {
+    background: var(--paper);
+  }
+  .journey-row:nth-child(even) {
+    background: var(--paper-2);
+  }
+  .journey-row:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+  .journey-grid {
+    display: grid;
+    grid-template-columns: minmax(9rem, 15rem) 1fr;
+    gap: var(--sp-3);
+    padding-block: clamp(1.4rem, 3vw, 2.2rem);
+  }
+  .journey-when {
+    border-left: 6px solid var(--accent);
+    padding-left: var(--sp-3);
+  }
+  .journey-date {
+    font-size: var(--fs-600);
+    color: var(--ink);
+    margin: 0;
+  }
+  .journey-title {
+    font-size: var(--fs-600);
+    margin-bottom: 0.5rem;
+  }
+  .journey-title a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.18em;
+  }
+  .journey-title a:hover {
+    color: var(--c-deep-teal);
+  }
+  .journey-desc {
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0;
+  }
+  .journey-desc :global(a) {
+    color: var(--c-deep-teal);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  @media (max-width: 720px) {
+    .journey-grid {
+      grid-template-columns: 1fr;
+      gap: var(--sp-1);
+    }
+  }
+
+  /* ---------- team wall ---------- */
+  .team-section {
+    background: var(--paper);
+  }
+  .team-head {
+    padding-block: var(--sp-6) var(--sp-4);
+  }
+  .team-heading {
+    font-size: var(--fs-900);
+  }
+
+  .team-wall {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1px;
+    background: var(--line);
+  }
+  .team-cell {
+    background: var(--paper);
+  }
+
+  .divider-cell {
+    background: var(--c-coral);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+  }
+  .divider-num {
+    font-size: var(--fs-800);
+    color: var(--c-brown);
+    line-height: 1;
+  }
+
+  .member-cell {
+    display: flex;
+    flex-direction: column;
+  }
+  .member-photo {
+    aspect-ratio: 1;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .member-info {
+    padding: var(--sp-2) var(--sp-2) var(--sp-3);
+  }
+  .member-name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--fs-500);
+    color: var(--ink);
+    margin: 0 0 0.15rem;
+  }
+  .member-role {
+    font-size: var(--fs-300);
+    color: var(--ink-soft);
+    margin: 0 0 0.5rem;
+  }
+  .member-linkedin {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: var(--fs-300);
+    color: var(--c-deep-teal);
+    text-decoration: none;
+  }
+  .member-linkedin:hover {
+    text-decoration: underline;
+  }
+
+  @media (hover: hover) {
+    .member-photo {
+      filter: grayscale(1) opacity(0.85);
+      transition: filter 0.2s ease;
+    }
+    .member-cell:hover .member-photo,
+    .member-cell:focus-within .member-photo {
+      filter: none;
+      opacity: 1;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .member-photo {
+      transition: none;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .team-wall {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+  }
 </style>
+
+<script>
+  // Small screens: open every goal row by default so the descriptions are
+  // readable without requiring a tap on every single one (same pattern as
+  // ThemesLineup.astro).
+  if (window.matchMedia('(max-width: 700px)').matches) {
+    document.querySelectorAll('.goals-wall .wall-row').forEach((d) => {
+      (d as HTMLDetailsElement).open = true;
+    });
+  }
+</script>
