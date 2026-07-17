@@ -45,6 +45,7 @@ const ogImageAlt = `${SITE.name} — 25–29 January 2027, by Learning Planet In
     <meta property="og:description" content={description} />
     <meta property="og:url" content={seo.canonical} />
     <meta property="og:image" content={ogImage} />
+    {!image && <meta property="og:image:type" content="image/jpeg" />}
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content={ogImageAlt} />
