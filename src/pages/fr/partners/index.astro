@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import PageHero from '~/components/PageHero.astro';
-import PartnersDirectory from '~/components/PartnersDirectory.astro';
+import PartnersWall from '~/components/PartnersWall.astro';
 import EmptyState from '~/components/EmptyState.astro';
 import partners from '~/data/partners.json';
 import { show } from '~/config';
@@ -11,6 +11,9 @@ const locale = 'fr';
 const t = useTranslations(locale);
 
 const hasPartners = show.partners && partners.length > 0;
+
+const intro =
+  "Nous sommes une coalition ouverte regroupant plus de 500 partenaires à travers le monde. Notre réseau relie des écoles, des initiatives menées par des jeunes, des ONG, des centres de recherche, des groupes de réflexion sur les politiques, des gouvernements et des organisations internationales, créant ainsi des ponts entre les communautés locales et les institutions mondiales. Cette ampleur et cette diversité nous permettent de nous engager à tous les niveaux de l'éducation et de la gouvernance, qu'ils soient locaux, nationaux ou internationaux.";
 ---
 
 <BaseLayout
@@ -20,22 +23,14 @@ const hasPartners = show.partners && partners.length > 0;
   locale={locale}
   noindex={!hasPartners}
 >
-  <PageHero
-    eyebrow="LearningPlanet Festival 2027"
-    title={t('partners.title')}
-    intro="Nous sommes une coalition ouverte regroupant plus de 500 partenaires à travers le monde. Notre réseau relie des écoles, des initiatives menées par des jeunes, des ONG, des centres de recherche, des groupes de réflexion sur les politiques, des gouvernements et des organisations internationales, créant ainsi des ponts entre les communautés locales et les institutions mondiales. Cette ampleur et cette diversité nous permettent de nous engager à tous les niveaux de l'éducation et de la gouvernance, qu'ils soient locaux, nationaux ou internationaux."
-  />
-
   {
     hasPartners ? (
-      <section class="section container">
-        <PartnersDirectory
-          locale={locale}
-          lead="Nous invitons toutes les organisations qui partagent notre vision à rejoindre le Festival en tant que partenaires officiels."
-        />
-      </section>
+      <PartnersWall locale={locale} intro={intro} />
     ) : (
-      <EmptyState title={t('partners.title')} message={t('held.partnersEmpty')} locale={locale} />
+      <>
+        <PageHero eyebrow="LearningPlanet Festival 2027" title={t('partners.title')} intro={intro} />
+        <EmptyState title={t('partners.title')} message={t('held.partnersEmpty')} locale={locale} />
+      </>
     )
   }
 </BaseLayout>

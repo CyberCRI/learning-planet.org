@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import PageHero from '~/components/PageHero.astro';
-import PartnersDirectory from '~/components/PartnersDirectory.astro';
+import PartnersWall from '~/components/PartnersWall.astro';
 import EmptyState from '~/components/EmptyState.astro';
 import partners from '~/data/partners.json';
 import { show } from '~/config';
@@ -11,6 +11,9 @@ const locale = 'en';
 const t = useTranslations(locale);
 
 const hasPartners = show.partners && partners.length > 0;
+
+const intro =
+  'We are an open coalition of more than 500 partners worldwide. Our network connects schools, youth-led initiatives, NGOs, research centers, policy think tanks, governments, and international organisations, creating bridges between grassroots communities and global institutions. This breadth and diversity enable us to engage at every level of education and governance – local, national, and international.';
 ---
 
 <BaseLayout
@@ -20,22 +23,14 @@ const hasPartners = show.partners && partners.length > 0;
   locale={locale}
   noindex={!hasPartners}
 >
-  <PageHero
-    eyebrow="LearningPlanet Festival 2027"
-    title={t('partners.title')}
-    intro="We are an open coalition of more than 500 partners worldwide. Our network connects schools, youth-led initiatives, NGOs, research centers, policy think tanks, governments, and international organisations, creating bridges between grassroots communities and global institutions. This breadth and diversity enable us to engage at every level of education and governance – local, national, and international."
-  />
-
   {
     hasPartners ? (
-      <section class="section container">
-        <PartnersDirectory
-          locale={locale}
-          lead="We welcome all organisations aligned with our vision to join the Festival as official partners."
-        />
-      </section>
+      <PartnersWall locale={locale} intro={intro} />
     ) : (
-      <EmptyState title={t('partners.title')} message={t('held.partnersEmpty')} locale={locale} />
+      <>
+        <PageHero eyebrow="LearningPlanet Festival 2027" title={t('partners.title')} intro={intro} />
+        <EmptyState title={t('partners.title')} message={t('held.partnersEmpty')} locale={locale} />
+      </>
     )
   }
 </BaseLayout>

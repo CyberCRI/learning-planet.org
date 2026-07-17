@@ -32,12 +32,18 @@
     "seeAll": "Voir tous les partenaires",
     "selectionNote": "Une sélection des {count} organisations de la communauté du Festival.",
     "allHeading": "Tous nos partenaires",
+    "wallHeading": "Organisations partenaires",
     "searchLabel": "Nom du partenaire",
     "searchPlaceholder": "Rechercher un partenaire",
     "filterLabel": "Filtrer par première lettre",
+    "jumpLabel": "Aller à la lettre",
     "all": "Tous",
     "count": "{count} partenaires",
-    "noResults": "Aucun partenaire ne correspond à votre recherche."
+    "noResults": "Aucun partenaire ne correspond à votre recherche.",
+    "becomeTitle": "Devenez partenaire",
+    "becomeText": "Nous invitons toutes les organisations qui partagent notre vision à rejoindre le Festival en tant que partenaires officiels.",
+    "becomeCtaPrimary": "Devenir partenaire du Festival",
+    "becomeCtaSecondary": "Écrivez-nous"
   },
   "footer": {
     "aiCredit": "Illustrations du festival créées avec l'aide de l'IA — voir les mentions légales",

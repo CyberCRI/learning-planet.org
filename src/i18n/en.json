@@ -104,12 +104,18 @@
     "seeAll": "See all partners",
     "selectionNote": "A selection of the {count} organisations in the Festival community.",
     "allHeading": "All our partners",
+    "wallHeading": "Partner organisations",
     "searchLabel": "Partner name",
     "searchPlaceholder": "Search partners",
     "filterLabel": "Filter by first letter",
+    "jumpLabel": "Jump to letter",
     "all": "All",
     "count": "{count} partners",
-    "noResults": "No partners match your search."
+    "noResults": "No partners match your search.",
+    "becomeTitle": "Become a partner",
+    "becomeText": "We welcome all organisations aligned with our vision to join the Festival as official partners.",
+    "becomeCtaPrimary": "Partner with the Festival",
+    "becomeCtaSecondary": "Write to us"
   },
   "footer": {
     "tagline": "Uniting to Transform Education",
