@@ -16,6 +16,7 @@ screenshots/
 .claude/
 
 # review/preview artifacts (not part of the site)
+.og-preview/
 home-comparison.html
 home-b-refined.html
 phase0-plan.html
@@ -34,6 +35,11 @@ src/assets/LPF27_Hero2.png
 src/assets/LPF27_Hero3.png
 src/assets/Hero_LPF27.png
 src/assets/brand/main-hero.webp
+
+# poster generation — the script (scripts/generate-posters.mjs) IS tracked,
+# but its source artwork and rendered outputs are heavy and regenerable.
+poster-art/
+posters/
 
 # local source material & internal working docs — NOT for the public repo
 # (contain unpublished/draft festival content; keep on disk only)
