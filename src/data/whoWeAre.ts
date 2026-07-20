@@ -5,7 +5,7 @@
  */
 
 export const intro =
-  'The Learning Planet Festival was first launched in 2020 in partnership with UNESCO. Since then, it has been organised each January to celebrate the International Day of Education, and has grown into a global movement uniting hundreds of thousands of participants from 193 countries. It has become a shared space for dialogue and action, where youth, educators, innovators, policymakers, researchers, and changemakers come together to reimagine education and take steps towards learning to take care of oneself, others, and the planet.';
+  'The Learning Planet Festival was first launched in 2020 by the Learning Planet Institute in partnership with UNESCO. Since then, it has been organised each January to celebrate the International Day of Education, and has grown into a global movement uniting hundreds of thousands of participants from 193 countries. It has become a shared space for dialogue and action, where youth, educators, innovators, policymakers, researchers, and changemakers come together to reimagine education and take steps towards learning to take care of oneself, others, and the planet.';
 
 export const organisers = {
   lpi: {
