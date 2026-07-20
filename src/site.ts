@@ -24,7 +24,7 @@ export const LINKS = {
   linkedin: 'https://www.linkedin.com/school/learningplanetinstitute/',
   instagram: 'https://www.instagram.com/lpiparis/',
   facebook: 'https://www.facebook.com/lpiparis',
-  contactEmail: 'learningplanet@learningplanetinstitute.org',
+  contactEmail: 'festival@learningplanetinstitute.org',
   mediaEmail: 'team.communication@learningplanetinstitute.org',
   lpi: 'https://learningplanetinstitute.org/',
   unesco: 'https://www.unesco.org/',

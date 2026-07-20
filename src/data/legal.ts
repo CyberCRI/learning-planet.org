@@ -22,7 +22,7 @@ export type LegalPage = {
 
 export type LegalPageId = 'privacy-policy' | 'cookies-policy' | 'legal-notice';
 
-const CONTACT = 'learningplanet@learningplanetinstitute.org';
+const CONTACT = 'festival@learningplanetinstitute.org';
 const DPO = 'dpo@learningplanetinstitute.org';
 
 const mail = (addr: string) => `<a href="mailto:${addr}">${addr}</a>`;
