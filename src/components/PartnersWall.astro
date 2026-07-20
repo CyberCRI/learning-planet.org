@@ -177,9 +177,6 @@ const noResultsText = t('partners.noResults');
     <h2 class="h-bold become-title">{t('partners.becomeTitle')}</h2>
     <p class="become-text">{t('partners.becomeText')}</p>
     <div class="become-actions">
-      <a class="btn become-btn-primary" href={LINKS.coDesignForm} target="_blank" rel="noopener">
-        {t('partners.becomeCtaPrimary')}
-      </a>
       <a class="btn become-btn-outline" href={`mailto:${LINKS.contactEmail}`}>
         {t('partners.becomeCtaSecondary')}
       </a>
@@ -444,13 +441,6 @@ const noResultsText = t('partners.noResults');
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--sp-2);
-  }
-  .become-btn-primary {
-    background: var(--paper);
-    color: var(--ink);
-  }
-  .become-btn-primary:hover {
-    background: var(--white);
   }
   .become-btn-outline {
     background: transparent;
