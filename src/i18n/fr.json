@@ -16,6 +16,9 @@
     "opensNewTab": "(s'ouvre dans un nouvel onglet)"
   },
   "hero": {
+    "returns": "Le festival revient",
+    "edition": "8e édition",
+    "meta": "Autour de la Journée internationale de l'éducation · Programme à venir",
     "stayInformed": "Rester informé",
     "addToCalendar": "Ajouter au calendrier",
     "calendarGoogleLink": "ou Google Agenda"

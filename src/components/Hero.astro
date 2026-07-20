@@ -29,7 +29,7 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
 
   <div class="container hero-grid">
     <div class="hero-copy">
-      <p class="hero-eyebrow">{t('hero.returns')}</p>
+      <p class="hero-eyebrow">{t('hero.returns')} <span class="eyebrow-dot" aria-hidden="true">·</span> <span class="eyebrow-fact">{t('hero.edition')}</span></p>
 
       <h1 id="hero-title" class="hero-title">
         <span class="hero-name-1">Learning Planet</span>
@@ -43,7 +43,7 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
         <span class="save-date-big">25–29 January <span class="save-date-year">2027</span></span>
       </p>
 
-      <p class="hero-note">{t('hero.note')}</p>
+      <p class="hero-meta">{t('hero.meta')}</p>
 
       <div class="hero-cta">
         <a class="btn btn-primary" href={withBase('lpf-2027.ics')} download>{t('hero.addToCalendar')}</a>
@@ -56,6 +56,11 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
           {t('hero.calendarGoogleLink')}
         </a>
         <a class="btn btn-outline" href={LINKS.stayInformedHeroForm} target="_blank" rel="noopener">{t('hero.stayInformed')}</a>
+      </div>
+
+      <!-- Co-signed lockup: institutional trust directly under the CTAs. -->
+      <div class="hero-signature">
+        <PoweredBy label={t('common.poweredBy')} variant="light" size="sm" />
       </div>
     </div>
   </div>
@@ -77,13 +82,6 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
     </div>
   </div>
 </section>
-
-<!-- Powered-by lockup as a slim strip directly below the hero (C2). -->
-<div class="hero-powered-strip">
-  <div class="container">
-    <PoweredBy label={t('common.poweredBy')} variant="light" size="lg" />
-  </div>
-</div>
 
 <style>
   .hero {
@@ -123,12 +121,20 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
     min-height: clamp(480px, 72vh, 700px);
     display: grid;
     align-items: center;
-    padding-block: var(--sp-5);
+    /* Tight vertical rhythm: the signature block below the CTAs must stay
+       visible on ~900px-tall viewports. */
+    padding-block: var(--sp-4);
   }
+  /* Flex column so the meta line can reorder below the CTAs on mobile,
+     protecting the fold. */
   .hero-copy {
     max-width: 38rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .hero-eyebrow {
+    order: 1;
     font-family: var(--font-display);
     text-transform: uppercase;
     letter-spacing: 0.22em;
@@ -137,7 +143,14 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
     color: var(--c-deep-green);
     margin: 0 0 var(--sp-2);
   }
+  .eyebrow-dot {
+    color: var(--c-coral);
+  }
+  .eyebrow-fact {
+    white-space: nowrap;
+  }
   .hero-title {
+    order: 2;
     font-family: var(--font-display);
     font-weight: 700;
     text-transform: uppercase;
@@ -156,6 +169,7 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
     line-height: 0.84;
   }
   .hero-mission {
+    order: 3;
     font-family: var(--font-display);
     font-weight: 500;
     font-size: clamp(1.1rem, 0.9rem + 0.8vw, 1.45rem);
@@ -164,10 +178,11 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
     max-width: 28ch;
   }
   .save-date {
+    order: 4;
     display: flex;
     flex-direction: column;
     gap: 0.1em;
-    margin: var(--sp-4) 0 var(--sp-3);
+    margin: var(--sp-3) 0 var(--sp-3);
     padding-top: var(--sp-2);
     border-top: 3px solid var(--ink);
     width: fit-content;
@@ -194,13 +209,15 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
   .save-date-year {
     color: var(--c-coral);
   }
-  .hero-note {
-    max-width: 30rem;
+  .hero-meta {
+    order: 5;
     font-size: var(--fs-400);
     color: var(--ink-soft);
+    max-width: 34rem;
     margin: 0 0 var(--sp-3);
   }
   .hero-cta {
+    order: 6;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -215,11 +232,39 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
     margin-inline: calc(var(--sp-2) * -0.35) 0.2em;
   }
 
-  /* Powered-by strip below the hero */
-  .hero-powered-strip {
-    background: var(--paper);
-    border-bottom: 1px solid var(--line);
-    padding-block: var(--sp-3);
+  /* Signature: the lockup restyled horizontal, set off by the festival
+     gradient — the brand system co-signing the partners. */
+  .hero-signature {
+    order: 7;
+    width: fit-content;
+    margin-top: var(--sp-3);
+    padding-top: var(--sp-3);
+    position: relative;
+  }
+  .hero-signature::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--grad-festival);
+    border-radius: 2px;
+  }
+  .hero-signature :global(.powered-by) {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.4rem;
+    text-align: left;
+  }
+  .hero-signature :global(.pb-label) {
+    white-space: nowrap;
+  }
+  .hero-signature :global(.powered-by.sm .pb-lpi img) {
+    height: 64px;
+  }
+  .hero-signature :global(.powered-by.sm .pb-unesco img) {
+    height: 32px;
   }
 
   /* ticker */
@@ -278,12 +323,25 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
       min-height: auto;
       padding-block: var(--sp-5) var(--sp-6);
     }
+    .hero-meta {
+      order: 8;
+      margin-top: var(--sp-3);
+      margin-bottom: 0;
+    }
   }
   @media (max-width: 560px) {
     .save-date-big {
       flex-direction: column;
       gap: 0;
       line-height: 0.95;
+    }
+  }
+  @media (max-width: 460px) {
+    .hero-signature :global(.powered-by.sm .pb-lpi img) {
+      height: 52px;
+    }
+    .hero-signature :global(.powered-by.sm .pb-unesco img) {
+      height: 26px;
     }
   }
   @media (prefers-reduced-motion: reduce) {

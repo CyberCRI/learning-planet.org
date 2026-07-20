@@ -20,8 +20,9 @@
   },
   "hero": {
     "returns": "The festival returns",
+    "edition": "8th edition",
     "saveTheDateKicker": "Save the date",
-    "note": "The Learning Planet Festival returns in January 2027 for its 8th edition, around the celebration of the International Day of Education. More details on the programme coming soon.",
+    "meta": "Around the International Day of Education · Programme coming soon",
     "stayInformed": "Stay informed",
     "addToCalendar": "Add to calendar",
     "calendarGoogleLink": "or Google Calendar"
