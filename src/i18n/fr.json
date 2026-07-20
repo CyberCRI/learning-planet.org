@@ -16,9 +16,9 @@
     "opensNewTab": "(s'ouvre dans un nouvel onglet)"
   },
   "hero": {
-    "addToCalendar": "Ajouter au calendrier :",
-    "calendarIcs": "Apple / Outlook (.ics)",
-    "calendarGoogle": "Google Agenda"
+    "stayInformed": "Rester informé",
+    "addToCalendar": "Ajouter au calendrier",
+    "calendarGoogleLink": "ou Google Agenda"
   },
   "curated": {
     "eyebrow": "Le format 2027",

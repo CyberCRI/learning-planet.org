@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import PoweredBy from './PoweredBy.astro';
 import hero from '~/assets/LPF27_Hero1.png';
 import { SITE, LINKS } from '~/site';
-import { useTranslations, localizedPath, type Locale } from '~/i18n/utils';
+import { useTranslations, type Locale } from '~/i18n/utils';
 import { withBase } from '~/lib/paths';
 
 interface Props {
@@ -45,20 +45,16 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
 
       <p class="hero-note">{t('hero.note')}</p>
 
-      <p class="add-to-calendar">
-        <span class="atc-label">{t('hero.addToCalendar')}</span>
-        <a href={withBase('lpf-2027.ics')} download>{t('hero.calendarIcs')}</a>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href={withBase('lpf-2027.ics')} download>{t('hero.addToCalendar')}</a>
         <a
+          class="cta-textlink"
           href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Learning%20Planet%20Festival%202027&dates=20270125/20270130&details=https%3A%2F%2Ffestival.learning-planet.org%2F"
           target="_blank"
           rel="noopener"
         >
-          {t('hero.calendarGoogle')}
+          {t('hero.calendarGoogleLink')}
         </a>
-      </p>
-
-      <div class="hero-cta">
-        <a class="btn btn-primary" href={localizedPath('replays', locale)}>{t('hero.watchReplays')}</a>
         <a class="btn btn-outline" href={LINKS.stayInformedHeroForm} target="_blank" rel="noopener">{t('hero.stayInformed')}</a>
       </div>
     </div>
@@ -204,24 +200,19 @@ const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
     color: var(--ink-soft);
     margin: 0 0 var(--sp-3);
   }
-  .add-to-calendar {
-    font-size: var(--fs-300);
-    color: var(--ink-soft);
-    margin: 0 0 var(--sp-4);
-  }
-  .atc-label {
-    margin-right: 0.4em;
-  }
-  .add-to-calendar a {
-    color: var(--c-deep-teal);
-    text-decoration: underline;
-    text-underline-offset: 0.18em;
-    margin-right: 0.9em;
-  }
   .hero-cta {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: var(--sp-2);
+  }
+  .cta-textlink {
+    font-size: var(--fs-400);
+    color: var(--c-deep-teal);
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+    /* Sit tight to the primary button, before the outline button. */
+    margin-inline: calc(var(--sp-2) * -0.35) 0.2em;
   }
 
   /* Powered-by strip below the hero */
