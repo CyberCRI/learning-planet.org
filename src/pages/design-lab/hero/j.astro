@@ -1,0 +1,33 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import LabBanner from '~/components/lab/LabBanner.astro';
+import HeroJ from '~/components/lab/HeroJ.astro';
+import ThemesLineup from '~/components/ThemesLineup.astro';
+import CuratedEdition from '~/components/CuratedEdition.astro';
+import MovementSection from '~/components/MovementSection.astro';
+import StatCounters from '~/components/StatCounters.astro';
+import PartnerMarquee from '~/components/PartnerMarquee.astro';
+import ReplaysTeaser from '~/components/ReplaysTeaser.astro';
+import StayInformedCta from '~/components/StayInformedCta.astro';
+import { show } from '~/config';
+
+const locale = 'en';
+---
+
+<BaseLayout
+  title="Hero J — Byline (design lab)"
+  description="Temporary team-review preview: hero variant J."
+  path="design-lab/hero/j"
+  locale={locale}
+  noindex
+>
+  <LabBanner label="Hero J — Byline" backHref="design-lab/hero/" />
+  <HeroJ locale={locale} />
+  {show.themes && <ThemesLineup locale={locale} />}
+  <CuratedEdition locale={locale} />
+  <MovementSection locale={locale} />
+  <StatCounters locale={locale} />
+  {show.partners && <PartnerMarquee locale={locale} />}
+  <ReplaysTeaser locale={locale} />
+  <StayInformedCta locale={locale} />
+</BaseLayout>

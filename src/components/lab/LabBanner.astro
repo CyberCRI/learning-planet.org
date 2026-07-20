@@ -8,15 +8,17 @@ import { withBase } from '~/lib/paths';
 
 interface Props {
   label: string;
+  /** Hub this variant belongs to; defaults to the who-we-are review pages. */
+  backHref?: string;
 }
-const { label } = Astro.props;
+const { label, backHref = 'design-lab/who-we-are/' } = Astro.props;
 ---
 
 <div class="lab-banner">
   <div class="container lab-inner">
     <span class="lab-tag">Design lab</span>
     <span class="lab-label">{label}</span>
-    <a class="lab-back" href={withBase('design-lab/who-we-are/')}>Back to comparison <span aria-hidden="true">→</span></a>
+    <a class="lab-back" href={withBase(backHref)}>Back to comparison <span aria-hidden="true">→</span></a>
   </div>
 </div>
 

@@ -1,0 +1,327 @@
+---
+// lab: hardcoded EN strings — add i18n keys on promotion.
+import { Image } from 'astro:assets';
+import PoweredBy from '../PoweredBy.astro';
+import hero from '~/assets/LPF27_Hero1.png';
+import { SITE, LINKS } from '~/site';
+import { useTranslations, type Locale } from '~/i18n/utils';
+import { withBase } from '~/lib/paths';
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const t = useTranslations(locale);
+
+// Ticker phrases (decorative). Kept short + confirmed.
+const tickerItems = [
+  t('ticker.shaping'),
+  t('ticker.youth'),
+  t('ticker.sustainable'),
+  t('ticker.peaceful'),
+];
+const tickerColors = ['--c-green', '--c-blue', '--c-lilac', '--c-yellow'];
+---
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-art" aria-hidden="true">
+    <Image src={hero} alt="" widths={[720, 1100, 1600, 2200]} sizes="100vw" loading="eager" fetchpriority="high" />
+  </div>
+
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1 id="hero-title" class="hero-title">
+        <span class="hero-name-1">Learning Planet</span>
+        <span class="hero-name-2 grad-text">Festival</span>
+      </h1>
+
+      <p class="hero-mission">{SITE.mission}.</p>
+
+      <p class="save-date">
+        <span class="save-date-kicker">{t('hero.saveTheDateKicker')}</span>
+        <span class="save-date-big">25–29 January <span class="save-date-year">2027</span></span>
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href={withBase('lpf-2027.ics')} download>{t('hero.addToCalendar')}</a>
+        <a
+          class="cta-textlink"
+          href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Learning%20Planet%20Festival%202027&dates=20270125/20270130&details=https%3A%2F%2Ffestival.learning-planet.org%2F"
+          target="_blank"
+          rel="noopener"
+        >
+          {t('hero.calendarGoogleLink')}
+        </a>
+        <a class="btn btn-outline" href={LINKS.stayInformedHeroForm} target="_blank" rel="noopener">{t('hero.stayInformed')}</a>
+      </div>
+
+      <p class="hero-meta">8th edition · Around the International Day of Education</p>
+    </div>
+
+    <div class="hero-plaque">
+      <PoweredBy label={t('common.poweredBy')} variant="light" size="lg" />
+    </div>
+  </div>
+
+  <div class="ticker" role="presentation">
+    <div class="ticker-track">
+      {
+        Array.from({ length: 2 }).map(() => (
+          <span class="ticker-run" aria-hidden="true">
+            {tickerItems.map((item, i) => (
+              <>
+                <span style={`color: var(${tickerColors[i % tickerColors.length]})`}>{item}</span>
+                <span class="dot">●</span>
+              </>
+            ))}
+          </span>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    overflow: clip;
+    background: var(--paper);
+    isolation: isolate;
+  }
+  .hero-art {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+  .hero-art :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  /* The arc illustration opens into a clean clearing on the left; a soft
+     radial cream feather guarantees headline contrast there. */
+  .hero-art::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      120% 120% at 14% 42%,
+      var(--paper) 0%,
+      color-mix(in srgb, var(--paper) 72%, transparent) 30%,
+      transparent 56%
+    );
+  }
+  .hero-grid {
+    position: relative;
+    z-index: 1;
+    min-height: clamp(480px, 72vh, 700px);
+    display: grid;
+    align-items: center;
+    padding-block: var(--sp-5);
+  }
+  .hero-copy {
+    max-width: 38rem;
+  }
+  .hero-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 0.86;
+    color: var(--ink);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-name-1 {
+    font-size: clamp(2.4rem, 1.2rem + 6vw, 5rem);
+  }
+  .hero-name-2 {
+    font-size: clamp(3.4rem, 1.4rem + 9vw, 7.6rem);
+    line-height: 0.84;
+  }
+  .hero-mission {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(1.1rem, 0.9rem + 0.8vw, 1.45rem);
+    color: var(--ink-soft);
+    margin: var(--sp-3) 0 0;
+    max-width: 28ch;
+  }
+  .save-date {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    margin: var(--sp-4) 0 var(--sp-3);
+    padding-top: var(--sp-2);
+    border-top: 3px solid var(--ink);
+    width: fit-content;
+  }
+  .save-date-kicker {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.34em;
+    font-weight: 600;
+    font-size: var(--fs-400);
+    color: var(--c-coral);
+  }
+  .save-date-big {
+    display: flex;
+    align-items: baseline;
+    gap: 0.3em;
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: clamp(1.8rem, 1rem + 4vw, 3.4rem);
+    line-height: 0.9;
+    color: var(--ink);
+  }
+  .save-date-year {
+    color: var(--c-coral);
+  }
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+  }
+  .cta-textlink {
+    font-size: var(--fs-400);
+    color: var(--c-deep-teal);
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+    /* Sit tight to the primary button, before the outline button. */
+    margin-inline: calc(var(--sp-2) * -0.35) 0.2em;
+  }
+  .hero-meta {
+    font-size: var(--fs-400);
+    color: var(--ink-soft);
+    margin: var(--sp-3) 0 0;
+  }
+
+  /* The plaque — LPI+UNESCO lockup as a frosted-glass card on the
+     illustration, gallery-plaque grammar, bottom right. */
+  .hero-plaque {
+    position: absolute;
+    right: clamp(1.1rem, 4vw, 2.5rem);
+    bottom: var(--sp-5);
+    background: color-mix(in srgb, var(--paper) 62%, transparent);
+    -webkit-backdrop-filter: blur(10px) saturate(1.15);
+    backdrop-filter: blur(10px) saturate(1.15);
+    border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+    border-radius: var(--radius);
+    padding: var(--sp-3) var(--sp-4);
+    box-shadow: 0 8px 30px rgb(0 0 0 / 0.08);
+  }
+  .hero-plaque :global(.powered-by) {
+    gap: 0.6rem;
+  }
+  .hero-plaque :global(.pb-label) {
+    color: var(--ink-soft);
+    white-space: nowrap;
+  }
+  .hero-plaque :global(.powered-by.lg .pb-lpi img) {
+    height: 84px;
+  }
+  .hero-plaque :global(.powered-by.lg .pb-unesco img) {
+    height: 40px;
+  }
+
+  /* ticker */
+  .ticker {
+    position: relative;
+    z-index: 1;
+    background: var(--ink);
+    overflow: hidden;
+  }
+  .ticker-track {
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 34s linear infinite;
+  }
+  .ticker-run {
+    display: flex;
+    align-items: center;
+    flex: none;
+    padding-block: 0.85rem;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    font-size: var(--fs-500);
+    color: var(--paper);
+    white-space: nowrap;
+  }
+  .ticker-run > span:not(.dot) {
+    padding-inline: clamp(0.9rem, 2vw, 1.6rem);
+  }
+  .ticker .dot {
+    color: var(--c-yellow);
+    font-size: 0.6em;
+  }
+  @keyframes ticker-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 980px) {
+    .hero-art :global(img) {
+      opacity: 0.42;
+    }
+    .hero-art::before {
+      background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--paper) 80%, transparent) 0%,
+        var(--paper) 90%
+      );
+    }
+    .hero-grid {
+      min-height: auto;
+      padding-block: var(--sp-5) var(--sp-6);
+    }
+    .hero-plaque {
+      position: static;
+      width: 100%;
+      margin-top: var(--sp-4);
+      background: color-mix(in srgb, var(--paper) 80%, transparent);
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      border: 1px solid var(--line);
+      box-shadow: none;
+      padding: var(--sp-3);
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 560px) {
+    .save-date-big {
+      flex-direction: column;
+      gap: 0;
+      line-height: 0.95;
+    }
+  }
+  @media (max-width: 460px) {
+    .hero-plaque :global(.powered-by.lg .pb-lpi img) {
+      height: 64px;
+    }
+    .hero-plaque :global(.powered-by.lg .pb-unesco img) {
+      height: 30px;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-track {
+      animation: none;
+      width: 100%;
+      justify-content: center;
+    }
+    .ticker-run:nth-child(2) {
+      display: none;
+    }
+  }
+</style>

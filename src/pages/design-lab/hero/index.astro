@@ -1,0 +1,152 @@
+---
+/**
+ * DESIGN LAB (temporary) — hub for the homepage HERO review, round 3
+ * (copy sharpening + "Powered by LPI & UNESCO" integrated into the hero).
+ * Earlier rounds (A–F) were retired when the CTA restructure shipped.
+ * Pick one, then this directory, src/components/lab/HeroG|H|I.astro and
+ * scripts/shot-hero-lab.mjs are retired.
+ */
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { withBase } from '~/lib/paths';
+
+const variants = [
+  {
+    href: 'design-lab/hero/g/',
+    key: 'G',
+    name: 'Presented by',
+    color: 'var(--c-green)',
+    blurb:
+      'The lockup as the opening credit: a horizontal "Powered by LPI & UNESCO" line above the headline, film-poster style. Partnership frames the identity.',
+  },
+  {
+    href: 'design-lab/hero/h/',
+    key: 'H',
+    name: 'Co-signed',
+    color: 'var(--c-coral)',
+    blurb:
+      'The lockup as the signature: under the CTA row, set off by a festival-gradient rule. Institutional trust exactly where the decision happens.',
+  },
+  {
+    href: 'design-lab/hero/i/',
+    key: 'I',
+    name: 'The plaque',
+    color: 'var(--c-blue)',
+    blurb:
+      'The lockup as a frosted-glass plaque on the illustration, bottom right — the boldest visual, with the most radical copy cut.',
+  },
+  {
+    href: 'design-lab/hero/j/',
+    key: 'J',
+    name: 'Byline',
+    color: 'var(--c-yellow)',
+    blurb:
+      'The lockup directly under the wordmark — “Learning Planet Festival, powered by LPI & UNESCO” as one statement. Team-suggested variant.',
+  },
+];
+---
+
+<BaseLayout
+  title="Design lab — Hero"
+  description="Temporary team-review page: three hero variants for the homepage."
+  path="design-lab/hero"
+  locale="en"
+  noindex
+>
+  <section class="section container">
+    <p class="eyebrow">Design lab · team review</p>
+    <h1 class="h-bold hub-title">Homepage hero — three variants</h1>
+    <p class="hub-note">
+      Round 3: sharper copy (the note paragraph and filler are gone) and the "Powered by LPI &amp;
+      UNESCO" lockup moved into the hero itself — the strip below the ticker disappears in all
+      three. Each opens as a full live homepage. Noindexed and excluded from the sitemap.
+    </p>
+
+    <ul class="hub-list" role="list">
+      {
+        variants.map((v) => (
+          <li class="hub-card" style={`--accent: ${v.color}`}>
+            <a href={withBase(v.href)}>
+              <span class="hub-key h-bold" aria-hidden="true">
+                {v.key}
+              </span>
+              <span class="hub-body">
+                <span class="hub-name h-bold">{v.name}</span>
+                <span class="hub-blurb">{v.blurb}</span>
+              </span>
+              <span class="hub-arrow" aria-hidden="true">
+                →
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  .hub-title {
+    font-size: var(--fs-800);
+    margin-block: var(--sp-2) var(--sp-3);
+  }
+  .hub-note {
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin-bottom: var(--sp-5);
+  }
+  .hub-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-3);
+  }
+  .hub-card a {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-4);
+    padding: var(--sp-4);
+    background: var(--paper-2);
+    border-left: 6px solid var(--accent);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--ink);
+    transition: background 0.15s ease;
+  }
+  .hub-card a:hover {
+    background: color-mix(in srgb, var(--accent) 14%, var(--paper-2));
+  }
+  .hub-key {
+    font-size: var(--fs-800);
+    line-height: 1;
+    color: var(--accent);
+    min-width: 2.2rem;
+    text-align: center;
+  }
+  .hub-body {
+    display: grid;
+    gap: 0.3rem;
+  }
+  .hub-name {
+    font-size: var(--fs-600);
+  }
+  .hub-blurb {
+    color: var(--ink-soft);
+    font-size: var(--fs-400);
+  }
+  .hub-arrow {
+    margin-left: auto;
+    font-size: var(--fs-600);
+    color: var(--ink-faint);
+  }
+
+  @media (max-width: 560px) {
+    .hub-card a {
+      gap: var(--sp-3);
+      padding: var(--sp-3);
+    }
+    .hub-key {
+      font-size: var(--fs-700);
+    }
+  }
+</style>
