@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import { useTranslations, localizedPath } from '~/i18n/utils';
+import { BASE } from '~/lib/paths';
 
 const locale = 'en';
 const t = useTranslations(locale);
@@ -13,6 +14,29 @@ const t = useTranslations(locale);
     <p class="nf-body prose">{t('notFound.body')}</p>
     <a class="btn btn-primary" href={localizedPath('', locale)}>{t('notFound.cta')}</a>
   </section>
+
+  <script is:inline define:vars={{ base: BASE }}>
+    // Legacy-URL catcher: GitHub Pages has no server-side redirects, so the
+    // ~15k old WordPress speaker/event/organisation/taxonomy URLs land here.
+    // Known legacy patterns are forwarded client-side (moved pages have real
+    // meta-refresh stubs — see src/data/legacyRedirects.ts); anything else
+    // stays a normal 404.
+    (function () {
+      var path = location.pathname;
+      if (base && path.indexOf(base) === 0) path = path.slice(base.length) || '/';
+      var fr = /^\/fr\//.test(path) ? '/fr' : '';
+      var rest = fr ? path.slice(3) : path;
+      var target = null;
+      if (/^\/(speaker|event|event-city|event-format|event-label|topic|category)\//.test(rest)) {
+        target = fr + '/';
+      } else if (/^\/organisation\//.test(rest)) {
+        target = fr + '/partners/';
+      } else if (/^\/festival-de-lapprendre/.test(rest)) {
+        target = '/fr/';
+      }
+      if (target) location.replace(base + target);
+    })();
+  </script>
 </BaseLayout>
 
 <style>
