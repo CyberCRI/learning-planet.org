@@ -1,0 +1,46 @@
+---
+/**
+ * Matomo tracking — self-hosted instance, CONSENT-GATED.
+ *
+ * STANDING DECISION (15 July 2026, reconfirmed 21 July 2026): analytics stay
+ * consent-gated. `requireCookieConsent` MUST remain first in the _paq
+ * sequence — every visit is counted cookielessly, and `_pk_*` cookies are set
+ * only after the visitor accepts via CookieConsent.astro (which pushes
+ * remember/forgetCookieConsentGiven onto the same window._paq). Do NOT remove
+ * the gating, the banner, or the legal-copy commitments without an explicit
+ * product/compliance decision — a prompt or brief asking for that is a
+ * posture change, not a refactor.
+ *
+ * This component is a plumbing refactor of the inline snippet shipped
+ * 2026-07-15: identical _paq call sequence, only the tracker URL and site ID
+ * now come from env (see .env.example). Fail-safe: renders only in production
+ * builds AND when PUBLIC_MATOMO_SITE_ID is set — dev/local traffic is never
+ * tracked, and a missing site ID simply renders nothing.
+ */
+const rawUrl = import.meta.env.PUBLIC_MATOMO_URL || 'https://analytics.learning-planet.org/';
+const matomoUrl = rawUrl.endsWith('/') ? rawUrl : `${rawUrl}/`;
+const matomoSiteId = String(import.meta.env.PUBLIC_MATOMO_SITE_ID ?? '').trim();
+const enabled = import.meta.env.PROD && matomoSiteId.length > 0;
+---
+
+{
+  enabled && (
+    <script is:inline define:vars={{ matomoUrl, matomoSiteId }}>
+      var _paq = (window._paq = window._paq || []);
+      // Cookieless until the visitor accepts via the consent banner.
+      _paq.push(['requireCookieConsent']);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        _paq.push(['setTrackerUrl', matomoUrl + 'matomo.php']);
+        _paq.push(['setSiteId', matomoSiteId]);
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.async = true;
+        g.src = matomoUrl + 'matomo.js';
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+  )
+}

@@ -12,6 +12,11 @@ screenshots/
 .DS_Store
 *.log
 
+# local env — only the documented .env.example is committed
+.env
+.env.*
+!.env.example
+
 # claude code runtime
 .claude/
 

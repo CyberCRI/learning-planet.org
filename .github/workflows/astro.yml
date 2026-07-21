@@ -67,6 +67,14 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Astro
+        # Matomo analytics (self-hosted, consent-gated — see
+        # src/components/Matomo.astro and .env.example): public build-time
+        # values, not secrets. Unset → the site builds fine, simply untracked.
+        # Any future preview/staging deploy must override PUBLIC_MATOMO_SITE_ID
+        # with a separate throwaway Matomo site ID to keep production stats clean.
+        env:
+          PUBLIC_MATOMO_URL: "https://analytics.learning-planet.org/"
+          PUBLIC_MATOMO_SITE_ID: "1"
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} astro build \
             --site "${{ steps.pages.outputs.origin }}" \
