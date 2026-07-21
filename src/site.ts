@@ -17,10 +17,13 @@ export const EDITION = {
 } as const;
 
 export const LINKS = {
+  // LearningPlanet Alliance channel — where the festival replays live.
   youtubeChannel: 'https://www.youtube.com/@LearningPlanetOrg',
+  // Learning Planet Institute channel — used for the footer social link.
+  youtubeInstituteChannel: 'https://www.youtube.com/channel/UCAwnYwPOM-fcJ7wkfp1Xn7g',
   youtube2026Playlist:
     'https://www.youtube.com/playlist?list=PLhoivKx89OU4t6JuXmeK5bYQw371RspfG',
-  newsletter: 'https://learningplanetinstitute.org/en/subscribe-to-our-newsletter/',
+  newsletter: 'https://www.learningplanetinstitute.org/fr/inscription-a-notre-newsletter/',
   linkedin: 'https://www.linkedin.com/school/learningplanetinstitute/',
   instagram: 'https://www.instagram.com/lpiparis/',
   facebook: 'https://www.facebook.com/lpiparis',
