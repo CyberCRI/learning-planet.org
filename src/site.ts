@@ -28,9 +28,9 @@ export const LINKS = {
   mediaEmail: 'team.communication@learningplanetinstitute.org',
   lpi: 'https://learningplanetinstitute.org/',
   unesco: 'https://www.unesco.org/',
-  stayInformedHeroForm: 'https://forms.gle/w2qv1zqEeQ3vyCHU8',
-  stayInformedForm: 'https://forms.gle/44bqNT5KBZwRLpT79',
-  coDesignForm: 'https://forms.gle/kSHAjuvtrTfq6VGT7',
+  stayInformedHeroForm: 'https://airtable.com/appST8T9zV5GeU5el/pagEtT7DsERDt2Q2C/form',
+  stayInformedForm: 'https://airtable.com/appST8T9zV5GeU5el/pagEtT7DsERDt2Q2C/form',
+  coDesignForm: 'https://airtable.com/appST8T9zV5GeU5el/pagEtT7DsERDt2Q2C/form',
 } as const;
 
 /** Confirmed evergreen impact figures for the movement, per the July 2026 editorial review. */
